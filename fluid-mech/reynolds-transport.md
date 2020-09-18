@@ -7,6 +7,7 @@ Studying fluids typically involve looking at specific "sections" of the fluid kn
 
 $$I = \int_{a}^{b}f(x)dx$$
 
-Below shows an arbitrary control volume.
+Below shows an arbitrary control volume:
+![Arbitrary control volume](fluid-mech/figures/general control volume.PNG)
 
 
