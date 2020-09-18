@@ -1,5 +1,7 @@
 ---
 mathjax: true
+layout: page
+title: Statement of Reynold's transport theorem
 ---
 {% include mathjax.html %}
 # Reynold's Transport Theorem
