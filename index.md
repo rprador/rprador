@@ -1,3 +1,5 @@
+{% include navigation.html}
+
 # Home Page
 
 This Github Pages is a dedicated location for storing personal notes that I have acquired over the years.
