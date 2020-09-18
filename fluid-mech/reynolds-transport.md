@@ -14,14 +14,17 @@ $$d \mathcal{V} = (\textbf{V}\cdot \hat{\textbf{n}})dAdt$$
 
 Dividing both sides by $$dt$$ and integrating gives the **volumetric flow rate** $$Q$$:
 
-$$\begin{equation}Q=\int_{\text{surf}}(\textbf{V}\cdot \hat{\textbf{n}})dA\end{equation}$$
+| $$Q=\int_{\text{surf}}(\textbf{V}\cdot \hat{\textbf{n}})dA$$ | (1) |
 
 Lots of times, the geometry of the control volume is not complicated, so we can specify the integral more succinctly as:
 
 $$Q = AV$$
 
 Conveniently, we can multiply the volumetric flow rate by the fluid's density to obtain the **mass flow rate**:
+
 $$\dot{m} = \int_{\text{surf}}\rho (\textbf{V}\cdot \hat{\textbf{n}})dA$$
+
+
 
 <hr style="border: 1px solid black;" />
 
