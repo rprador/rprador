@@ -45,4 +45,14 @@ $$ \begin{align*} 0 &= \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}}
 &= \rho \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA \\
 &= \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
 
+For a general control surface, we have that the volumetric flow rate must be zero:
+
+$$Q_{\text{CS}} = \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA = 0 \;\;\;\; \text{(Incompressible flow)}$$
+
+If the inlets/outlets are one-dimensional:
+
+$$ \sum Q_{\text{in}} = \sum Q_{\text{out}} \;\;\;\; \text{(1D Incompressible flow)}$$
+
+where $Q = A_{i}V_{i}$.
+
 
