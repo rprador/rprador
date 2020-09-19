@@ -41,6 +41,7 @@ such that the "total" amount of $B$ in a general control volume is:
 $$B_{CV} = \int_{V} \beta dm = \int_{V} \beta \rho d \mathcal{V} $$
 
 Now, if we consider the possibility of having changes with respect to the control volume, we have ***flow terms***:
+
 $$\int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
 
 and the change of $\beta$ within the control volume with respect to time:
