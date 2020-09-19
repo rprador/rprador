@@ -39,5 +39,6 @@ By incompressible, we mean the change in density (time derivative here) is negli
 
 $$ \begin{align*} 0 &= \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
 &= \rho \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA
-$$
+&= \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
+
+
