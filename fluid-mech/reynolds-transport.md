@@ -7,6 +7,7 @@ title: Statement of Reynold's transport theorem
 # Reynold's Transport Theorem
 Studying fluids typically involve looking at specific "sections" of the fluid known as *control volumes*. This is not the only way to study a fluid but it is the most commonly introduced method. We start with a few definitions.
 
+## Quick definitions
 ![Arbitrary control volume](https://rprador.github.io/rprador/fluid-mech/figures/control-volume.PNG)
 The above figure shows such a control volume for a fluid flowing through an arbitrary surface (a). The differential volume through a differential element $dA$ traces out a slanted parallelepiped (b) that is along the direction of the flow, which in this case is affected by the orientation of the elemental area. To account for this orientation, we simply take velocity $\textbf{V}$ projected onto the normal of the elemental area, $\textbf{V} \cdot \hat{\textbf{n}}$. The differential volume is, therefore, (think base times height):
 
@@ -32,6 +33,8 @@ Note: units of volumetric flow rate are m<sup>3</sup>/s; mass flow rate are kg/s
 
 <hr style="border: 1px solid black;" />
 
+## Statement of theorem
+
 Moving on, let $B$ be an extensive property of the system such as energy, momentum, etc. We can define an intensive property by taking the amount of $B$ per unit mass, i.e.:
 
 $$\beta = \frac{dB}{dm}$$
@@ -49,6 +52,18 @@ and the change of $\beta$ within the control volume with respect to time:
 $$\frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right)$$
 
 The time derivative of any extensive property of the system is given by **Reynold's transport theorem**:
-\begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
+\boxed{\begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}}
 
-Schematically, all Reynold's transport theorem says is that a system's change in an extensive property with respect to time 
+Schematically:
+
+$$\text{Change in } B = (\text{Change within CV}) + (\text{Outgoing Flow}) - (\text{Incoming flow}) $$
+
+By applying Reynold's transport theorem for different quantities $B$, we can derive useful relationships.
+
+### One-dimensional case
+
+Suppose the flow is one-dimensional. Reynold's transport theorem simplifies to a very useful form:
+
+$$ \frac{dB}{dt} = \frac{d}{dt} \left( \int_{V}\beta dm \right) + \left(\sum \beta \dot{m}\right)_{\text{out}} - \left(\sum \beta \dot{m}\right)_{\text{in}} $$
+
+where the sums go over every inlet and outlet.
