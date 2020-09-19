@@ -7,7 +7,7 @@ title: Applications of Reynold's Transport Theorem
 
 # Conservation of Mass
 
-Recall that Reynold's transport theorem stated, that for an extensive property $B$ and its intensive form, $\beta = dB/dm$:
+Recall that Reynold's transport theorem stated for an extensive property $B$ and its intensive form, $\beta = dB/dm$:
 
 \begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
@@ -27,11 +27,15 @@ This is the most general form of the **conservation of mass** for a control volu
 
 In the case of steady flow, the time dependence of the Reynold's transport theorem is taken to be zero. In other words, every time derivative vanishes. Hence, $\partial \rho /\partial t = 0$, and so:
 
-$$ \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA = 0 \;\;\;\; \text{Steady flow}$$
+$$ \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA = 0 \;\;\;\; \text{(Steady flow)} $$
 
-In the one-dimensional case, the integral reduces to individual contributions $\rho_{i}A_{i}V_{i}$. This leads to the very simple relation:
+In the case that inlet/outlet surfaces are one-dimensional, the integral reduces to individual contributions $\rho_{i}A_{i}V_{i}$. This leads to the very simple relation:
 
-$$ \sum_{i} (\dot{m}_{i})_{\text{in}} = \sum_{i} (\dot{m}_{i})_{\text{out}} $$
+$$ \sum_{i} (\dot{m}_{i})_{\text{in}} = \sum_{i} (\dot{m}_{i})_{\text{out}} \;\;\;\; \text{(1D Steady flow)} $$
+
+However, if not then we have to calculated an integral for each inlet/outlet:
+
+$$\dot{m} = \int_{\text{surf}} \rho (\textbf{V} \cdot \hat{\textbf{n}}) $$
 
 ## Incompressible Flow
 
