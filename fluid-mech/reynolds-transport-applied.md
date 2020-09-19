@@ -31,6 +31,13 @@ $$ \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA = 0 \;\;\;\; \te
 
 In the one-dimensional case, the integral reduces to individual contributions $\rho_{i}A_{i}V_{i}$. This leads to the very simple relation:
 
-## \sum_{i} (\dot{m}_{i})_{\text{in}} = \sum_{i} (\dot{m}_{i})_{\text{out}} ##
+$$ \sum_{i} (\dot{m}_{i})_{\text{in}} = \sum_{i} (\dot{m}_{i})_{\text{out}} $$
 
+## Incompressible Flow
 
+By incompressible, we mean the change in density (time derivative here) is negligible. In other words, $\rho \approx$ constant. It is useful to know that although it is not general true that most fluids are incompressible, it is true that all liquids are ***nearly*** incompressible. Like from the case of steady flow, we therefore have:
+
+$$ \begin{align*} 0 &= \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+&= \rho \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+&= \int_{\text{surf}} (\textbf{V}\cdot \hat{\textbf{n}})dA
+$$
