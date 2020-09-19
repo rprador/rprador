@@ -62,6 +62,6 @@ By applying Reynold's transport theorem for different quantities $B$, we can der
 
 Suppose the flow is one-dimensional. Reynold's transport theorem simplifies to a very useful form:
 
-$$ \frac{dB}{dt} = \frac{d}{dt} \left( \int_{V}\beta dm \right) + \left(\sum){i} \beta_{i} \dot{m}_{i}\right)_{\text{out}} - \left(\sum_{j} \beta_{j} \dot{m}_{j}\right)_{\text{in}} $$
+$$ \frac{dB}{dt} = \frac{d}{dt} \left( \int_{V}\beta dm \right) +  \left( \sum_{i} \beta_{i} \dot{m}_{i}\right)_{\text{out}} - \left( \sum_{j} \beta_{j} \dot{m}_{j}\right)_{\text{in}} $$
 
 where the summations go over every inlet and outlet.
