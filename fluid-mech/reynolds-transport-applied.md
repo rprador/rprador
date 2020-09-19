@@ -13,9 +13,9 @@ Recall that Reynold's transport theorem stated, that for an extensive property $
 
 Our choice for $B$ is the mass, so $B=m$ and $\beta=dm/dm=1$. Thus,
 
-\begin{align} \frac{dm}{dt}_{\text{sys}} &= \frac{d}{dt}\left( \int_{V} (1) \rho d\mathcal{V} \right) + \int_{\text{surf}} (1) \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+$$ \begin{align} \frac{dm}{dt}_{\text{sys}} &= \frac{d}{dt}\left( \int_{V} (1) \rho d\mathcal{V} \right) + \int_{\text{surf}} (1) \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
 &= \frac{d}{dt}\left( \int_{V} \rho d\mathcal{V} \right) + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align}
+&= \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align} $$
 
 Mass conservation states explicitly that $dm/dt$ of the system is zero. Therefore:
 
