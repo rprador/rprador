@@ -14,7 +14,7 @@ $$d \mathcal{V} = (\textbf{V}\cdot \hat{\textbf{n}})dAdt$$
 
 Dividing both sides by $$dt$$ and integrating gives the **volumetric flow rate** $$Q$$:
 
-$$Q=\int_{\text{surf}}(\textbf{V}\cdot \hat{\textbf{n}})dA$$        (1)
+\begin{equation} Q=\int_{\text{surf}}(\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
 Lots of times, the geometry of the control volume is not complicated, the velocity is constant, and the flow is one-dimensional, so we can specify the integral more succinctly as:
 
