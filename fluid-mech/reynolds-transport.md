@@ -32,7 +32,7 @@ Note: units of volumetric flow rate are m<sup>3</sup>/s; mass flow rate are kg/s
 
 <hr style="border: 1px solid black;" />
 
-Moving on, let $B$ be an extensive property of the fluid such as energy, momentum, etc. We can define an intensive property by taking the amount of $$$B$ per unit mass, i.e.:
+Moving on, let $B$ be an extensive property of the system such as energy, momentum, etc. We can define an intensive property by taking the amount of $B$ per unit mass, i.e.:
 
 $$\beta = \frac{dB}{dm}$$
 
@@ -48,4 +48,7 @@ and the change of $\beta$ within the control volume with respect to time:
 
 $$\frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right)$$
 
+The time derivative of any extensive property of the system is given by **Reynold's transport theorem**:
+\begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
+Schematically, all Reynold's transport theorem says is that a system's change in an extensive property with respect to time 
