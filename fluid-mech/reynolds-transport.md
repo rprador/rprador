@@ -31,8 +31,6 @@ $$\dot{m} = \rho Q = \rho A V$$
 
 Note: units of volumetric flow rate are m<sup>3</sup>/s; mass flow rate are kg/s. It should also be noted that by the nature of the dot product in the expressions above, we can define the direction of flow. Going by the convention in White's textbook, $\hat{\textbf{n}}$ is taken to be an ***outward*** normal vector to the surface. Therefore, the dot product $$\textbf{V}\cdot \hat{\textbf{n}}$$ is ***positive*** for an ***outgoing*** flow (outflow) and ***negative*** for an ***incoming*** flow (inflow).
 
-<hr style="border: 1px solid black;" />
-
 ## Statement of theorem
 
 Moving on, let $B$ be an extensive property of the system such as energy, momentum, etc. We can define an intensive property by taking the amount of $B$ per unit mass, i.e.:
@@ -52,7 +50,7 @@ and the change of $\beta$ within the control volume with respect to time:
 $$\frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right)$$
 
 The time derivative of any extensive property of the system is given by **Reynold's transport theorem**:
-\boxed{\begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}}
+\begin{equation} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
 Schematically:
 
@@ -64,6 +62,6 @@ By applying Reynold's transport theorem for different quantities $B$, we can der
 
 Suppose the flow is one-dimensional. Reynold's transport theorem simplifies to a very useful form:
 
-$$ \frac{dB}{dt} = \frac{d}{dt} \left( \int_{V}\beta dm \right) + \left(\sum \beta \dot{m}\right)_{\text{out}} - \left(\sum \beta \dot{m}\right)_{\text{in}} $$
+$$ \frac{dB}{dt} = \frac{d}{dt} \left( \int_{V}\beta dm \right) + \left(\sum){i} \beta_{i} \dot{m}_{i}\right)_{\text{out}} - \left(\sum_{j} \beta_{j} \dot{m}_{j}\right)_{\text{in}} $$
 
-where the sums go over every inlet and outlet.
+where the summations go over every inlet and outlet.
