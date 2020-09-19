@@ -22,13 +22,13 @@ $$Q = AV$$
 
 Conveniently, we can multiply the volumetric flow rate by the fluid's density to obtain the **mass flow rate**:
 
-$$\dot{m} = \int_{\text{surf}}\rho (\textbf{V}\cdot \hat{\textbf{n}})dA$$        (2)
+\begin{equation} \dot{m} = \int_{\text{surf}}\rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
 Like before, this takes on a simple form assuming the case of a one-dimensional flow at constant velocity and density:
 
 $$\dot{m} = \rho Q = \rho A V$$
 
-Note: units of volumetric flow rate are m<sup>3</sup>/s; mass flow rate are kg/s. It should also be noted that by the nature of the dot product in the expressions above, we can define the direction of flow. Going by the convention in White's textbook, $$\hat{\textbf{n}}$$ is taken to be an ***outward*** normal vector to the surface. Therefore, the dot product $$\textbf{V}\cdot \hat{\textbf{n}}$$ is ***postive*** for ***outgoing*** flow and ***negative*** for ***incoming*** flow.
+Note: units of volumetric flow rate are m<sup>3</sup>/s; mass flow rate are kg/s. It should also be noted that by the nature of the dot product in the expressions above, we can define the direction of flow. Going by the convention in White's textbook, $$\hat{\textbf{n}}$$ is taken to be an ***outward*** normal vector to the surface. Therefore, the dot product $$\textbf{V}\cdot \hat{\textbf{n}}$$ is ***positive*** for an ***outgoing*** flow (outflow) and ***negative*** for an ***incoming*** flow (inflow).
 
 <hr style="border: 1px solid black;" />
 
@@ -36,5 +36,15 @@ Moving on, let $$B$$ be an extensive property of the fluid such as energy, momen
 
 $$\beta = \frac{dB}{dm}$$
 
+such that the "total" amount of $B$ in a general control volume is:
+
+$$B_{CV} = \int_{V} \beta dm = \int_{V} \beta \rho d \mathcal{V} $$
+
+Now, if we consider the possibility of having changes with respect to the control volume, we have ***flow terms***:
+$$\int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+and the change of $\beta$ within the control volume with respect to time:
+
+$$\frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right)$$
 
 
