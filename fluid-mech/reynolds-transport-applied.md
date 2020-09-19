@@ -13,12 +13,24 @@ Recall that Reynold's transport theorem stated, that for an extensive property $
 
 Our choice for $B$ is the mass, so $B=m$ and $\beta=dm/dm=1$. Thus,
 
-$$ \begin{align} \frac{dm}{dt}_{\text{sys}} &= \frac{d}{dt}\left( \int_{V} (1) \rho d\mathcal{V} \right) + \int_{\text{surf}} (1) \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+$$ \begin{align*} \left(\frac{dm}{dt}\right)_{\text{sys}} &= \frac{d}{dt}\left( \int_{V} (1) \rho d\mathcal{V} \right) + \int_{\text{surf}} (1) \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
 &= \frac{d}{dt}\left( \int_{V} \rho d\mathcal{V} \right) + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align} $$
+&= \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
 
 Mass conservation states explicitly that $dm/dt$ of the system is zero. Therefore:
 
 \begin{equation} 0 = \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
-t
+This is the most general form of the **conservation of mass** for a control volume. However, a few simplifications can be made with the right assumptions.
+
+## Steady Flow
+
+In the case of steady flow, the time dependence of the Reynold's transport theorem is taken to be zero. In other words, every time derivative vanishes. Hence, $\partial \rho /\partial t = 0$, and so:
+
+$$ \int_{\text{surf}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA = 0 \;\;\;\; \text{Steady flow}$$
+
+In the one-dimensional case, the integral reduces to individual contributions $\rho_{i}A_{i}V_{i}$. This leads to the very simple relation:
+
+## \sum_{i} (\dot{m}_{i})_{\text{in}} = \sum_{i} (\dot{m}_{i})_{\text{out}} ##
+
+
