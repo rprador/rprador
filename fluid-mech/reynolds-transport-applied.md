@@ -126,7 +126,7 @@ $$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \
 
 Defining the velocities:
 
-$$ \textbf{V}_{\text{in}} &= \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} , \;\;\;\; \textbf{V}_{\text{rot}} &= \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} $$
+$$ \textbf{V}_{\text{in}} = \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} , \;\;\;\; \textbf{V}_{\text{rot}} = \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} $$
 
 We get:
 
@@ -134,4 +134,4 @@ $$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \Omega \times \textbf{r} $
 
 A second differentiation yields:
 
-$$ \frac{\textbf{V}_{\text{in}}}{dt} = \frac{\textbf{V}_{\text{rot}}}{dt} + \frac{d}{t}\left( \Omega \times \textbf{r} \right) $$
+$$ \frac{\textbf{V}_{\text{in}}}{dt} = \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{t}\left( \Omega \times \textbf{r} \right) $$
