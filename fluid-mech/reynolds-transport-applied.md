@@ -57,7 +57,7 @@ where $Q = A_{i}V_{i}$.
 
 # Newton's Second Law
 
-The next extensive property that can be worked with is momentum. Then $\textbf{B} = \textbf{p}$ and $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
+The next extensive property that can be worked with is momentum. Then $\textbf{B} = \textbf{p}$ and $\beta = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
 \begin{equation}  \left(\frac{d\textbf{p}}{dt}\right)_{\text{sys}} = \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
@@ -73,4 +73,4 @@ $$ \dot{\textbf{M}}_{\text{CS}} = \int \textbf{V} \rho (\textbf{V}\cdot \hat{\te
 
 which in the one dimensional case with constant density is:
 
-$$ \dot{textbf{M}}} = \dot{m}_{i}\textbf{V}_{i} $$
+$$ \dot{\textbf{M}}} = \dot{m}_{i}\textbf{V}_{i} $$
