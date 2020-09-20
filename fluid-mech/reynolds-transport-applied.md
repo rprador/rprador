@@ -127,5 +127,5 @@ $$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \
 
 A second differentiation yields:
 
-$$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left\[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right\] \end{align*} \\
+$$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right] \end{align*} \\
 &= a $$
