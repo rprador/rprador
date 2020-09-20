@@ -81,4 +81,14 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 
 ### Noninertial Frames
 
-Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\Omega$.
+Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\Omega$. Let $Q$ be an arbitrary vector:
+
+$$ \textbf{Q} = Q_{1}\hat{\textbf{e}}_{1} + Q_{2}\hat{\textbf{e}}_{2} + Q_{3}\hat{\textbf{e}}_{3} $$
+
+The time derivative of $Q$ relative to the inertial fram $S_{0}$ is:
+
+$$ \left(\frac{dQ}{dt}\right)_{S_{0}} $$
+
+and the time derivative of $Q$ relative to the noninertial frame $S$ is:
+
+$$ \left(\frac{dQ}{dt}\right)_{S} $$
