@@ -81,11 +81,13 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 
 ### Noninertial Frames
 
+### Time derivatives in rotating frames
+
 Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\Omega$. Let $Q$ be an arbitrary vector:
 
 $$ \textbf{Q} = Q_{1}\hat{\textbf{e}}_{1} + Q_{2}\hat{\textbf{e}}_{2} + Q_{3}\hat{\textbf{e}}_{3} $$
 
-where $\hat{\textbf{e}}_{i}$ are unit vectors. The time derivative of $\textbf{Q}$ relative to the inertial fram $S_{0}$ is:
+where $\hat{\textbf{e}}\_{i}$ are unit vectors. The time derivative of $\textbf{Q}$ relative to the inertial fram $S_{0}$ is:
 
 $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} $$
 
@@ -115,3 +117,8 @@ Therefore, any time derivative of a vector within an inertial frame is equal to 
 
 $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \Omega \times \textbf{Q} $$
 
+### Newton's second law in a rotating frame
+
+With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the absolute position of a particle be $\textbf{r}' = \textbf{r} + \textbf{R}$, where $\textbf{R}$ is the position vector in the inertial frame $S_{0}$ pointing to the origin of $S$, and \textbf{r} is the position vector in $S$ to the particle.
+
+$$ \begin{align*} \textbf{V} = \left(\frac{d\textbf{r}'}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}'}{dt} \right)_{S}  + \Omega \times \textbf{r}' \end{align*} $$
