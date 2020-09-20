@@ -119,6 +119,19 @@ $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \
 
 ### Newton's second law in a rotating frame
 
-With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the absolute position of a particle be $\textbf{r}' = \textbf{r} + \textbf{R}$, where $\textbf{R}$ is the position vector in the inertial frame $S_{0}$ pointing to the origin of $S$, and \textbf{r} is the position vector in $S$ to the particle.
+With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the position of a fluid particle be $\textbf{r}$
 
-$$ \begin{align*} \textbf{V} = \left(\frac{d\textbf{r}'}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}'}{dt} \right)_{S}  + \Omega \times \textbf{r}' \end{align*} $$
+The velocity $\textbf{V}$ of a fluid particle is:
+$$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \Omega \times \textbf{r} $$
+
+Defining the velocities:
+
+$$ \textbf{V}_{\text{in}} &= \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} , \;\;\;\; \textbf{V}_{\text{rot}} &= \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} $$
+
+We get:
+
+$$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \Omega \times \textbf{r} $$
+
+A second differentiation yields:
+
+$$ \frac{\textbf{V}_{\text{in}}}{dt} = \frac{\textbf{V}_{\text{rot}}}{dt} + \frac{d}{t}\left( \Omega \times \textbf{r} \right) $$
