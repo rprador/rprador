@@ -5,7 +5,11 @@ title: Applications of Reynold's Transport Theorem
 {% include navigation.html %}
 {% include mathjax.html %}
 
-# Conservation of Mass
+# Applications of Reynold's Transport Theorem
+
+The usefulness of the transport theorem is in its ability to find relations between the control volume and relevant properties. Below show such relations for various properties.
+
+## Conservation of Mass
 
 Recall that Reynold's transport theorem stated for an extensive property $B$ and its intensive form, $\beta = dB/dm$:
 
@@ -23,7 +27,7 @@ Mass conservation states explicitly that $dm/dt$ of the system is zero. Therefor
 
 This is the most general form of the **conservation of mass** for a control volume. However, a few simplifications can be made with the right assumptions.
 
-## Steady Flow
+### Steady Flow
 
 In the case of steady flow, the time dependence of the Reynold's transport theorem is taken to be zero. In other words, every time derivative vanishes. Hence, $\partial \rho /\partial t = 0$, and so:
 
@@ -37,7 +41,7 @@ However, if not then we have to calculated an integral for each inlet/outlet:
 
 $$\dot{m} = \int_{\text{CS}} \rho (\textbf{V} \cdot \hat{\textbf{n}}) $$
 
-## Incompressible Flow
+### Incompressible Flow
 
 By incompressible, we mean the change in density (time derivative here) is negligible. In other words, $\rho \approx$ constant. It is useful to know that although it is not general true that most fluids are incompressible, it is true that all liquids are ***nearly*** incompressible. Like from the case of steady flow, we therefore have:
 
@@ -55,7 +59,7 @@ $$ \sum Q_{\text{in}} = \sum Q_{\text{out}} \;\;\;\; \text{(1D Incompressible fl
 
 where $Q = A_{i}V_{i}$.
 
-# Newton's Second Law
+## Newton's Second Law
 
 The next extensive property that can be worked with is momentum. Then $\textbf{B} = \textbf{p}$ and $\beta = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
@@ -74,3 +78,7 @@ $$ \dot{\textbf{M}}_{\text{CS}} = \int \textbf{V} \rho (\textbf{V}\cdot \hat{\te
 which in the one dimensional case with constant density is:
 
 $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
+
+### Control Volumes in non-inertial frames
+
+
