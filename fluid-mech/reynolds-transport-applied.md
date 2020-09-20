@@ -103,10 +103,10 @@ $$ \left(\frac{dQ}{dt}\right)_{S_{0}} = \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e
 
 The second term on the RHS can be evaluated as (need to find proof somewhere of this):
 
-$$ \frac{d\hat{\textbf{e}}}{dt} = \Omega \cross \hat{\textbf{e}} $$
+$$ \frac{d\hat{\textbf{e}}}{dt} = \Omega \times \hat{\textbf{e}} $$
 
 Hence:
 
-$$ \begin{align*} \left(\frac{dQ}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\Omega \cross \hat{\textbf{e}}) \\ 
-&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \Omega \cross \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
-&= \Omega \cross Q \end{align*} $$
+$$ \begin{align*} \left(\frac{dQ}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\Omega \times \hat{\textbf{e}}) \\ 
+&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \Omega \times \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
+&= \Omega \times Q \end{align*} $$
