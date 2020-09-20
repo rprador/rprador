@@ -65,4 +65,12 @@ where Newton's second law has been used on the LHS. Since Newton's law was used,
 
 In the case of one dimensional inlets/outlets, we have:
 
-$$ \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{out}} - \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{in}} $$ 
+$$ \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{out}} - \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{in}} \;\;\;\; (\text{1D momentum flux}) $$
+
+The label ***momentum flux*** refers to the momentum analogue for the mass flow rate:
+
+$$ \textbf{dot{M}}_{\text{CS}} = \int \textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+which in the one dimensional case with constant density is:
+
+$$ \textbf{M} = \dot{m}_{i}\textbf{V}_{i} $$
