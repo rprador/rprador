@@ -136,4 +136,4 @@ $$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \textbf{\Omega} \times \te
 A second differentiation yields:
 
 $$ \begin{align*} \frac{\textbf{V}_{\text{in}}}{dt} &= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{dt}\left( \textbf{\Omega} \times \textbf{r} \right) \\
-&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{}{} \end{align*} $$
+&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d\textbf{\Omega}}{dt}\times \textbf{r} + \textbf{\Omega}\times \frac{d\textbf{r}}{dt} \end{align*} $$
