@@ -69,8 +69,8 @@ $$ \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\math
 
 The label ***momentum flux*** refers to the momentum analogue for the mass flow rate:
 
-$$ \textbf{dot{M}}_{\text{CS}} = \int \textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+$$ \dot{\textbf{M}}_{\text{CS}} = \int \textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
 
 which in the one dimensional case with constant density is:
 
-$$ \textbf{M} = \dot{m}_{i}\textbf{V}_{i} $$
+$$ \dot{textbf{M}}} = \dot{m}_{i}\textbf{V}_{i} $$
