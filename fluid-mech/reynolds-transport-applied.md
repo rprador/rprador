@@ -83,7 +83,7 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 
 ### Time derivatives in rotating frames
 
-Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\textbf{\Omega}$. Let $Q$ be an arbitrary vector:
+Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\Omega$. Let $Q$ be an arbitrary vector:
 
 $$ \textbf{Q} = Q_{1}\hat{\textbf{e}}_{1} + Q_{2}\hat{\textbf{e}}_{2} + Q_{3}\hat{\textbf{e}}_{3} $$
 
@@ -105,7 +105,7 @@ $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \sum_{i} \frac{dQ_{i}}{dt}\hat{
 
 The second term on the RHS can be evaluated as (need to find proof somewhere of this):
 
-$$ \frac{d\hat{\textbf{e}}}{dt} = \textbf{\Omega} \times \hat{\textbf{e}} $$
+$$ \frac{d\hat{\textbf{e}}}{dt} = \Omega \times \hat{\textbf{e}} $$
 
 Hence:
 
@@ -136,4 +136,4 @@ $$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \textbf{\Omega} \times \te
 A second differentiation yields:
 
 $$ \begin{align*} \frac{\textbf{V}_{\text{in}}}{dt} &= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{dt}\left( \textbf{\Omega} \times \textbf{r} \right) \\
-&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d\textbf{\Omega}}{dt}\times \textbf{r} + \textbf{\Omega}\times \frac{d\textbf{r}}{dt} \end{align*} $$
+&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d\textbf{\Omega}}{dt}\times \textbf{r} + \boldsymbol{\Omega}\times \frac{d\textbf{r}}{dt} \end{align*} $$
