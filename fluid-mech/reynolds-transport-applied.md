@@ -109,4 +109,6 @@ Hence:
 
 $$ \begin{align*} \left(\frac{dQ}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\Omega \times \hat{\textbf{e}}) \\ 
 &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \Omega \times \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
-&= \Omega \times Q \end{align*} $$
+&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i}  + \Omega \times \textbf{Q} \end{align*} $$
+
+Therefore, any time derivative of a vector within an inertial frame is equal to a time derivative in the noninterial frame plus a rotational effect $\Omega \times \textbf{Q}$.
