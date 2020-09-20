@@ -57,12 +57,12 @@ where $Q = A_{i}V_{i}$.
 
 # Newton's Second Law
 
-The next extensive property that can be worked with is momentum. Then:
+The next extensive property that can be worked with is momentum. Then $\textbf{B} = textbf{p}$, $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
-$$ $\textbf{B} = textbf{p}, \;\; $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $$
+\begin{equation}  \left(\frac{d\textbf{p}}{dt}\right)_{\text{sys}} = \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
-where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
+where Newton's second law has been used on the LHS. Since Newton's law was used, it should be noted that the reference frame of the control volume must be inertial, i.e. it is not accelerating.
 
-$$  \left(\frac{d\textbf{p}}{dt}\right)_{\text{sys}} = \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+In the case of one dimensional inlets/outlets, we have:
 
-where Newton's second law has been used on the LHS. 
+$$ \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{out}} - \sum(\dot{m}_{i}\textbf{V}_{i})_{\text{in}} $$ 
