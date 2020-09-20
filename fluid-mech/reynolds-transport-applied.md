@@ -113,7 +113,7 @@ $$ \begin{align*} \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} &= \sum_{i} \frac{
 &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \boldsymbol{\Omega} \times \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
 &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i}  + \boldsymbol{\Omega} \times \textbf{Q} \end{align*} $$
 
-Therefore, any time derivative of a vector within an inertial frame is equal to a time derivative in the noninterial frame plus a rotational effect $\textbf{\Omega} \times \textbf{Q}$:
+Therefore, any time derivative of a vector within an inertial frame is equal to a time derivative in the noninterial frame plus a rotational effect $\boldsymbol{\Omega} \times \textbf{Q}$:
 
 $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{Q} $$
 
@@ -127,5 +127,5 @@ $$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \
 
 A second differentiation yields:
 
-$$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right] \\
-&= a \end{align*} $$
+$$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right]_{S_{0}} \\
+&= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right]_{S} + \boldsymbol{\Omega}\times\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right] \end{align*} $$
