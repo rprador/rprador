@@ -83,7 +83,7 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 
 ### Time derivatives in rotating frames
 
-Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\Omega$. Let $Q$ be an arbitrary vector:
+Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\textbf{\Omega}$. Let $Q$ be an arbitrary vector:
 
 $$ \textbf{Q} = Q_{1}\hat{\textbf{e}}_{1} + Q_{2}\hat{\textbf{e}}_{2} + Q_{3}\hat{\textbf{e}}_{3} $$
 
@@ -105,24 +105,25 @@ $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \sum_{i} \frac{dQ_{i}}{dt}\hat{
 
 The second term on the RHS can be evaluated as (need to find proof somewhere of this):
 
-$$ \frac{d\hat{\textbf{e}}}{dt} = \Omega \times \hat{\textbf{e}} $$
+$$ \frac{d\hat{\textbf{e}}}{dt} = \textbf{\Omega} \times \hat{\textbf{e}} $$
 
 Hence:
 
-$$ \begin{align*} \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\Omega \times \hat{\textbf{e}}) \\ 
-&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \Omega \times \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
-&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i}  + \Omega \times \textbf{Q} \end{align*} $$
+$$ \begin{align*} \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\textbf{\Omega} \times \hat{\textbf{e}}) \\ 
+&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \textbf{\Omega} \times \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
+&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i}  + \textbf{\Omega} \times \textbf{Q} \end{align*} $$
 
-Therefore, any time derivative of a vector within an inertial frame is equal to a time derivative in the noninterial frame plus a rotational effect $\Omega \times \textbf{Q}$:
+Therefore, any time derivative of a vector within an inertial frame is equal to a time derivative in the noninterial frame plus a rotational effect $\textbf{\Omega} \times \textbf{Q}$:
 
-$$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \Omega \times \textbf{Q} $$
+$$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \textbf{\Omega} \times \textbf{Q} $$
 
 ### Newton's second law in a rotating frame
 
 With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the position of a fluid particle be $\textbf{r}$
 
 The velocity $\textbf{V}$ of a fluid particle is:
-$$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \Omega \times \textbf{r} $$
+
+$$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \textbf{\Omega} \times \textbf{r} $$
 
 Defining the velocities:
 
@@ -130,8 +131,9 @@ $$ \textbf{V}_{\text{in}} = \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} , \;\;\;
 
 We get:
 
-$$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \Omega \times \textbf{r} $$
+$$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \textbf{\Omega} \times \textbf{r} $$
 
 A second differentiation yields:
 
-$$ \frac{\textbf{V}_{\text{in}}}{dt} = \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{t}\left( \Omega \times \textbf{r} \right) $$
+$$ \begin{align*} \frac{\textbf{V}_{\text{in}}}{dt} &= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{dt}\left( \textbf{\Omega} \times \textbf{r} \right) \\
+&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{}{} \end{align*} $$
