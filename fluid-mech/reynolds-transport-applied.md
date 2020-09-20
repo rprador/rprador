@@ -125,15 +125,7 @@ The velocity $\textbf{V}$ of a fluid particle is:
 
 $$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} $$
 
-Defining the velocities:
-
-$$ \textbf{V}_{\text{in}} = \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} , \;\;\;\; \textbf{V}_{\text{rot}} = \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} $$
-
-We get:
-
-$$ \textbf{V}_{\text{in}} = \textbf{V}_{\text{rot}} + \boldsymbol{\Omega} \times \textbf{r} $$
-
 A second differentiation yields:
 
-$$ \begin{align*} \frac{\textbf{V}_{\text{in}}}{dt} &= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d}{dt}\left( \boldsymbol{\Omega} \times \textbf{r} \right) \\
-&= \frac{d\textbf{V}_{\text{rot}}}{dt} + \frac{d\boldsymbol{\Omega}}{dt}\times \textbf{r} + \boldsymbol{\Omega}\times \frac{d\textbf{r}}{dt} \end{align*} $$
+$$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left\[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right\] \end{align*} \\
+&= a $$
