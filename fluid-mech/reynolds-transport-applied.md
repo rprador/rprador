@@ -57,7 +57,7 @@ where $Q = A_{i}V_{i}$.
 
 # Newton's Second Law
 
-The next extensive property that can be worked with is momentum. Then $\textbf{B} = textbf{p}$, $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
+The next extensive property that can be worked with is momentum. Then $\textbf{B} = textbf{p}$ and $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
 \begin{equation}  \left(\frac{d\textbf{p}}{dt}\right)_{\text{sys}} = \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
