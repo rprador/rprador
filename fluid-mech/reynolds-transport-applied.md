@@ -85,10 +85,28 @@ Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, 
 
 $$ \textbf{Q} = Q_{1}\hat{\textbf{e}}_{1} + Q_{2}\hat{\textbf{e}}_{2} + Q_{3}\hat{\textbf{e}}_{3} $$
 
-The time derivative of $Q$ relative to the inertial fram $S_{0}$ is:
+where $\hat{\textbf}_{i}$ are unit vectors. The time derivative of $Q$ relative to the inertial fram $S_{0}$ is:
 
 $$ \left(\frac{dQ}{dt}\right)_{S_{0}} $$
 
 and the time derivative of $Q$ relative to the noninertial frame $S$ is:
 
 $$ \left(\frac{dQ}{dt}\right)_{S} $$
+
+Within the noninertial frame $S$, the unit vectors $\hat{\textbf{e}}_{i}$ are stationary, so that the time derivative is simply:
+
+$$ \left(\frac{dQ}{dt}\right)_{S} = \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} $$
+
+However, in the fixed inertial frame $S_{0}$, the unit vectors are rotating, so they undergo a change:
+
+$$ \left(\frac{dQ}{dt}\right)_{S_{0}} = \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} \left( \frac{d\hat{\textbf{e}_{i}}}{dt} \right)_{S_{0}} $$
+
+The second term on the RHS can be evaluated as (need to find proof somewhere of this):
+
+$$ \frac{d\hat{\textbf{e}}}{dt} = \Omega \cross \hat{\textbf{e}} $$
+
+Hence:
+
+$$ \begin{align*} \left(\frac{dQ}{dt}\right)_{S_{0}} &= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \sum_{i}Q_{i} (\Omega \cross \hat{\textbf{e}}) \\ 
+&= \sum_{i} \frac{dQ_{i}}{dt}\hat{\textbf{e}}_{i} + \Omega \cross \sum_{i}Q_{i}\hat{\textbf{e}}_{i} \\
+&= \Omega \cross Q \end{align*} $$
