@@ -84,3 +84,7 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 This case might not be very common in many problems but it will be here anyways. Suppose we have a fluid flowing within a noninertial reference frame. Let $\textbf{R}$ be the radial vector from a fixed inertial frame pointing to the origin of the noninertial frame. Let $\textbf{r}$ be the radial vector within the noninertial frame that points to a particle. The position of the particle with respect to the fixed inertial frame can be written as:
 
 $$ \textbf{r}' = \textbf{R} + \textbf{r} $$
+
+Differentiating with respect to time,
+
+$$ \textbf{V}' = \textbf{V} + \frac{d\textbf{r}}{dt} $$
