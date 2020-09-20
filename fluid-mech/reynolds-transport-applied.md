@@ -14,12 +14,12 @@ Recall that Reynold's transport theorem stated for an extensive property $B$ and
 Our choice for $B$ is the mass, so $B=m$ and $\beta=dm/dm=1$. Thus,
 
 $$ \begin{align*} \left(\frac{dm}{dt}\right)_{\text{sys}} &= \frac{d}{dt}\left( \int_{CV} (1) \rho d\mathcal{V} \right) + \int_{\text{CS}} (1) \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= \frac{d}{dt}\left( \int_{V} \rho d\mathcal{V} \right) + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
+&= \frac{d}{dt}\left( \int_{CV} \rho d\mathcal{V} \right) + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+&= \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
 
 Mass conservation states explicitly that $dm/dt$ of the system is zero. Therefore:
 
-\begin{equation} 0 = \int_{V} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
+\begin{equation} 0 = \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation}
 
 This is the most general form of the **conservation of mass** for a control volume. However, a few simplifications can be made with the right assumptions.
 
@@ -59,5 +59,5 @@ where $Q = A_{i}V_{i}$.
 
 The next extensive property that can be worked with is momentum. Then, $\textbf{B] = textbf{p}$, $\textbf{\beta} = d\textbf{p}/dm = \textbf{V}$, where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
-\begin{align*} \left(\frac{d\textf{p}}{dt}\right)_{\text{sys}} &= \frac{d}{dt} \int_{V} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= 1\end{align*}
+$$ \begin{align*} \left(\frac{d\textf{p}}{dt}\right)_{\text{sys}} &= \frac{d}{dt} \int_{CV} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
+&= 1\end{align*} $$
