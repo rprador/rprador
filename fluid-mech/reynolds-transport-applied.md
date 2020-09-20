@@ -63,5 +63,6 @@ $$ $\textbf{B} = textbf{p}, \;\; $\textbf{\beta} = d\textbf{p}/dm = \textbf{V} $
 
 where we are keeping track of the vector components. Substituting this into the general Reynold's transport theorem:
 
-$$ \begin{align*} \left(\frac{d\textf{p}}{dt}\right)_{\text{sys}} &= \frac{d}{dt} \int_{CV} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\
-&= 1\end{align*} $$
+$$  \left(\frac{d\textbf{p}}{dt}\right)_{\text{sys}} = \sum_{i}\textbf{F}_{i} = \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+where Newton's second law has been used on the LHS. 
