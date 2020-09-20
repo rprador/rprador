@@ -55,4 +55,7 @@ $$ \sum Q_{\text{in}} = \sum Q_{\text{out}} \;\;\;\; \text{(1D Incompressible fl
 
 where $Q = A_{i}V_{i}$.
 
+# Newton's Second Law
+
+The next extensive property that can be worked with is momentum. Then, $\textbf{B] = textbf{p}$, $\textbf{\beta} = d\textbf{p}/dm = \textbf{V}$, where we are keeping track of the vector components.
 
