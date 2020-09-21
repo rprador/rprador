@@ -151,6 +151,13 @@ In the inertial frame, therefore, Newton's second law reads:
 $$ \begin{align*} \sum \textbf{F} &= m\left( \frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} \\
 &= m\ddot{\textbf{r}} +  m(\dot{\boldsymbol{\Omega}} \times \textbf{r}) + 2m(\boldsymbol{\Omega} \times \dot{\textbf{r}}) + m\boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) \end{align*} $$
 
-Rearrangine and keeping mind the antisymmetric property of cross products ($\textbf{a}\times\textbf{b} = -\textbf{b}\times \textbf{a}$):
+Rearrangine and keeping in mind the antisymmetric property of cross products ($\textbf{a}\times\textbf{b} = -\textbf{b}\times \textbf{a}$):
 
-$$ m\ddot{\textbf{r}} = \sum \textbf{F} + m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) + 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) + m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} $$
+$$ m\ddot{\textbf{r}} = \sum \textbf{F} + m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) + 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) + m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \;\;\;\;  (\text{N.S.L Rotating Frame}) $$
+
+Broken down:
+
+$$ \begin{align*} \text{Euler Force} = m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) \\
+\text{Coriolis force} &= 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) \\
+\text{Centrifugal force} = m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \\ \end{align*} $$
+
