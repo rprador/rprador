@@ -127,9 +127,12 @@ A second differentiation yields:
 
 $$ \begin{align*} \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} &= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right]_{S_{0}} \\
 &= \frac{d}{dt}\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right]_{S} + \boldsymbol{\Omega}\times\left[ \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} \right] \\ 
-&= \left( \frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S} + \frac{d}{dt}\left[ \boldsymbol{\Omega}\times \textbf{r} \right]_{S} + \left\{ \boldsymbol{\Omega}\times \left( \frac{d\textbf{r}}{dt} \right)_{S} \right\} + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r})  \end{align*} $$
+&= \left( \frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S} + \frac{d}{dt}\left[ \boldsymbol{\Omega}\times \textbf{r} \right]_{S} + \left\{ \boldsymbol{\Omega}\times \left( \frac{d\textbf{r}}{dt} \right)_{S} \right\} + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) \\
+&= \left( \frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S} + \left( \frac{d\boldsymbol{\Omega}}{dt} \right)_{S} \times \textbf{r} + \boldsymbol{\Omega} \times \left( \frac{d\textbf{r}}{dt} \right_{S} + \left\{ \boldsymbol{\Omega}\times \left( \frac{d\textbf{r}}{dt} \right)_{S} \right\} + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r})   \end{align*} $$
 
-where the second line is obtained from $\left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{Q}$.
+where the second line is obtained from 
+
+$$\left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{Q} $$
 
 Introducing the dot notation:
 
@@ -137,4 +140,4 @@ $$ \dot{\textbf{Q}} \equiv \left( \frac{d\textbf{Q}}{dt} \right)_{S} $$
 
 We get:
 
-$$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = 1  $$
+$$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = \ddot{\textbf{r}}   $$
