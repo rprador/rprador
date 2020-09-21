@@ -155,9 +155,9 @@ Rearrangine and keeping in mind the antisymmetric property of cross products ($\
 
 $$ m\ddot{\textbf{r}} = \sum \textbf{F} + m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) + 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) + m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \;\;\;\;  (\text{N.S.L Rotating Frame}) $$
 
-Broken down:
+Each term constitutes a "ficticious" force:
 
-$$ \begin{align*} \text{Euler Force} = m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) \\
+$$ \begin{align*} \text{Euler Force} &= m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) \\
 \text{Coriolis force} &= 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) \\
 \text{Centrifugal force} = m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \\ \end{align*} $$
 
