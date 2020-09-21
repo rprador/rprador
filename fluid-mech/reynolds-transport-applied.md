@@ -140,4 +140,10 @@ $$ \dot{\textbf{Q}} \equiv \left( \frac{d\textbf{Q}}{dt} \right)_{S} $$
 
 We get:
 
-$$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = \ddot{\textbf{r}}   $$
+$$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = \ddot{\textbf{r}} + (\dot{\boldsymbol{\Omega}} \times \textbf{r}) + (\boldsymbol{\Omega} \times \dot{\textbf{r}}) + (\boldsymbol{\Omega}\times \dot{\textbf{r}}) + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) $$
+
+Or:
+
+$$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = \ddot{\textbf{r}} + (\dot{\boldsymbol{\Omega}} \times \textbf{r}) + 2(\boldsymbol{\Omega} \times \dot{\textbf{r}}) + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) $$
+
+
