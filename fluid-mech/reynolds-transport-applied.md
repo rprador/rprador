@@ -119,7 +119,7 @@ $$ \left(\frac{d\textbf{Q}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{Q}}{dt} \
 
 ### Newton's second law in a rotating frame
 
-With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the position of a fluid particle be $\textbf{r}$. The velocity $\textbf{V}$ of a fluid particle is:
+With the results from above, we can easily derive the velocity and acceleration vectors in a rotating frame. Let the position of a fluid particle be $\textbf{r}$. The time derivative is:
 
 $$ \left(\frac{d\textbf{r}}{dt}\right)_{S_{0}} = \left( \frac{d\textbf{r}}{dt} \right)_{S}  + \boldsymbol{\Omega} \times \textbf{r} $$
 
@@ -146,4 +146,7 @@ Or:
 
 $$ \left(\frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} = \ddot{\textbf{r}} + (\dot{\boldsymbol{\Omega}} \times \textbf{r}) + 2(\boldsymbol{\Omega} \times \dot{\textbf{r}}) + \boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) $$
 
+In the inertial frame, therefore, Newton's second law reads:
 
+$$ \begin{align*} \textbf{F} &= m\left( \frac{d^{2}\textbf{r}}{dt^{2}} \right)_{S_{0}} \\
+&= m\ddot{\textbf{r}} +  m(\dot{\boldsymbol{\Omega}} \times \textbf{r}) + 2m(\boldsymbol{\Omega} \times \dot{\textbf{r}}) + m\boldsymbol{\Omega}\times (\boldsymbol{\Omega} \times \textbf{r}) \end{align*} $$
