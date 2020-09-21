@@ -159,5 +159,5 @@ Each term constitutes a "ficticious" force:
 
 $$ \begin{align*} \text{Euler Force} &= m(\textbf{r} \times \dot{\boldsymbol{\Omega}}) \\
 \text{Coriolis force} &= 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) \\
-\text{Centrifugal force} = m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \\ \end{align*} $$
+\text{Centrifugal force} &= m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \\ \end{align*} $$
 
