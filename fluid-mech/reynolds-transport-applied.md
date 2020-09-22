@@ -179,17 +179,20 @@ With these assumptions, we turn to the linear momentum equation (3).
 
 $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
 
-Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, $\textbf{V}\cdot \hat{\textbf{n}} = V^{2}$, which is along the streamline direction. Thus:
+Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, $\textbf{V}\cdot \hat{\textbf{n}} = V^{2}$, which is along the streamline direction. Thus, assuming the surface area of the control surface is the same on both ends:
 
-$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
+$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho A(V^{2}_{2} - V^{2}_{1}) $$
 
 where the subscripts denote the flow at points 1 and 2 along the streamline and the sum of the forces is now scalar since we are only considering the points along the streamline. The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
 
-$$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1}A_{1} - p_{2}A_{2}) + \rho g (z_{2} - z_{1}) $$
+$$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1} - p_{2})A + g (z_{2}\rho \mathcal{} - z_{1}) $$
 
 where the $z$ is the height at points 1 and 2. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
 
 Therefore,
 
-$$ (p_{1}A_{1} - p_{2}A_{2}) + \rho g (z_{2} - z_{1}) =  \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
+$$ (p_{1} - p_{2})A + \rho g (z_{2} - z_{1}) =  \rho A(V^{2}_{2} - V^{2}_{1}) $$
 
+Moving everything over to one side:
+
+$$ (p_{1} - p_{2})A + \rho g (z_{2} - z_{1}) - \rho A(V^{2}_{2} - V^{2}_{1}) = 0 $$
