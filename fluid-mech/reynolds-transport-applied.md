@@ -178,3 +178,6 @@ The most common form of the linear momentum equation seen in lower division flui
 With these assumptions, we turn to the linear momentum equation (3).
 
 $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, since the flow is along a streamline, ${V}\cdot \hat{\textbf{n}} = V^{2}$. Thus:
+
