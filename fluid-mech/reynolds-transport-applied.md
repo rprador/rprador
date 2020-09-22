@@ -181,7 +181,7 @@ $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d
 
 Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Note also that $\textbf{V}\cdot \hat{\textbf{n}} = V_{n} = V$, which is along the streamline direction. Thus:
 
-$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho \int_{\text{CS}}V\textbf{V}dA $$
+$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho \int_{\text{CS}}V\cdot V dA = $$
 
 where the subscripts denote the flow at points 1 and 2 along the streamline and the sum of the forces is now scalar since we are only considering the points along the streamline. The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
 
