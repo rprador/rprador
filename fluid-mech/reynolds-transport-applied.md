@@ -169,4 +169,11 @@ where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis
 
 ### The Bernoulli Equation
 
-The most common form of the linear momentum equation seen in lower division fluid mechanics courses, as well as the most introduced fluids concept in other courses, is the Bernoulli equation.
+The most common form of the linear momentum equation seen in lower division fluid mechanics courses, as well as the most introduced fluids concept in other courses, is the Bernoulli equation. The Bernoulli equation requires the following restrictions:
+- Steady flow, $\frac{d}{dt}() = 0$
+- Incompressible, $\rho \approx$ constant
+- Flow is along a streamline, i.e. path is tangent everywhere to the velocity $\textbf{V}$.
+- Inviscid (frictionless) flow, if the fluid is viscous, then the velocity $\textbf{V}$ can change, which makes the velocity profile $u$ change.
+
+k
+- 
