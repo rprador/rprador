@@ -181,11 +181,11 @@ $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d
 
 Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Note also that $\textbf{V}\cdot \hat{\textbf{n}} = V_{n} = V$, which is along the streamline direction. Thus:
 
-$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho \int_{\text{CS}}V\cdot V dA = $$
+$$ \sum \textbf{F} = \rho V \int_{\text{CS}}\textbf{V} dA = ((\rho VA)\textbf{V})_{\text{out}} - ((\rho VA)\textbf{V})_{\text{in}} =  (\dot{m}\textbf{V})_{\text{out}} - (\dot{m}\textbf{V})_{\text{in}}$$
 
 where the subscripts denote the flow at points 1 and 2 along the streamline and the sum of the forces is now scalar since we are only considering the points along the streamline. The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
 
-$$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
+$$ \sum \textbf{F} = \textbf{F}_{\text{press}} + \textbf{F}_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
 
 where the $z$ is the height at points 1 and 2 and comes from $m = \rho \mathcal{V} = \rho A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
 
