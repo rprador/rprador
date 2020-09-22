@@ -179,10 +179,12 @@ With these assumptions, we turn to the linear momentum equation (3).
 
 $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
 
-Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, since the flow is along a streamline, $\textbf{V}\cdot \hat{\textbf{n}} = V^{2}$. Thus:
+Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, $\textbf{V}\cdot \hat{\textbf{n}} = V^{2}$, which is along the streamline direction. Thus:
 
-$$ \sum \textbf{F} = \rho \int_{\text{CS}} V^{2} dA = \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
+$$ \sum F = \rho \int_{\text{CS}} V^{2} dA = \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
 
-where the subscripts 1 and 2 denote the flow at points 1 and 2 along the streamline.
+where the subscripts denote the flow at points 1 and 2 along the streamline and the sum of the forces is now scalar since we are only considering the points along the streamline. The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
+
+$$ \sum F = \{F}_{\text{press} + {F}_{\text{grav}} $$
 
 
