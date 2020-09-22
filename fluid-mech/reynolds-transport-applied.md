@@ -195,7 +195,7 @@ where the $z$ is the height at points 1 and 2 along the streamline and $\rho A z
 
 Therefore,
 
-$$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  \rho A(V^{2}_{2} - V^{2}_{1}) $$
+$$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  (\dot{m} V)_{\text{out}} - (\dot{m} V)_{\text{in}} $$
 
 Moving everything over to one side and dividing everything by $\rho A$:
 
