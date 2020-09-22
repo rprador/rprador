@@ -164,3 +164,5 @@ $$ \begin{align*} \text{Euler Force} &= m(\textbf{r} \times \dot{\boldsymbol{\Om
 Modifying equation (3) by subtracting the acceleration terms that show up above:
 
 $$ \begin{equation} \sum \textbf{F} - \int_{\text{CV}}\textbf{a}_{\text{rel}} dm =  \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation} $$
+
+where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis, and Centrifugal forces.
