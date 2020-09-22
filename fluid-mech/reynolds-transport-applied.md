@@ -199,4 +199,4 @@ $$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  \rho A(V^{2}_{2} - V^{2}_{1}
 
 Moving everything over to one side and dividing everything by $\rho A$:
 
-$$ \frac{(p_{1} - p_{2})}{\rho} + g (z_{2} - z_{1}) - (V^{2}_{2} - V^{2}_{1}) = 0 $$
+
