@@ -177,17 +177,21 @@ The most common form of the linear momentum equation seen in lower division flui
 
 With these assumptions, we turn to the linear momentum equation (3).
 
-$$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+$$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0}, \text{steady} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
 
 Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Note also that $\textbf{V}\cdot \hat{\textbf{n}} = V_{n} = V$, which is along the streamline direction. Thus:
 
 $$ \sum \textbf{F} = \rho V \int_{\text{CS}}\textbf{V} dA = ((\rho VA)\textbf{V})_{\text{out}} - ((\rho VA)\textbf{V})_{\text{in}} =  (\dot{m}\textbf{V})_{\text{out}} - (\dot{m}\textbf{V})_{\text{in}}$$
 
-where the subscripts denote the flow at points 1 and 2 along the streamline and the sum of the forces is now scalar since we are only considering the points along the streamline. The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
+Note that the velocity is implicitly uniform so that the mass flow rate $\dot{m}$ becomes present. This, however, still involves the vector representation through $\textbf{V}$. To simplify the problem, note that direction has already been stated to be along the streamline. We will henceforth drop the vector notation and assume all vector quantities are along the streamline.
 
-$$ \sum \textbf{F} = \textbf{F}_{\text{press}} + \textbf{F}_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
+$$ \sum F = (\dot{m} V)_{\text{out}} - (\dot{m} V)_{\text{in}} \;\;\;\; \text{, along streamline}$$
 
-where the $z$ is the height at points 1 and 2 and comes from $m = \rho \mathcal{V} = \rho A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
+The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
+
+$$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
+
+where the $z$ is the height at points 1 and 2 along the streamline and $\rho A z$ comes from $m = \rho \mathcal{V} = \rho A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
 
 Therefore,
 
