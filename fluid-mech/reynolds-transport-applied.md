@@ -161,3 +161,6 @@ $$ \begin{align*} \text{Euler Force} &= m(\textbf{r} \times \dot{\boldsymbol{\Om
 \text{Coriolis force} &= 2m(\boldsymbol{\dot{\textbf{r}} \times \Omega}) \\
 \text{Centrifugal force} &= m(\boldsymbol{\Omega} \times \textbf{r})\times\boldsymbol{\Omega} \\ \end{align*} $$
 
+Modifying equation (3) by subtracting the acceleration terms that show up above:
+
+$$ \begin{equation} \sum \textbf{F} - \int_{\text{CV}}\textbf{a}_{\text{rel}} dm =  \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation} $$
