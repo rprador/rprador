@@ -197,6 +197,8 @@ Therefore,
 
 $$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  (\dot{m} V)_{\text{out}} - (\dot{m} V)_{\text{in}} $$
 
-Moving everything over to one side and dividing everything by $\rho A$:
+Rewriting as a differential expression:
+
+$$ (p_{1} - p_{2})dA + \rho g (z_{2} - z_{1})dA =  d(\dot{m} V) $$
 
 
