@@ -81,7 +81,7 @@ $$ \dot{\textbf{M}} = \dot{m}_{i}\textbf{V}_{i} $$
 
 ### Noninertial Frames
 
-### Time derivatives in rotating frames
+#### Time derivatives in rotating frames
 
 Suppose we have a fixed inertial frame $S_{0}$ with coordinates $(x_{0}, y_{0}, z_{0})$. Let there be another frame $S$ with coordinates $(x, y, z)$ that shares an origin with $S_{0}$ and is rotating with angular velocity $\boldsymbol{\Omega}$. Let $Q$ be an arbitrary vector:
 
@@ -166,3 +166,7 @@ Modifying equation (3) by subtracting the acceleration terms that show up above:
 $$ \begin{equation} \sum \textbf{F} - \int_{\text{CV}}\textbf{a}_{\text{rel}} dm =  \frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation} $$
 
 where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis, and Centrifugal forces.
+
+### The Bernoulli Equation
+
+The most common form of the linear momentum equation seen in lower division fluid mechanics courses, as well as the most introduced fluids concept in other courses, is the Bernoulli equation.
