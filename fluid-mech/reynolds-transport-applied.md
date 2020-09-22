@@ -189,4 +189,7 @@ $$ \sum F = F_{\text{press} + F_{\text{grav}} = (p_{1}A_{1} - p_{2}A_{2}) + \rho
 
 where the $z$ is the height at points 1 and 2. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
 
+Therefore,
+
+$$ (p_{1}A_{1} - p_{2}A_{2}) + \rho g (z_{2} - z_{1}) =  \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
 
