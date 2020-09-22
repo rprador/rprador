@@ -181,4 +181,8 @@ $$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d
 
 Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Also, since the flow is along a streamline, $\textbf{V}\cdot \hat{\textbf{n}} = V^{2}$. Thus:
 
-$$ \sum \textbf{F} = \rho V^{2}\int_{\text{CS}}\dA = \rho V^{2} A $$
+$$ \sum \textbf{F} = \rho \int_{\text{CS}} V^{2} dA = \rho (V^{2}_{2}A_{2} - V^{2}_{1}A_{1}) $$
+
+where the subscripts 1 and 2 denote the flow at points 1 and 2 along the streamline.
+
+
