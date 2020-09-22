@@ -172,8 +172,9 @@ where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis
 The most common form of the linear momentum equation seen in lower division fluid mechanics courses, as well as the most introduced fluids concept in other courses, is the Bernoulli equation. The Bernoulli equation requires the following restrictions:
 - Steady flow, $\frac{d}{dt}() = 0$
 - Incompressible, $\rho \approx$ constant
-- Flow is along a streamline, i.e. path is tangent everywhere to the velocity $\textbf{V}$.
-- Inviscid (frictionless) flow, if the fluid is viscous, then the velocity $\textbf{V}$ can change, which makes the velocity profile $u$ change.
+- Flow is along a streamline, i.e. path is tangent everywhere to the velocity $\textbf{V}$. This condition ensures that the velocity can be written as $V^{2} = u^{2} + v^{2} + w^{2}$, impyling that in the two-dimensional case $\frac{dy}{dx} = \frac{v}{u}$.
+- Inviscid (frictionless) flow, if the fluid is viscous, then the velocity $\textbf{V}$ can change with respect to direction. Thus $\frac{\partial \textbf{V}}{dx\_{i}}=0$.
 
-k
-- 
+With these assumptions, we turn to the linear momentum equation (3).
+
+$$ \sum \textbf{F} = \cancel{frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
