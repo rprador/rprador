@@ -187,12 +187,12 @@ where the subscripts denote the flow at points 1 and 2 along the streamline and 
 
 $$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
 
-where the $z$ is the height at points 1 and 2 and comes from $m = \rho = A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
+where the $z$ is the height at points 1 and 2 and comes from $m = \rho \mathcal{V} = \rho A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
 
 Therefore,
 
 $$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  \rho A(V^{2}_{2} - V^{2}_{1}) $$
 
-Moving everything over to one side:
+Moving everything over to one side and dividing everything by $\rho A$:
 
-$$ (p_{1} - p_{2})A + \rho g (z_{2} - z_{1}) - \rho A(V^{2}_{2} - V^{2}_{1}) = 0 $$
+$$ \frac{(p_{1} - p_{2})}{\rho} + g (z_{2} - z_{1}) - (V^{2}_{2} - V^{2}_{1}) = 0 $$
