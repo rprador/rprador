@@ -182,3 +182,9 @@ Note that the sign convention taken here is the physics/engineering one where he
 Now, the (specific) energy can come from a variety of sources. For this discussion, we will only consider energy contributions from internal energy $u$, kinetic energy $\frac{1}{2}V^{2}$, and potential energy $gz$.
 
 $$ e = u +\frac{1}{2}V^{2} + gz $$
+
+Depending on the problem, it is possible to split up the heat and work into components:
+
+$$ \dot{Q} = \begin{cases} \text{Convection} \\ \text{Conduction} \\ \text{Radiation} \end{cases}$$
+
+$$ \dot{Q} = \begin{cases} \text{Shaft} \\ \text{Pressure} \\ \text{Viscous Stress} \end{cases}$$
