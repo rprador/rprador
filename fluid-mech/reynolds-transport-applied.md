@@ -167,38 +167,8 @@ $$ \begin{equation} \sum \textbf{F} - \int_{\text{CV}}\textbf{a}_{\text{rel}} dm
 
 where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis, and Centrifugal forces.
 
-### The Bernoulli Equation
+## Conservation of Energy
 
-The most common form of the linear momentum equation seen in lower division fluid mechanics courses, as well as the most introduced fluids concept in other courses, is the Bernoulli equation. The Bernoulli equation requires the following restrictions:
-- Steady flow, $\frac{d}{dt}() = 0$
-- Incompressible, $\rho \approx$ constant
-- Flow is along a streamline, i.e. path is tangent everywhere to the velocity $\textbf{V}$. This condition ensures that the velocity can be written as $V^{2} = u^{2} + v^{2} + w^{2}$, impyling that in the two-dimensional case $\frac{dy}{dx} = \frac{v}{u}$.
-- Inviscid (frictionless) flow, if the fluid is viscous, then the velocity $\textbf{V}$ can change with respect to direction. Thus $\frac{\partial \textbf{V}}{dx\_{i}}=0$.
+For this application, let $B = E$, the total energy, and $\beta = dE/dm$. 
 
-With these assumptions, we turn to the linear momentum equation (3).
-
-$$ \sum \textbf{F} = \underbrace{\frac{d}{dt} \int_{\text{CV}} \textbf{V} \rho d\mathcal{V}}_{=0}, \text{steady} + \int_{\text{CS}}\textbf{V} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
-
-Since the fluid is incompressible, $\rho$ can be moved outside of the integral. Note also that $\textbf{V}\cdot \hat{\textbf{n}} = V_{n} = V$, which is along the streamline direction. Thus:
-
-$$ \sum \textbf{F} = \rho V \int_{\text{CS}}\textbf{V} dA = ((\rho VA)\textbf{V})_{\text{out}} - ((\rho VA)\textbf{V})_{\text{in}} =  (\dot{m}\textbf{V})_{\text{out}} - (\dot{m}\textbf{V})_{\text{in}}$$
-
-Note that the velocity is implicitly uniform so that the mass flow rate $\dot{m}$ becomes present. This, however, still involves the vector representation through $\textbf{V}$. To simplify the problem, note that direction has already been stated to be along the streamline. We will henceforth drop the vector notation and assume all vector quantities are along the streamline.
-
-$$ \sum F = (\dot{m} V)_{\text{out}} - (\dot{m} V)_{\text{in}} \;\;\;\; \text{, along streamline}$$
-
-The question now is, what constitutes the external forces on the fluid? Since the fluid is inviscid, we are ignoring the shearing force due to friction along the walls of the control volume. We will consider the following forces: pressure and gravity. Sometimes, books will refer to these as the surface and body forces, respectively.
-
-$$ \sum F = F_{\text{press}} + F_{\text{grav}} = (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) $$
-
-where the $z$ is the height at points 1 and 2 along the streamline and $\rho A z$ comes from $m = \rho \mathcal{V} = \rho A z$. Note the minus sign on the pressure is from taking point 1 to have an inward pressure that points along the positive direction and point 2 having an inward pressure that points in the negative direction.
-
-Therefore,
-
-$$ (p_{1} - p_{2})A + (\rho A )g (z_{2} - z_{1}) =  (\dot{m} V)_{\text{out}} - (\dot{m} V)_{\text{in}} $$
-
-Rewriting as a differential expression:
-
-$$ (p_{1} - p_{2})dA + \rho g (z_{2} - z_{1})dA =  d(\dot{m} V) $$
-
-
+$$ frac{dE}{dt} = \frac{d}{dt}\left( \int_{CV} \frac{dE}{dm} \rho d\mathcal{V} \right) + \int_{\text{CS}} \frac{dE}{dm} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
