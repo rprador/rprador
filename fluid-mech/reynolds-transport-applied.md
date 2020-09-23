@@ -187,4 +187,6 @@ Depending on the problem, it is possible to split up the heat and work into comp
 
 $$ \dot{Q} = \begin{cases} \text{Convection} \\ \text{Conduction} \\ \text{Radiation} \end{cases}$$
 
-$$ \dot{Q} = \begin{cases} \text{Shaft} \\ \text{Pressure} \\ \text{Viscous Stress} \end{cases}$$
+and
+
+$$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \end{cases}$$
