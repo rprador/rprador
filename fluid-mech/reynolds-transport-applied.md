@@ -192,3 +192,4 @@ and
 $$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \\ \text{Other} \end{cases}$$
 
 Other types of work, such as electromagnetic work, can be done as well but are ignored here. 
+
