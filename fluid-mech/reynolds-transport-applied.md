@@ -189,4 +189,6 @@ $$ \dot{Q} = \begin{cases} \text{Convection} \\ \text{Conduction} \\ \text{Radia
 
 and
 
-$$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \end{cases}$$
+$$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \\ \text{Other} \end{cases}$$
+
+Other types of work, such as electromagnetic work, can be done as well but are ignored here. 
