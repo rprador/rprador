@@ -169,6 +169,16 @@ where $\textbf{a}\_{\text{rel}}$ are the accelerations from the Euler, Corioilis
 
 ## Conservation of Energy
 
-For this application, let $B = E$, the total energy, and $\beta = dE/dm$. 
+For this application, let $B = E$, the total energy, and $\beta = dE/dm \equiv e$ which is the energy per unit mass (or specific energy). We will assume the control volume is fixed and non-deformable.
 
-$$ frac{dE}{dt} = \frac{d}{dt}\left( \int_{CV} \frac{dE}{dm} \rho d\mathcal{V} \right) + \int_{\text{CS}} \frac{dE}{dm} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+$$ \frac{dE}{dt} = \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+From the first law of thermodynamics, $\dot{Q} - \dot{W} = \dot{E}$, where $\dot{Q}$ is the heat per unit time and $\dot{W}$ is the work per unit time. Therefore,
+
+$$\dot{Q} - \dot{W} = \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$ 
+
+Note that the sign convention taken here is the physics/engineering one where heat added to the system is positive and work done by the system is also positive. From a chemistry perspective, the convention for work is flipped: work done by the system is negative, leading to $\dot{Q} + \dot{W}$. Just keep this in mind when referencing other sources.
+
+Now, the (specific) energy can come from a variety of sources. For this discussion, we will only consider energy contributions from internal energy $u$, kinetic energy $\frac{1}{2}V^{2}$, and potential energy $gz$.
+
+$$ e = u +\frac{1}{2}V^{2} + gz $$
