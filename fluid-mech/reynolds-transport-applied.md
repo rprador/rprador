@@ -191,5 +191,12 @@ and
 
 $$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \\ \text{Other} \end{cases}$$
 
-Other types of work, such as electromagnetic work, can be done as well but are ignored here. 
+Other types of work, such as electromagnetic work, can be done as well but are ignored here. We will also consider the heat as a single quantity without splitting it.
 
+The work due to pressure forces on a differential element is:
+
+$$ dW_{p} = \textbf{F}_{p} \cdot d\textbf{s} = p(d\textbf{A} \cdot d\textbf{s}) = pdAds(\hat{\textbf{n}} \cdot \hat{\textbf{s}}) $$
+
+where $d\textbf{s}$ is the path over which the work is done. Dividing by $dt$:
+
+$$ d\dot{W}_{p} = pdAleft(\frac{d\textbf{s}}{dt} \cdot \hat{\textbf{n}} \right) = pdA ( \textbf{V}_{s} \cdot \hat{\textbf{n}} ) $$
