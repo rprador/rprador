@@ -216,3 +216,10 @@ $$ \begin{cases} \text{No-slip condition at surface} (\textbf{V}=0), &\dot{W}_{v
 The rate of work then is:
 
 $$ \dot{W} = \dot{W}_{s} + \dot{W}_{p} + \dot{W}_{v} = \dot{W}_{s} + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA - \int_{\text{CS}} \boldsymbol{\tau} \cdot \textbf{V} dA $$ 
+
+The energy equation is:
+
+$$ \begin{align*} \dot{Q} - \dot{W}_{s} - \dot{W}_{p} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\ 
+\dot{Q} - \dot{W}_{s} - \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\ 
+\dot{Q} - \dot{W}_{s} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA \\ 
+\dot{Q} - \dot{W}_{s} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA \\  \end{align*} $$
