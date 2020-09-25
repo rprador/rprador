@@ -222,4 +222,13 @@ The energy equation is:
 $$ \begin{align*} \dot{Q} - \dot{W}_{s} - \dot{W}_{p} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\ 
 \dot{Q} - \dot{W}_{s} - \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \\ 
 \dot{Q} - \dot{W}_{s} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA \\ 
-\dot{Q} - \dot{W}_{s} - \dot{W}_{v} &=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} e \rho (\textbf{V}\cdot \hat{\textbf{n}})dA + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA \\  \end{align*} $$
+&=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} (e \rho + p)(\textbf{V}\cdot \hat{\textbf{n}})dA \\
+&=  \frac{d}{dt}\left( \int_{CV} e \rho d\mathcal{V} \right) + \int_{\text{CS}} (e + \frac{p}{\rho})\rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
+
+Plugging in the energy terms, and noting that in the surface integral that: 
+
+$$ e + \frac{p}{\rho} = u + \frac{1}{2}V^{2} + gz + \frac{p}{\rho} = (u + \frac{p}{\rho}) + \frac{1}{2}V^{2} + gz = h + \frac{1}{2}V^{2} + gz  $$
+
+where $h$ is the (specific) enthalpy, we get:
+
+$$  \begin{equation} \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \frac{d}{dt}\left( \int_{CV} (u + \frac{1}{2}V^{2} + gz) \rho d\mathcal{V} \right) + \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation} $$
