@@ -243,4 +243,22 @@ $$ \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \int_{\text{CS}} (h + \frac{1}{2}V^{2} 
 
 The surface integral reduces to a sum over the number of inlets./outlets. In particular,
 
-$$ \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA = \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{out}}\dot{m}_{\text{out}} -  \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{in}} \dot{m}_{\text{in}} $$
+$$ \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA = \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{out}}\dot{m}_{\text{out}} -  \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{in}} \dot{m}_{\text{in}} $$
+
+Note: it is possible to relate the mass flow rates using the conservation of mass continuity equation.
+
+#### Steady State + 1D Inlet/Outlet + One Inlet, One Outlet
+
+In this case, we have:
+
+$$ \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA =  (h_{2} + \frac{1}{2}V_{2}^{2} + gz_{2}) \dot{m}_{2} -  (h_{1} + \frac{1}{2}V_{1}^{2} + gz_{1}) \dot{m}_{1} $$
+
+From the continuity equation, the mass flow rates are equal, so $\dot{m}_{1} = \dot{m}_{1} = \dot{m} $. Therefore:
+
+$$ \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA =  \left[ (h_{2} + \frac{1}{2}V_{2}^{2} + gz_{2}) -  (h_{1} + \frac{1}{2}V_{1}^{2} + gz_{1})\right] \dot{m} $$
+
+Dividing through by $\dot{m}$ and denoting the (specific) heat and (specific) work as $q = \dot{Q}/\dot{m} = dQ/dm$ and $w = \dot{W}/\dot{m} = dW/dm$, respectively:
+
+$$ q - w_{s} - w_{v} = \Delta\left( h + \frac{1}{2}V^{2} + gz \right)$$
+
+where the $\Delta$ is the difference in values. Note: the dot notation is gone because unit-wise, the time dependence has been cancelled. 
