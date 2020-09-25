@@ -232,3 +232,15 @@ $$ e + \frac{p}{\rho} = u + \frac{1}{2}V^{2} + gz + \frac{p}{\rho} = (u + \frac{
 where $h$ is the (specific) enthalpy, we get:
 
 $$  \begin{equation} \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \frac{d}{dt}\left( \int_{CV} (u + \frac{1}{2}V^{2} + gz) \rho d\mathcal{V} \right) + \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{equation} $$
+
+### Steady State
+
+In steady state, the volume integral derivative vanishes, leaving
+
+$$ \dot{Q} - \dot{W}_{s} - \dot{W}_{v} = \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA $$
+
+#### Steady State + 1D Inlet/Outlet
+
+The surface integral reduces to a sum over the number of inlets./outlets. In particular,
+
+$$ \int_{\text{CS}} (h + \frac{1}{2}V^{2} + gz)\rho (\textbf{V}\cdot \hat{\textbf{n}})dA = \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{out}}\dot{m}_{\text{out}} -  \sum\left( h + \frac{1}{2}V^{2} + gz \right)_{\text{in}} \dot{m}_{\text{in}} $$
