@@ -261,4 +261,12 @@ Dividing through by $\dot{m}$ and denoting the (specific) heat and (specific) wo
 
 $$ q - w_{s} - w_{v} = \Delta\left( h + \frac{1}{2}V^{2} + gz \right)$$
 
-where the $\Delta$ is the difference in values. Note: the dot notation is gone because unit-wise, the time dependence has been cancelled. 
+where the $\Delta$ is the difference in values. Note: the dot notation is gone because unit-wise, the time dependence has been cancelled.
+
+#### Steady State + 1D Inlet/Outlet + One Inlet, One Outlet (Head version)
+
+As the steady state, 1D energy equation has units of energy per unit mass for each of its terms, dividing through by $g$ converts them all into units of length. These terms are termed ***heads***.
+
+$$ \mathcal{h}_q - \mathcal{h}_{s} - \mathcal{h}_{v} = \Delta\left( \frac{u}{g} + \frac{p}{\rho g} + \frac{V^{2}{2g}} + z \right) $$ 
+
+where $\mathcal{h}_{q} = q/g, \mathcal{h}_{s} = w_{s}/g, \mathcal{h}_{v} = w_{s}/g$ are the head forms of the heat and work, $V^{2}/2g$ is the velocity head, and $p/\rho g$ is the pressure head. For clarity, the enthalpy was split back into its internal energy and pressure terms. Sometimes, the pressure head is written using the specific weight $\gamma = \rho g$ instead. 
