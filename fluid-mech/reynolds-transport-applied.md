@@ -207,8 +207,12 @@ Similarly, the rate of work due to viscous stresses is:
 
 $$ \dot{W}_{v} = -\int_{\text{CS}} \boldsymbol{\tau} \cdot \textbf{V} dA $$
 
-where $\boldsymbol{\tau}$ is the stress on ther surface. Depending on the problem, we have a few cases for this time of work:
+where $\boldsymbol{\tau}$ is the stress on the surface. Depending on the problem, we have a few cases for this time of work:
 
 $$ \begin{cases} \text{No-slip condition at surface} (\textbf{V}=0), &\dot{W}_{v} = 0 \\
 \text{At inlet/outlet},  &\dot{W}_{v} \approx 0 \\ 
 \text{At machine surface}, &\dot{W}_{\text{m. surf}} \rightarrow \dot{W}_{s} (\text{absorbed into term}) \end{cases} $$
+
+The rate of work then is:
+
+$$ \dot{W} = \dot{W}_{s} + \dot{W}_{p} + \dot{W}_{v} = \dot{W}_{s} + \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA - \int_{\text{CS}} \boldsymbol{\tau} \cdot \textbf{V} dA $$ 
