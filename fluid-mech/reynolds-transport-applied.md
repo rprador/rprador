@@ -191,13 +191,15 @@ and
 
 $$ \dot{W} = \begin{cases} \text{Shaft}, \dot{W}_{s} \\ \text{Pressure}, \dot{W}_{p} \\ \text{Viscous Stress}, \dot{W}_{v} \\ \text{Other} \end{cases}$$
 
-Other types of work, such as electromagnetic work, can be done as well but are ignored here. We will also consider the heat as a single quantity without splitting it. The rate of work down by the fluid on a shaft protruding from the control volume is called the **rate of shaft work** and is typically given within a problem, so we will leave it alone. The sign for this depends on the mechanism, i.e. positive for turbine, negative for a fan. 
+Other types of work, such as electromagnetic work, can be done as well but are ignored here. We will also consider the heat as a single quantity without splitting it. 
 
-The rate of work done by pressure forces at the surface is called the **rate of pressure work**. Recall that the power can is related to the force acting on an object with velocity $\textbf{V}$ as $\dot{W} = \textbf{F} \cdot \textbf{V}$. In the case of pressure forces, there is a normal stress due to pressure, $\sigma = -p$ (note: normal inward is denoted negative). Hence:
+The rate of work done by the fluid on a shaft protruding from the control volume is called the **rate of shaft work** and is typically given within a problem, so we will leave it alone. The sign for this depends on the mechanism, i.e. positive for turbine, negative for a fan. 
 
-$$ d\dot{W}_{p} = d\textbf{F}_{p} \cdot textbf{V} = (\boldsymbol{\sigma} dA) \cdot \textbf{V} = p (\textbf{V} \cdot \hat{\textbf{n}}) dA $$
+The rate of work done by pressure forces at the surface is called the **rate of pressure work**. Recall that the power can is related to the force acting on an object with velocity $\textbf{V}$ as $\dot{W} = \textbf{F} \cdot \textbf{V}$. In the case of pressure forces, there is a normal stress due to pressure, $\sigma = p$. Hence:
 
-Integrating, we get the rate of work due to pressure forces (sometimes called flow work):
+$$ d\dot{W}_{p} = d\textbf{F}_{p} \cdot \textbf{V} = (\boldsymbol{\sigma} dA) \cdot \textbf{V} = p (\textbf{V} \cdot \hat{\textbf{n}}) dA $$
+
+Integrating, we get the rate of work due to pressure forces (sometimes called **flow work**):
 
 $$ \dot{W}_{p} = \int_{\text{CS}} p (\textbf{V} \cdot \hat{\textbf{n}}) dA $$
 
@@ -207,6 +209,6 @@ $$ \dot{W}_{v} = -\int_{\text{CS}} \boldsymbol{\tau} \cdot \textbf{V} dA $$
 
 where $\boldsymbol{\tau}$ is the stress on ther surface. Depending on the problem, we have a few cases for this time of work:
 
-$$ \begin{cases} \text{No-slip condition at surface} (\textbf{V}=0), \dot{W}_{v} &= 0 \\
-\text{At inlet/outlet},  \dot{W}_{v} &\approx 0 \\ 
-\text{At machine surface}, \dot{W}_{\text{m. surf}} &\rightarrow \dot{W}_{s} (\text{absorbed into term}) \end{cases} $$
+$$ \begin{cases} \text{No-slip condition at surface} (\textbf{V}=0), &\dot{W}_{v} = 0 \\
+\text{At inlet/outlet},  &\dot{W}_{v} \approx 0 \\ 
+\text{At machine surface}, &\dot{W}_{\text{m. surf}} \rightarrow \dot{W}_{s} (\text{absorbed into term}) \end{cases} $$
