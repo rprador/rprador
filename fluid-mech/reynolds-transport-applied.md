@@ -269,4 +269,4 @@ As the steady state, 1D energy equation has units of energy per unit mass for ea
 
 $$ \mathcal{h}_q - \mathcal{h}_{s} - \mathcal{h}_{v} = \Delta\left( \frac{u}{g} + \frac{p}{\rho g} + \frac{V^{2}}{2g} + z \right) $$ 
 
-where $\mathcal{h}\_{q} = q/g, \mathcal{h}\_{s} = w\_{s}/g, \mathcal{h}\_{v} = w\_{s}/g$ are the head forms of the heat and work, $V^{2}/2g$ is the velocity head, and $p/\rho g$ is the pressure head. For clarity, the enthalpy was split back into its internal energy and pressure terms. Sometimes, the pressure head is written using the specific weight $\gamma = \rho g$ instead. 
+where $\mathcal{h}\_{q} = q/g, \mathcal{h}\_{s} = w\_{s}/g, \mathcal{h}\_{v} = w\_{v}/g$ are the head forms of the heat and work, $V^{2}/2g$ is the ***velocity head***, and $p/\rho g$ is the ***pressure head***. For clarity, the enthalpy was split back into its internal energy and pressure terms. Sometimes, the pressure head is written using the specific weight $\gamma = \rho g$ instead. 
