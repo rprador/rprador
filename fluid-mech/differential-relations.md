@@ -32,8 +32,8 @@ $$ \dot{m} + d\dot{m} = \dot{m} + \frac{\partial \dot{m}}{\partial x}dx = \rho u
 Thus:
 
 $$ \begin{align*} \dot{m}_{\text{in}} &= \dot{out}_{\text{out}} \\
-\rho u dydz &= \rho u dydz + \frac{\partial \rho u}{\partial x} dxdydz \\
-0 = \frac{\partial \rho u}{\partial x} \end{align*} $$
+\rho u dydz &= \rho u dydz + \frac{\partial}{\partial x}(\rho u) dxdydz \\
+0 &= \frac{\partial}{\partial x}(\rho u) \end{align*} $$
 
 If we include the rest of the faces of the differential volume, then we have that total change in mass flow rate is:
 
@@ -51,3 +51,8 @@ where the theorem is, for an arbitrary vector $\textbf{A}$:
 
 $$ \int_{\text{Vol.}} (\nabla \cdot \textbf{A})d\mathcal{V} = \int_{\text{Surf.}} (\textbf{A} \cdot \hat{\textbf{n}})dA  $$
 
+Then the integral relation reduces to:
+
+$$ \begin{align*} 0 &= \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CV}} \nabla \cdot (\rho \textbf{V}) d\mathcal{V} \\
+&= \int_{CV} \left[ \frac{\partial\rho}{\partial t} + \nabla \cdot (\rho \textbf{V}) \right] d\mathcal{V} \\
+&= \frac{\partial\rho}{\partial t} + \nabla \cdot (\rho \textbf{V} \end{align*} $$
