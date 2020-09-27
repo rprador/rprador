@@ -21,6 +21,6 @@ Normally, I would not make a distinction here about the derivative but it should
 
 ## Conservation of Mass (Continuity Equation)
 
-![Volume element mass](fluid-mech/figures/volume-element-mass.PNG)
+![Volume element mass](https://rprador.github.io/rprador/fluid-mech/figures/volume-element-mass.PNG)
 
 
