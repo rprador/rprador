@@ -23,4 +23,7 @@ Normally, I would not make a distinction here about the derivative but it should
 
 ![Volume element mass](https://rprador.github.io/rprador/fluid-mech/figures/volume-element-mass.PNG)
 
+Suppose we have a volume element as shown in the figure. One derivation of the continuity equation begins with describing the mass flux through one end of the control volume to the other, in which the fluid velocity runs parallel to the surface normal of the faces. In other words, given a mass flow rate $\rho A V$, where $\rho$ is the mass density, $A$ is the surface area of one face of the control volume and $V$ is the fluid velocity, then what is the change in the mass flow rate $d(\rho A V)$? Assuming mass conservation holds (and, as usual, it does), then it should be that the mass flow rate in equals the mass flow rate out. Let the fluid flow along the $x$-axos through the surface made by $dydz$, as in the figure. Then the mass flow rate in is $\rho u dydz$. After traveling a distance $dx$, the mass flow rate is approximately:
+
+$$ \dot{m} + d\dot{m} = \dot{m} + \frac{\partial \dot{m}}{\partial x}dx = \rho u dydz + \frac{\partial \rho u}{\partial x} dxdydz$$
 
