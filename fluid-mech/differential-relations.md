@@ -55,4 +55,24 @@ Then the integral relation reduces to:
 
 $$ \begin{align*} 0 &= \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CV}} \nabla \cdot (\rho \textbf{V}) d\mathcal{V} \\
 &= \int_{CV} \left[ \frac{\partial\rho}{\partial t} + \nabla \cdot (\rho \textbf{V}) \right] d\mathcal{V} \\
-&= \frac{\partial\rho}{\partial t} + \nabla \cdot (\rho \textbf{V} \end{align*} $$
+&= \frac{\partial\rho}{\partial t} + \nabla \cdot \rho (\textbf{V}) \end{align*} $$
+
+Note: the density $\rho$ has not yet been assumed constant!
+
+### Steady State
+
+If we have steady flow, then the time-dependent term vanishes:
+
+$$ 0 = \nabla \cdot (\rho \textbf{V}$$
+
+### Incompressible
+
+Now, the density is approximately constant, so:
+
+$$ 0 = \nabla \cdot \textbf{V}$$
+
+Note: White makes a distinction when regarding fluids as incompressible. It turns out that this can be determined through the ***Mach number*** of the fluid flow:
+
+$$ \text{Ma}^{2} \equiv \left(\frac{V}{c_{\text{sound}}}\right)^{2} \ll 1 $$
+
+where $c\_{\text{sound}}$ is the speed of sound of the fluid. White states that a commonly accepted value for incompressibility is when $\text{Ma} \leq 0.3$.
