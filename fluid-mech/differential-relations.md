@@ -19,6 +19,15 @@ $$ \begin{equation} \textbf{a}(\textbf{r}, t) =  \underbrace{\frac{\partial \tex
 
 Normally, I would not make a distinction here about the derivative but it should be noted that this type of derivative that splits the vector quantity into a time-dependent and spatial-dependent part is known as **substantial** or **material** derivatives. It is common to use the notation $D/Dt$ for this type of derivative.
 
+For a very nice way to get the following equations, we can transform Reynold's transport theorem into differential form using the [divergence (Gauss's) theorem](https://en.wikipedia.org/wiki/Divergence_theorem), where the theorem is, for an arbitrary vector $\textbf{A}$:
+
+$$ \int_{\text{Vol.}} (\nabla \cdot \textbf{A})d\mathcal{V} = \int_{\text{Surf.}} (\textbf{A} \cdot \hat{\textbf{n}})dA  $$
+
+Starting from the integral form, where $B$ is an extensive property and $\beta = dB/dm$ is the intensive property:
+
+$$ \begin{align*} \frac{dB}{dt} = \frac{d}{dt}\left( \int_{V} \beta \rho d\mathcal{V} \right) + \int_{\text{surf}} \beta \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \end{align*} $$
+
+
 ## Conservation of Mass (Continuity Equation)
 
 ![Volume element mass](https://rprador.github.io/rprador/fluid-mech/figures/volume-element-mass.PNG)
@@ -43,15 +52,11 @@ If the mass flow is time-depedent, an additional contribution $\partial\rho/\par
 
 $$ \begin{equation} \frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \textbf{V}) = 0 \end{equation} $$
 
-Another way to arrive at this is to take the integral relation from Reynold's theorem and invoke the [divergence (Gauss's) theorem](https://en.wikipedia.org/wiki/Divergence_theorem) on the control surface term:
+Another way to arrive at this is to use the differential form of Reynold's theorem.
 
 $$  \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CS}} \rho (\textbf{V}\cdot \hat{\textbf{n}})dA \rightarrow  \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CV}} \nabla \cdot (\rho \textbf{V}) d\mathcal{V} $$
 
-where the theorem is, for an arbitrary vector $\textbf{A}$:
-
-$$ \int_{\text{Vol.}} (\nabla \cdot \textbf{A})d\mathcal{V} = \int_{\text{Surf.}} (\textbf{A} \cdot \hat{\textbf{n}})dA  $$
-
-Then the integral relation reduces to:
+hen the integral relation reduces to:
 
 $$ \begin{align*} 0 &= \int_{CV} \frac{\partial\rho}{\partial t} d\mathcal{V} + \int_{\text{CV}} \nabla \cdot (\rho \textbf{V}) d\mathcal{V} \\
 &= \int_{CV} \left[ \frac{\partial\rho}{\partial t} + \nabla \cdot (\rho \textbf{V}) \right] d\mathcal{V} \\
@@ -63,7 +68,7 @@ Note: the density $\rho$ has not yet been assumed constant!
 
 If we have steady flow, then the time-dependent term vanishes:
 
-$$ 0 = \nabla \cdot (\rho \textbf{V}$$
+$$ 0 = \nabla \cdot (\rho \textbf{V}) $$
 
 ### Incompressible
 
@@ -75,4 +80,8 @@ Note: White makes a distinction when regarding fluids as incompressible. It turn
 
 $$ \text{Ma}^{2} \equiv \left(\frac{V}{c_{\text{sound}}}\right)^{2} \ll 1 $$
 
-where $c\_{\text{sound}}$ is the speed of sound of the fluid. White states that a commonly accepted value for incompressibility is when $\text{Ma} \leq 0.3$.
+where $c\_{\text{sound}}$ is the speed of sound in the fluid. White states that a commonly accepted value for incompressibility is when $\text{Ma} \leq 0.3$.
+
+## Linear Momentum Equation
+
+
