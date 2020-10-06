@@ -6,5 +6,5 @@ This Github Pages is a dedicated location for storing personal notes that I have
 
 [Fluid Mechanics](https://rprador.github.io/rprador/fluid-mech/fm-topics)
 
-[Differential Equations](https://rprador.github.io/rprador/differential_eqns/de-topics.md)
+[Differential Equations](https://rprador.github.io/rprador/differential_eqns/de-topics)
 
