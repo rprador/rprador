@@ -4,4 +4,4 @@ This page and its subpages cover some topics within differenential equations, bo
 
 ## Ordinary Differential Equations
 
-[First-order linear differential equations](https://rprador.github.io/rprador/differential_eqns/first-order-odes.md)
+[First-order linear differential equations](https://rprador.github.io/rprador/differential_eqns/first-order-odes)
