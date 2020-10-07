@@ -66,11 +66,11 @@ $$ \begin{equation} \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \end{equation
 
 As the purpose of the integrating factor is to convert this ODE into an exact one, we note that the left-hand side is given by the derivative using the product rule:
 
-$$ \begin{equation} \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,,  \end{equation} $$
+$$ \begin{equation} \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y \,,  \end{equation} $$
 
 or 
 
-$$ \frac{d\mu}{dx}y + \mu\frac{dy}{dx} = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,. $$
+$$ \frac{d\mu}{dx}y + \mu\frac{dy}{dx} = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y \,. $$
 
 Subtracting both sides by $ \mu(x)\frac{dy}{dx}$ and dividing through by $y$, we get
 
@@ -82,9 +82,12 @@ $$ \begin{equation} \mu(x) =  e^{\int^{x}p(x')dx' } \end{equation} $$
 
 A word on the notation for the integrating factor: although the integration is technically definite, we exclude the lower limit as the results from it yield a constant that does not affect our end results. In effect, that constant from evaluating the lower limit can be set equal to 0. Thus, the notation $\int^{x}$ means to evaluate the definite integral at $x$ only, do not include an integration constant!
 
-Now that we know what the integrating factor is given by (9), we go back to (8). 
+Now that we know what the integrating factor is given by (9), we use the result of (8) and plug into (7) to get
 
-Therefore, the ODE reduces to
+$$ \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)q(x) \,. $$
 
-$$ \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)q(x) $$
+Integrating, we get the solution:
 
+$$ \begin{equation} y(x) = \frac{1}{\mu(x)} \left[ \int^{x} \mu(x)q(x)dx + C \right] = \frac{1}{\mu(x)}\int^{x} \mu(x)q(x)dx + \frac{C}{\mu(x)} \,, \end{equation} $$
+
+where $C$ is a constant. To get the constant, we would need to supply an initial condition $(x_0, y_0)$.
