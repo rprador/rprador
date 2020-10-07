@@ -102,8 +102,29 @@ $$ I(t) = \frac{1}{\mu(t)}\int^{t} \mu(t)q(t)dx + \frac{C}{\mu(t)} = e^{-\frac{R
 
 Simplifying,
 
-$$ I(t) = \frac{V_0}{R} + Ce^{\frac{R}{L}t} $$
+$$ I(t) = \frac{V_0}{R} + Ce^{\frac{R}{L}t} ]\,. $$
 
 If we have the initial condition $I(0)=0$, then $C=-V_0/R$, thus
 
-$$ I(t) = \frac{V_0}{R}\left( 1- e^{-Rt/L} \right) $$
+$$ I(t) = \frac{V_0}{R}\left( 1- e^{-Rt/L} \right) \,. $$
+
+### Picard's Method - Iterative Method
+
+Suppose we have a first-order ODE of the form
+
+$$ \begin{equation} y'(x) = f(x,y) \end{equation}  \,, $$
+
+with the initial conditions $(x_0, y_0)$. Suppose $y$ and $y'$ are continuous when $|x| \leq a $ and $|y| \leq b$, for some constants $a,b$. If we integrate both sides, we obtain
+
+$$ y - y_0 = \int_{x_0}^{x} f(x', y)dx' $$
+
+The way Picard's method works is that we define a sequence of solutions ${y_0, y_1, y_2, \dots, y_n}$ that approaches the real solution $y$ as $n \rightarrow \infty$. By iteratively computing the integrals:
+
+$$ \begin{align*} y_1 = y_0 + \int_{x_0}^{x} f(x', y_0)dx' \\ 
+y_2 = y_0 + \int_{x_0}^{x} f(x', y_1)dx' \\
+ y_3 = y_0 + \int_{x_0}^{x} f(x', y_2)dx' \\
+\vdots \\
+ y_n = y_0 + \int_{x_0}^{x} f(x', y_{n-1})dx' \\\end{align*} $$ 
+
+we can approach the real solution. 
+
