@@ -36,7 +36,7 @@ $$ \begin{equation} P(x)dx + Q(y)dy = 0 \,. \end{equation} $$
 
 Note how each term is either a function of $x$ or $y$ but not both. Integrating both sides (indefinite integral) will lead to the solution to the ODE given by (1), up to an integration constant.
 
-### Integrating Factors
+### Exact ODES and Integrating Factors
 
 Seperation of variables only works if $P=P(x)$ and $Q=Q(y)$. However, a more general case is when they are both functions of $x$ and $y$. We then have the differential equation
 
@@ -62,11 +62,11 @@ $$ \begin{equation} \frac{dy}{dx} + p(x)y = q(x) \end{equation} \,. $$
 
 Multiplying both sides by the integrating factor $\mu(x)$:
 
-$$ \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \end{equation} $$
+$$ \begin{equation} \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \end{equation} $$
 
 As the purpose of the integrating factor is to convert this ODE into an exact one, we note that the left-hand side is given by the derivative using the product rule:
 
-$$ \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,, $$
+$$ \begin{equation} \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,,  \end{equation} $$
 
 or 
 
@@ -82,7 +82,7 @@ $$ \begin{equation} \mu(x) =  e^{\int^{x}p(x')dx' } \end{equation} $$
 
 A word on the notation for the integrating factor: although the integration is technically definite, we exclude the lower limit as the results from it yield a constant that does not affect our end results. In effect, that constant from evaluating the lower limit can be set equal to 0. Thus, the notation $\int^{x}$ means to evaluate the definite integral at $x$ only, do not include an integration constant!
 
-Now that we know what the integrating factor is given by 
+Now that we know what the integrating factor is given by (9), we go back to (8). 
 
 Therefore, the ODE reduces to
 
