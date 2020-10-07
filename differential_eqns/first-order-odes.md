@@ -32,7 +32,7 @@ $$ \begin{equation} \frac{dy}{dx} = -\frac{P(x)}{Q(y)} \,, \end{equation}  $$
 
 we call it a **seperable** equation as it can be split into parts of a single variable. By multiplying the differentials and rearranging, (1) becomes
 
-$$ \begin{equation} P(x)dx + Q(y)dy = 0 \,.  \begin{equation} $$
+$$ \begin{equation} P(x)dx + Q(y)dy = 0 \,. \end{equation} $$
 
 Note how each term is either a function of $x$ or $y$ but not both. Integrating both sides (indefinite integral) will lead to the solution to the ODE given by (1), up to an integration constant.
 
@@ -50,3 +50,8 @@ then we call (3) an **exact** differential equation. More specfically, if the ab
 
 $$ \begin{equation} \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \iff P = \frac{\partial F}{\partial x} , Q=\frac{\partial F}{\partial y} \longrightarrow Pdx + Qdy = dF  \end{equation} $$
 
+Therefore, we can obtain the function $F(x,y)$ through straight-forward integration of (4):
+
+$$ \begin{equation} F(x,y) = \int_{x_0}^{x} P(x,y)dx + \int_{y_0}^{y} Q(x_0 ,y)dy = \text{constant} \,, \end{equation} $$
+
+where $(x_0 , y_0)$ come from initial conditions.
