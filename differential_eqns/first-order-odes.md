@@ -20,7 +20,7 @@ Suppose we have a general $n$th-order ordinary differential equation of one vari
 
 $$ a_0 y + a_1 y' + a_2 y'' + a_3 y''' + \dots + a_{(n-1)}y^{(n-1)} + a_{n}y^{(n)} = b; $$
 
-If the coefficients $a$ and $b$ are constants or functions of x, we call this a **linear** differential equation. Otherwise, it is **nonlinear**. All of the previous examples above, except the fourth one, are linear. Differential equations that include products of derivatives or functions that are not polynomials (trigonometric, exponential, etc.) are nonlinear. Additionally, if $b=0$, the equation is **homogenous**; otherwise, it is **nonhomogenous**.
+If the coefficients $a$ and $b$ are constants or functions of x, we call this a **linear** differential equation. Otherwise, it is **nonlinear**. All of the previous examples above, except the fourth one, are linear. Differential equations that include products of derivatives or functions that are not polynomials (trigonometric, exponential, etc.) are nonlinear. Additionally, if $b=0$, the equation is **homogenous**; otherwise, it is **inhomogenous**.
 
 ## Solving First-Order ODEs
 
@@ -56,4 +56,35 @@ $$ \begin{equation} F(x,y) = \int_{x_0}^{x} P(x,y)dx + \int_{y_0}^{y} Q(x_0 ,y)d
 
 where $(x_0 , y_0)$ come from initial conditions.
 
-So what happens if the ODE is not exact? Sometimes, it is possible to multiply by another function such that the product is exact. The function we need is called an integrating factor.
+So what happens if the ODE is not exact? Sometimes, it is possible to multiply by another function such that the product is exact. The function we need is called an **integrating factor**. Let's derive the expression for the integrating factor $\mu$. Suppose we have the nonexact, first-order linear ODE
+
+$$ \begin{equation} \frac{dy}{dx} + p(x)y = q(x) \end{equation} \,. $$
+
+Multiplying both sides by the integrating factor $\mu(x)$:
+
+$$ \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \end{equation} $$
+
+As the purpose of the integrating factor is to convert this ODE into an exact one, we note that the left-hand side is given by the derivative using the product rule:
+
+$$ \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,, $$
+
+or 
+
+$$ \frac{d\mu}{dx}y + \mu\frac{dy}{dx} = \mu(x)\frac{dy}{dx} + \mu(x)p(x)y = \mu(x)q(x) \,. $$
+
+Subtracting both sides by $ \mu(x)\frac{dy}{dx}$ and dividing through by $y$, we get
+
+$$ \frac{d\mu}{dx} = \mu(x)p(x) $$
+
+This is now a separable equation! Therefore, we can multiply terms over and integrate to get
+
+$$ \begin{equation} \mu(x) =  e^{\int^{x}p(x')dx' } \end{equation} $$
+
+A word on the notation for the integrating factor: although the integration is technically definite, we exclude the lower limit as the results from it yield a constant that does not affect our end results. In effect, that constant from evaluating the lower limit can be set equal to 0. Thus, the notation $\int^{x}$ means to evaluate the definite integral at $x$ only, do not include an integration constant!
+
+Now that we know what the integrating factor is given by 
+
+Therefore, the ODE reduces to
+
+$$ \frac{d}{dx}\left[ \mu(x)y \right] = \mu(x)q(x) $$
+
