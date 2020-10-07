@@ -128,3 +128,11 @@ y_2 &= y_0 + \int_{x_0}^{x} f(x', y_1)dx' \\
 
 we can approach the real solution. If no initial condition is given, then we would have to "guess" one as a starting value for ($x_0, y_0$).
 
+This method is best used numerically with a computer. However, for simple solutions, using this method will yield a series solution. For example, if we have the ODE $y'=x-y$ with the initial conditions $(0,1)$, then:
+
+$$ \begin{align*} y_1 &= y_0 + \int_{0}^{x} (x'-y_0) dx' &= 1 - x + \frac{x^2}{2} \\
+y_2 &= y_0 + \int_{0}^{x} (x'-y_1) dx' &= 1 - x + \frac{x^2}{2} - \frac{x^3}{6}
+\end{align*}$$
+
+If we continue, we note that the solution looks a lot like a power series expansion of the exponential function. In fact, the exact solution is $y=x-1+2e^{-x}$, using the same initial conditions. In the case of Picard's method, the error of the solution is up to the order of the last term.
+
