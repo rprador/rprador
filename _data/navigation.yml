@@ -2,4 +2,5 @@
 - title: Home
   url: /
 - title: Topics
-  url: /fluid-mech/fm-topics
+  - title: Fluid Mechanics
+    url: /fluid-mech/fm-topics
