@@ -12,7 +12,7 @@ Given an ordinary (only total derivatives) differential equation, the **order** 
 $$ \begin{align*} y' + 2y &= 1 \quad & (\text{First-order}) \\
 y' + y^2 &= 2 \quad & (\text{First-order}) \\
 m\frac{d^2 r}{dx^2} &= F \quad & (\text{Second-order}) \\
-\left( \frac{d^2 u}{dx^2} \right)^4 + \frac{du}{dx} &= 0 \quad & (\text{Second-order}) \,. \end{align*}$$
+\left( \frac{d^2 u}{dx^2} \right)^4 + \frac{du}{dx} &= 0 \quad & (\text{Second-order}) \end{align*}$$
 
 Note to be careful with confusing powers for order. The last example above is still second-order as its derivative is of order 2 -- the power of 4 does not count! 
 
@@ -48,10 +48,12 @@ $$ \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \,, $$
 
 then we call (3) an **exact** differential equation. More specfically, if the above relation holds, then there exists some function $F(x,y)$ that if we take the differential of, $dF$, then
 
-$$ \begin{equation} \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \iff P = \frac{\partial F}{\partial x} , Q=\frac{\partial F}{\partial y} \longrightarrow Pdx + Qdy = dF  \end{equation} $$
+$$ \begin{equation} \frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x} \iff P = \frac{\partial F}{\partial x} , Q=\frac{\partial F}{\partial y} \longrightarrow Pdx + Qdy = dF \,.  \end{equation} $$
 
 Therefore, we can obtain the function $F(x,y)$ through straight-forward integration of (4):
 
 $$ \begin{equation} F(x,y) = \int_{x_0}^{x} P(x,y)dx + \int_{y_0}^{y} Q(x_0 ,y)dy = \text{constant} \,, \end{equation} $$
 
 where $(x_0 , y_0)$ come from initial conditions.
+
+So what happens if the ODE is not exact? Sometimes, it is possible to multiply by another function such that the product is exact. The function we need is called an integrating factor.
