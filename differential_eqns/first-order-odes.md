@@ -114,17 +114,17 @@ Suppose we have a first-order ODE of the form
 
 $$ \begin{equation} y'(x) = f(x,y) \end{equation}  \,, $$
 
-with the initial conditions $(x_0, y_0)$. Suppose $y$ and $y'$ are continuous when $|x| \leq a $ and $|y| \leq b$, for some constants $a,b$. If we integrate both sides, we obtain
+with the initial conditions ($x_0, y_0$). Suppose $y$ and $y'$ are continuous when $\|x\| \leq a $ and $\|y\| \leq b$, for some constants $a,b$. If we integrate both sides, we obtain
 
 $$ y - y_0 = \int_{x_0}^{x} f(x', y)dx' $$
 
 The way Picard's method works is that we define a sequence of solutions ${y_0, y_1, y_2, \dots, y_n}$ that approaches the real solution $y$ as $n \rightarrow \infty$. By iteratively computing the integrals:
 
-$$ \begin{align*} y_1 = y_0 + \int_{x_0}^{x} f(x', y_0)dx' \\ 
-y_2 = y_0 + \int_{x_0}^{x} f(x', y_1)dx' \\
- y_3 = y_0 + \int_{x_0}^{x} f(x', y_2)dx' \\
-\vdots \\
- y_n = y_0 + \int_{x_0}^{x} f(x', y_{n-1})dx' \\\end{align*} $$ 
+$$ \begin{align*} y_1 &= y_0 + \int_{x_0}^{x} f(x', y_0)dx' \\ 
+y_2 &= y_0 + \int_{x_0}^{x} f(x', y_1)dx' \\
+ y_3 &= y_0 + \int_{x_0}^{x} f(x', y_2)dx' \\
+&\vdots \\
+ y_n &= y_0 + \int_{x_0}^{x} f(x', y_{n-1})dx' \\\end{align*} $$ 
 
-we can approach the real solution. 
+we can approach the real solution. If no initial condition is given, then we would have to "guess" one as a starting value for ($x_0, y_0$).
 
