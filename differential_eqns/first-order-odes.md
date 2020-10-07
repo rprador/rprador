@@ -91,3 +91,19 @@ Integrating, we get the solution:
 $$ \begin{equation} y(x) = \frac{1}{\mu(x)} \left[ \int^{x} \mu(x)q(x)dx + C \right] = \frac{1}{\mu(x)}\int^{x} \mu(x)q(x)dx + \frac{C}{\mu(x)} \,, \end{equation} $$
 
 where $C$ is a constant. To get the constant, we would need to supply an initial condition $(x_0, y_0)$.
+
+Example. $\frac{dI}{dt} + \frac{R}{L}I = \frac{V_0}{L}$, where $I=I(t)$ and $L,R, V_0$ are constants. The integrating factor is
+
+$$ \mu(t) = e^{\int^{t}\frac{R}{L}dt'} = e^{\frac{R}{L}t} \,. $$
+
+Then,
+
+$$ I(t) = \frac{1}{\mu(t)}\int^{t} \mu(t)q(t)dx + \frac{C}{\mu(t)} = e^{-\frac{R}{L}t} \int^{t} e^{\frac{R}{L}t'} \frac{V_0}{L} dt' + Ce^{\frac{R}{L}t} \,. $$
+
+Simplifying,
+
+$$ I(t) = \frac{V_0}{R} + Ce^{\frac{R}{L}t} $$
+
+If we have the initial condition $I(0)=0$, then $C=-V_0/R$, thus
+
+$$ I(t) = \frac{V_0}{R}\left( 1- e^{-Rt/L} \right) $$
