@@ -38,7 +38,7 @@ is known as the **characteristic equation**. Solving this quadratic equation wil
 
 If the characteristic equation yields complex roots, then we have to make sure to use Euler's formula:
 
-$$ e^{i\theta} = cos\theta + i sin\theta \,, $$
+$$ e^{i\theta} = \cos\theta + i \sin\theta \,, $$
 
 to convert our solutions. Therefore, if the roots are of the complex form $r=\lambda \pm i\mu$, then the solutions are given by
 
@@ -60,4 +60,8 @@ suppose we already have a solution, $y_1 (x)$. We can fashion a second solution 
 
 $$ \begin{equation} y_2 (x) = v(x)y_1(x) \,,  \end{equation} $$
 
-where $v(x)$ is an arbitary function. The goal is to use this trial solution, find $v'(x)$, integrate it to get $v(x)$, and fully determine $y_2$. By plugging in $y_2$ into the original ODE, we end up with a first-order ODE, hence the name oif the method **reduction of order**.
+where $v(x)$ is an arbitary function. The goal is to use this trial solution, find $v'(x)$, integrate it to get $v(x)$, and fully determine $y_2$. By plugging in $y_2$ into the original ODE, we end up with a first-order ODE, hence the name oif the method **reduction of order**. The equation for $v(x)$ is given by
+
+$$ \begin{equation} v(x) = \int^{x} \frac{1}{(y_1(s))^{2}} e^{-1\int^{s}p(t)dt}ds \end{equation} $$
+
+Thus, we get the homogenous solution: $y_h = C_1 y_1 (x) + C_2 y_2 (x) $
