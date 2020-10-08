@@ -60,7 +60,7 @@ suppose we already have a solution, $y_1 (x)$. We can fashion a second solution 
 
 $$ \begin{equation} y_2 (x) = v(x)y_1(x) \,,  \end{equation} $$
 
-where $v(x)$ is an arbitary function. The goal is to use this trial solution, find $v'(x)$, integrate it to get $v(x)$, and fully determine $y_2$. By plugging in $y_2$ into the original ODE, we end up with a first-order ODE, hence the name oif the method **reduction of order**. The equation for $v(x)$ is given by
+where $v(x)$ is an arbitary function. The goal is to use this trial solution, find $v'(x)$, integrate it to get $v(x)$, and fully determine $y_2$. By plugging in $y_2$ into the original ODE, we end up with a first-order ODE, hence the name of the method **reduction of order**. The equation for $v(x)$ is given by
 
 $$ \begin{equation} v(x) = \int^{x} \frac{1}{(y_1(s))^{2}} e^{-1\int^{s}p(t)dt}ds \end{equation} $$
 
@@ -76,4 +76,26 @@ the general solution is found by following three steps:
 
 1. Find the **homogenous** (or **complementary**) solution $y_h$ to $$ y'' + p(x)y' + q(x) = 0$$.
 2. Determine the **particular** solution $y_p$ to the inhomogenous ODE using any method (see below).
-3. Take their sum: $$ y = X_1 y_h (x) + C_2 y_p (x)$$. This is the general solution.
+3. Take their sum: $$ y = C_1 y_h (x) + C_2 y_p (x)$$. This is the general solution.
+
+### Particular Solution by the Method of Undermined Coefficients
+
+add soon.
+
+### Particular Solution by the Method of Variation of Parameters
+
+This method is particularly useful as it can be used for any equation that we need the particular solution of. The first step is to find the homogenous solution $y_h = C_1 y_1 (x) + C_2 y_2 (x)$. This can be done using reduction of order as described above. The next step is to assume that the particular solution is given by
+
+$$ \begin{equation} y_p = u_1 (x)y_1 + u_2 (x)y_2 \end{equation} $$
+
+where $u_1$ and $u_2$ are the varied parameters and $y_1 , y_2$ are from the homogenous solution. The varied parameters are given by:
+
+$$ \begin{align} u_1 (x) &= \frac{-g(t)y_2 (t)dt}{W(y1, y2)} \\  u_2 (x) &= \frac{g(t)y_1 (t)dt}{W(y1, y2)} \end{align} $$
+
+where 
+
+$$ W(y_1 , y_2) = y_1 y'_2 - y_1 ' y_2 \,, $$ 
+
+is the Wronskian. Note that if $W(y_1 , y_2) \neq 0 $, then $y_1$ and $y_2$ are linear independent solutions are we can write $y_p$ in the form given above. Finally, we take the sum:
+
+$$ \begin{equation} y = y_p + y_h \end{equation} \,. $$
