@@ -19,4 +19,9 @@ Consider the following ODE:
 
 $$ \begin{equation} ay'' + by' + cy = 0 \end{equation} \,, $$
 
-where $a,b,c$ are constants.
+where $a,b,c$ are constants. The trick here is to assume that the solution takes on the form $y=e^{rx}$, $r$ is a constant. Doing so, (2) becomes
+
+$$  \begin{align*} 0 = ar^{2}e^{rt} + bre^{rt} + ce^{rt} \\ 
+&=e^{rt}(ar^2 + br + c) \\  &= ar^2 + br + c \end{align*} \,.  $$
+
+
