@@ -42,4 +42,22 @@ $$ e^{i\theta} = cos\theta + i sin\theta \,, $$
 
 to convert our solutions. Therefore, if the roots are of the complex form $r=\lambda \pm i\mu$, then the solutions are given by
 
-$$ \begin{align} y_1 &= C_1 e^{\lambda x} cos(\mu x) \\ y_2 &= C_2 e^{\lambda x}sin(\mu x) \end{align} $$
+$$ \begin{align} y_1 &= C_1 e^{\lambda x} \cos(\mu x) \\ y_2 &= C_2 e^{\lambda x}\sin(\mu x) \end{align} $$
+
+### Repeated roots for $r_1 = r_2$
+
+If the characteristic equation yields repeated roots, then (through the method of reduction of order: see next section) the solution is given by 
+
+$$ \begin{equation}  y = C_1e^{r_1 x} + C_2 xe^{r_1 x} \end{equation} $$
+
+## General Second-Order Homogenous ODEs
+
+For the second-order ODE
+
+$$ y'' + p(x)y' + q(x) = 0 \,, $$
+
+suppose we already have a solution, $y_1 (x)$. We can fashion a second solution of the form
+
+$$ \begin{equation} y_2 (x) = v(x)y_1(x) \,,  \end{equation} $$
+
+where $v(x)$ is an arbitary function. The goal is to use this trial solution, find $v'(x)$, integrate it to get $v(x)$, and fully determine $y_2$. By plugging in $y_2$ into the original ODE, we end up with a first-order ODE, hence the name oif the method **reduction of order**.
