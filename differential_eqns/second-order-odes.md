@@ -13,7 +13,7 @@ $$ \begin{equation} y'' + p(x)y' + q(x)y = g(x) \,. \end{equation} $$
 
 Many problems in physics and engineering involve these types of ODEs.
 
-## Homogenous Linear Second-Order ODEs With Constant Coefficients
+## Second-Order Linear Homogenous ODEs With Constant Coefficients
 
 Consider the following ODE:
 
@@ -64,4 +64,16 @@ where $v(x)$ is an arbitary function. The goal is to use this trial solution, fi
 
 $$ \begin{equation} v(x) = \int^{x} \frac{1}{(y_1(s))^{2}} e^{-1\int^{s}p(t)dt}ds \end{equation} $$
 
-Thus, we get the homogenous solution: $y_h = C_1 y_1 (x) + C_2 y_2 (x) $
+Thus, we get the homogenous solution: $y_h = C_1 y_1 (x) + C_2 y_2 (x)$.
+
+## General Second-Order Linear Inhomogenous ODEs
+
+For an inhomogenous second-order linear ODES of the form:
+
+$$ y'' + p(x)y' + q(x) = g(x) \,, $$
+
+the general solution is found by following three steps:
+
+1. Find the **homogenous** (or **complementary**) solution $y_h$ to $$ y'' + p(x)y' + q(x) = 0$$.
+2. Determine the **particular** solution $y_p$ to the inhomogenous ODE using any method (see below).
+3. Take their sum: $$ y = X_1 y_h (x) + C_2 y_p (x)$$. This is the general solution.
