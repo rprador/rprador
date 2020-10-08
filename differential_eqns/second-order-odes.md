@@ -90,7 +90,7 @@ $$ \begin{equation} y_p = u_1 (x)y_1 + u_2 (x)y_2 \end{equation} $$
 
 where $u_1$ and $u_2$ are the varied parameters and $y_1 , y_2$ are from the homogenous solution. The varied parameters are given by:
 
-$$ \begin{align} u_1 (x) &= \frac{-g(t)y_2 (t)dt}{W(y1, y2)} \\  u_2 (x) &= \frac{g(t)y_1 (t)dt}{W(y1, y2)} \end{align} $$
+$$ \begin{align} u_1 (x) &= \int^{x} \frac{-g(t)y_2 (t)dt}{W(y1, y2)} \\  u_2 (x) &= \int^{x} \frac{g(t)y_1 (t)dt}{W(y1, y2)} \end{align} $$
 
 where 
 
@@ -99,3 +99,18 @@ $$ W(y_1 , y_2) = y_1 y'_2 - y_1 ' y_2 \,, $$
 is the Wronskian. Note that if $W(y_1 , y_2) \neq 0 $, then $y_1$ and $y_2$ are linear independent solutions are we can write $y_p$ in the form given above. Finally, we take the sum:
 
 $$ \begin{equation} y = y_p + y_h \end{equation} \,. $$
+
+## Series Solutions To Second-Order Linear Homogenous ODEs
+
+It is sometimes possible to seek a series solution. Suppose we are given:
+
+$$ \begin{equation  P_0(x)y'' + P_1(x)y' + P_2(x)y = 0  \end{equation}} \,, $$
+
+then we can classify the coefficient $P_0$ as either **ordinary** or **singular** using the following classification: At the point $x=a$,
+
+$$ \begin{align*} P_0(a) &\neq 0 \longrightarrow \text{Ordinary point} \\  P_0(a) &= 0 \longrightarrow \text{Singular point} \end{align*} $$
+
+For a **singular** point, we can break it down further as
+
+$$ \begin{align*} & \lim_{x\rightarrow a} \frac{P_1(x)}{P_0(x)}(x-a) = \text{finite} , \quad lim_{x\rightarrow a} \frac{P_2(x)}{P_0(x)}(x-a)^2 = \text{finite} \longrightarrow \text{Regular} & \text{Either limit is not finite} \longrightarrow \text{Irregular} \end{align*} $$
+
