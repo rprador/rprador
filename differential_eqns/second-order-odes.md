@@ -114,3 +114,6 @@ For a **singular** point, we can break it down further as
 
 $$ \begin{align*} & \lim_{x\rightarrow a} \frac{P_1(x)}{P_0(x)}(x-a) = \text{finite} , \quad lim_{x\rightarrow a} \frac{P_2(x)}{P_0(x)}(x-a)^2 = \text{finite} \longrightarrow \text{Regular} & \text{Either limit is not finite} \longrightarrow \text{Irregular} \end{align*} $$
 
+### Method of Frobenius When There Is Regular Singular Point
+
+
