@@ -10,4 +10,4 @@ This page and its subpages cover some topics within differenential equations, bo
 
 ## Partial Differential Equation
 
-[Sturm-Liouville Equations](https://rprador.github.io/rprador/differential_eqns//sturm-liouville.md)
+[Sturm-Liouville Equations](https://rprador.github.io/rprador/differential_eqns//sturm-liouville)
