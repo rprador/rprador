@@ -7,4 +7,4 @@ title: Derivation of the Equivalent One-Body Problem
 
 # Derivation of the Equivalent One-Body Problem
 
-
+[Coordinates](mechanics/figures/CM_coords.PNG)
