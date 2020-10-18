@@ -23,8 +23,12 @@ Here, the kinetic energy $T$ can be split into components of the CM plus the com
 
 $$ T = \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}m_{1}\dot{\textbf{r}}_{1}^{'2} + \frac{1}{2}m_{2}\dot{\textbf{r}}_{2}^{'2} \,, $$
 
-where $\dot{\textbf{r}}\_{1}^{'}$ and $\dot{\textbf{r}}\_{1}^{'}$ are the radial vectors of the masses _relative_ to the CM, not the origin, and are given by
+where $\dot{\textbf{r}}\_{1}^{\'}$ and $\dot{\textbf{r}}\_{1}^{\'}$ are the radial vectors of the masses _relative_ to the CM, not the origin, and are given by
 
-$$ \dot{\textbf{r}}_{1}^{'} = -\frac{m_{2}}{m_{1}+m_{2}}\textbf{r} \quad \dot{\textbf{r}}_{2}^{'} = -\frac{m_{1}}{m_{1}+m_{2}}\textbf{r} \,. $$
+$$ \textbf{r}_{1}^{'} = -\frac{m_{2}}{m_{1}+m_{2}}\textbf{r} \quad \textbf{r}_{2}^{'} = -\frac{m_{1}}{m_{1}+m_{2}}\textbf{r} \,. $$
+
+In terms of $\textbf{r}$, the kinetic energy is
+
+$$ T = \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}m_{1}(\frac{m_{2}}{m_{1}+m_{2}})^{2}\dot{\textbf{r}}^{2} + \frac{1}{2}m_{1}(\frac{m_{1}}{m_{1}+m_{2}})^{2}  \dot{\textbf{r}}^{2} $$
 
 By using $\textbf{R}$ and $\textbf{r}$, the problem will simplify greatly.
