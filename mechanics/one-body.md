@@ -40,3 +40,8 @@ The Lagrangian can be written as
 $$ \begin{equation} L =  \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}\mu\dot{\textbf{r}}^{2} - U(\textbf{r}, \dot{\textbf{r}}, \dots) \,. \end{equation} $$
 
 By using $\textbf{R}$ and $\textbf{r}$, the problem can now be interpreted as one of two fictitious particles of mass $M=m\_1 + m\_2$ moving with the speed of the CM, and another of mass $\mu$ moving with a speed of the relative position $\textbf{r}$. Thus, the problem has been reduced to a one-body problem based around the CM of the system.
+
+# Equations of Motion
+
+We assume that the interaction potential is due to a conservative central force, $V(r)$.
+
