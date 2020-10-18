@@ -39,9 +39,22 @@ The Lagrangian can be written as
 
 $$ \begin{equation} L =  \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}\mu\dot{\textbf{r}}^{2} - U(\textbf{r}, \dot{\textbf{r}}, \dots) \,. \end{equation} $$
 
-By using $\textbf{R}$ and $\textbf{r}$, the problem can now be interpreted as one of two fictitious particles of mass $M=m\_1 + m\_2$ moving with the speed of the CM, and another of mass $\mu$ moving with a speed of the relative position $\textbf{r}$. Thus, the problem has been reduced to a one-body problem based around the CM of the system.
+By using $\textbf{R}$ and $\textbf{r}$, the problem can now be interpreted as one of two fictitious particles of mass $M=m\_1 + m\_2$ moving with the speed of the CM, and another of mass $\mu$ moving with a speed of the relative position $\textbf{r}$. Thus, the problem has been reduced to a one-body problem based around the CM of the system. In deriving the equations of motion, we can now focus on just a single particle Lagrangian.
 
 # Equations of Motion
 
-We assume that the interaction potential is due to a conservative central force, $V(r)$.
+We assume that the interaction potential is due to a conservative central force, $V(r)$, so that the forces is only along $\textbf{r}$. Since the potential only depends on the radial coordinate $r$, the problem is spherically symmetric. Furthermore, the Lagrangian depends on $\textbf{r}, \dot{\textbf{r}}, \dot{\textbf{R}}$ but not on $\textbf{R}$, meaning that $\textbf{R}$ is a cyclic coordinate. Therefore, $m\dot{\textbf{R}}=0$, implying uniform motion of the CM. Through the spherical symmetry of the problem, we know that the total angular momentum of the system is conserved:
 
+$$ \textbf{L} = \textbf{r} \times \textbf{p} = \text{constant} \,. $$
+
+From this, the central force motion is always in a plane.
+
+Moving back to the Lagrangian, in polar coordinates we have for a single particle of mass $m$
+
+$$ L = \frac{1}{2}m(\dot{r}^{2} + r^{2}\dot{\theta}^{2}) - V(r) \,. $$
+
+The $\theta$ coordinate is cyclic, so its canonical momentum $p\_\theta$ is conserved:
+
+$$ p_\theta = \frac{\partial L}{\partial \dot{\theta}} = mr^{2}\dot{\theta} = l = \text{const.}  \,, $$
+
+where $l$ is the constant magnitude of the angular momentum.
