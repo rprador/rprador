@@ -25,10 +25,18 @@ $$ T = \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}m_{1}\dot{\te
 
 where $\dot{\textbf{r}}\_{1}^{\'}$ and $\dot{\textbf{r}}\_{1}^{\'}$ are the radial vectors of the masses _relative_ to the CM, not the origin, and are given by
 
-$$ \textbf{r}_{1}^{'} = -\frac{m_{2}}{m_{1}+m_{2}}\textbf{r} \quad \textbf{r}_{2}^{'} = -\frac{m_{1}}{m_{1}+m_{2}}\textbf{r} \,. $$
+$$ \textbf{r}_{1}^{'} = -\frac{m_{2}}{m_{1}+m_{2}}\textbf{r} , \quad \textbf{r}_{2}^{'} = -\frac{m_{1}}{m_{1}+m_{2}}\textbf{r} \,. $$
 
 In terms of $\textbf{r}$, the kinetic energy is
 
-$$ T = \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}m_{1}(\frac{m_{2}}{m_{1}+m_{2}})^{2}\dot{\textbf{r}}^{2} + \frac{1}{2}m_{1}(\frac{m_{1}}{m_{1}+m_{2}})^{2}  \dot{\textbf{r}}^{2} $$
+$$ \begin{align*} T &= \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}m_{1} \left(\frac{m_{2}}{m_{1}+m_{2}}\right)^{2} \dot{\textbf{r}}^{2} + \frac{1}{2}m_{1} \left(\frac{m_{1}}{m_{1}+m_{2}}\right)^{2}  \dot{\textbf{r}}^{2} \\ &= \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}\frac{m_{1}m_{2}}{m_{1}+m_{2}}\dot{\textbf{r}}^{2} \end{align*} $$
 
-By using $\textbf{R}$ and $\textbf{r}$, the problem will simplify greatly.
+One last thing we can do is introduced the **reduced mass**, defined as
+
+$$ \mu = \frac{m_1 m_2}{m_1 + m_2 \,. }$$
+
+The Lagrangian can be written as
+
+$$ \begin{equation} L =  \frac{1}{2}(m_{1} + m_{2})\dot{\textbf{R}}^{2} + \frac{1}{2}\mu\dot{\textbf{r}}^{2} - U(\textbf{r}, \dot{\textbf{r}}, \dots) \,. \end{equation} $$
+
+By using $\textbf{R}$ and $\textbf{r}$, the problem can now be interpreted as one of two fictitious particles of mass $M=m\_1 + m\_2$ moving with the speed of the CM, and another of mass $\mu$ moving with a speed of the relative position $\textbf{r}$. Thus, the problem has been reduced to a one-body problem based around the CM of the system.
