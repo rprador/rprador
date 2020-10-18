@@ -65,4 +65,4 @@ $$ m\ddot{r} - mr\dot{\theta}^{2} + \frac{\partial V}{\partial r} = 0 \,. $$
 
 Substituting $\dot{\theta}=\frac{l}{mr^{2}}$ from the first equation of motion into the Euler-Lagrange equation for $r$, we get the second equation of motion
 
-$$ \begin{equation m\ddot{r} - \frac{l^{2}}{mr^{3}} = -\frac{\partial V}{\partial r} \end{equation} $$
+$$ \begin{equation} m\ddot{r} - \frac{l^{2}}{mr^{3}} = -\frac{\partial V}{\partial r} \end{equation} $$
