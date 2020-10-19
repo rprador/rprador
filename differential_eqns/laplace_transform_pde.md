@@ -47,9 +47,13 @@ where $H(t-a)$ is the Heaviside step function. $H(t-a)$ is equal to 0 when $t<a$
 
 $$ \mathcal{L}\{ f(at)\}(s) = \frac{1}{a}F(\frac{s}{a}) $$
 
-- _First derivatives_.
+- _First derivative_.
 
 $$ \mathcal{L}\{ \frac{d}{dt}f(t) \}(s) = sF(s) - f(t=0^{+}) $$
+
+- _Second derivative_.
+
+$$ \mathcal{L}\{ \frac{d^{2}}{dt^{2}}f(t) \}(s) = s^{2}F(s)-sf(t=0)-\frac{df}{dt}|_{t=0} $$
 
 - _General derivative_.
 
