@@ -49,15 +49,15 @@ $$ \mathcal{L}\{ f(at)\}(s) = \frac{1}{a}F(\frac{s}{a}) $$
 
 - _First derivative_.
 
-$$ \mathcal{L}\{ \frac{d}{dt}f(t) \}(s) = sF(s) - f(t=0^{+}) $$
+$$ \mathcal{L}\left\{ \frac{d}{dt}f(t) \right\}(s) = sF(s) - f(t=0^{+}) $$
 
 - _Second derivative_.
 
-$$ \mathcal{L}\{ \frac{d^{2}}{dt^{2}}f(t) \}(s) = s^{2}F(s)-sf(t=0)-\frac{df}{dt}|_{t=0} $$
+$$ \mathcal{L}\left\{ \frac{d^{2}}{dt^{2}}f(t) \right\}(s) = s^{2}F(s)-sf(t=0)-\frac{df}{dt}|_{t=0} $$
 
 - _General derivative_.
 
-$$ \mathcal{L}\{ \frac{d^{(n)}}{dt^{(n)}}f(t) \}(s) = s^{n}F(s) - \sum_{i=1}^{n-1}s^{n-i}f(t=0^{+})  $$
+$$ \mathcal{L}\left\{ \frac{d^{(n)}}{dt^{(n)}}f(t) \right\}(s) = s^{n}F(s) - \sum_{i=1}^{n-1}s^{n-i}f(t=0^{+})  $$
 
 ## Use in ODEs
 
@@ -87,9 +87,9 @@ $$ Y(s) = \frac{2}{(s-1)^{4}} $$
 
 Finally, we take the inverse Laplace transform to convert back to $y(t)$. Using the inverse Laplace transform
 
-$$ \mathcal{L}^{-1} \left{ \frac{1}{(s+a)^{n}} \right} = \frac{t^{n-1}e^{-at}}{(n-1)!}, \quad (n=1,2,3,\dots) \,, $$
+$$ \mathcal{L}^{-1} \left\{ \frac{1}{(s+a)^{n}} \right\} = \frac{t^{n-1}e^{-at}}{(n-1)!}, \quad (n=1,2,3,\dots) \,, $$
 
 the solution to the ODE is
 
-$$ \begin{align*} y(t) &= \mathcal{L}^{-1} \{ Y(s) \} \\ &= \mathcal{L}^{-1} \{ \frac{2}{(s-1)^{4}} \} \\ &= \frac{t^{3}e^{t}}{3} \end{align*}$$
+$$ \begin{align*} y(t) &= \mathcal{L}^{-1} \{ Y(s) \} \\ &= \mathcal{L}^{-1} \left\{ \frac{2}{(s-1)^{4}} \right\} \\ &= \frac{t^{3}e^{t}}{3} \end{align*}$$
 
