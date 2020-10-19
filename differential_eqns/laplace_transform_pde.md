@@ -13,10 +13,20 @@ Given a function $f(t)$, the Laplace transform of $f(t)$ is denoted by $F(s) = \
 
 $$ \begin{equation} F(s) = \mathcal{L}\{f(t)\}(s) = \int_{0}^{\infty} e^{-st}f(t)dt \end{equation} \,, $$
 
-where $s$ is a complex variable and $F(s)$ is called the **image function** or **Laplace transform** of $f(t)$. This transformation can also be reversed, in which case we call the **original function** $f(t)$ the **inverse Laplace transform** of $F(s)$, which can be calculated as
+where $s$ is a complex variable (sometimes called the **frequency parameter**) and $F(s)$ is called the **image function** or **Laplace transform** of $f(t)$. A Laplace transform exists if $f(t)$ is piece-wise continuous on every finite interval $0 \leq t \leq T$, $t^{n}|f(t)|$ is bounded near $t=0$ for some $n<1$, and $e^{-s\_{0}t}|f(t)|$ is bounded for a large $t$ for some value of $s_{0}$.
+
+This transformation can also be reversed, in which case we call the **original function** $f(t)$ the **inverse Laplace transform** of $F(s)$, which can be calculated as
 
 $$ \begin{equation} f(t) = \mathcal{L}^{-1}\{F(s)\}(t) = \frac{1}{2\pi i} \lim_{T\rightarrow\infty} \int_{c-iT}^{c+iT} e^{st}F(s)ds \end{equation} \,.$$
 
 This is known as **Mellin's integral**. 
 
 Although we can perform the integration, a Laplace transform table is much more useful when doing problems, such as [this one from NIST](https://dlmf.nist.gov/1.14#T4).
+
+## A Few Properties of the Laplace Transform
+
+- _Linearity (linear operator)_. $\mathcal{L}\{ af(t)+bg(t) \}(s) = aF(s)+bG(s)$
+
+- _Shifting property by frequency_. $\mathcal{L} \{ e^{at}f(t) \}(s) = F(s-a)$, $\mathcal{L}^{-1} \{ F(s-a) \}(t) = e^{at}f(t)$
+
+- _Shifting property by time_. $\mathcal{L} \{ f(t)H(t-a) \}(s) = e^{-as}\mathcal{L}\{ f(t+a) \}(s)$, $\mathcal{L}^{-1} \{ e^{-as}F(s) \}(t) = f(t-a)H(t-a)$, where $H(t)$ is the Heaviside step function.
