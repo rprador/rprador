@@ -13,7 +13,7 @@ Given a function $f(t)$, the Laplace transform of $f(t)$ is denoted by $F(s) = \
 
 $$ \begin{equation} F(s) = \mathcal{L}\{f(t)\}(s) = \int_{0}^{\infty} e^{-st}f(t)dt \end{equation} \,, $$
 
-where $s$ is a complex variable (sometimes called the **frequency parameter**) and $F(s)$ is called the **image function** or **Laplace transform** of $f(t)$. A Laplace transform exists if $f(t)$ is piece-wise continuous on every finite interval $0 \leq t \leq T$, $t^{n}|f(t)|$ is bounded near $t=0$ for some $n<1$, and $e^{-s\_{0}t}|f(t)|$ is bounded for a large $t$ for some value of $s_{0}$.
+where $s$ is a complex variable (sometimes called the **frequency parameter**) and $F(s)$ is called the **image function** or **Laplace transform** of $f(t)$. A Laplace transform exists if $f(t)$ is piece-wise continuous on every finite interval $0 \leq t \leq T$, $t^{n}\|f(t)\|$ is bounded near $t=0$ for some $n<1$, and $e^{-s\_{0}t}\|f(t)\|$ is bounded for a large $t$ for some value of $s_{0}$.
 
 This transformation can also be reversed, in which case we call the **original function** $f(t)$ the **inverse Laplace transform** of $F(s)$, which can be calculated as
 
@@ -29,4 +29,6 @@ Although we can perform the integration, a Laplace transform table is much more 
 
 - _Shifting property by frequency_. $\mathcal{L} \{ e^{at}f(t) \}(s) = F(s-a)$, $\mathcal{L}^{-1} \{ F(s-a) \}(t) = e^{at}f(t)$
 
-- _Shifting property by time_. $\mathcal{L} \{ f(t)H(t-a) \}(s) = e^{-as}\mathcal{L}\{ f(t+a) \}(s)$, $\mathcal{L}^{-1} \{ e^{-as}F(s) \}(t) = f(t-a)H(t-a)$, where $H(t)$ is the Heaviside step function.
+- _Shifting property by time_. $\mathcal{L} \{ f(t)H(t-a) \}(s) = e^{-as}\mathcal{L}\{ f(t+a) \}(s)$, $\mathcal{L}^{-1} \{ e^{-as}F(s) \}(t) = f(t-a)H(t-a)$, where $H(t-a)$ is the Heaviside step function. $H(t-a)$ is equal to 0 when $t<a$ and 1 when $t>a$.
+
+-
