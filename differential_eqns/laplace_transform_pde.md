@@ -25,10 +25,22 @@ Although we can perform the integration, a Laplace transform table is much more 
 
 ## A Few Properties of the Laplace Transform
 
-- _Linearity (linear operator)_. $\mathcal{L}\{ af(t)+bg(t) \}(s) = aF(s)+bG(s)$
+- _Linearity (linear operator)_. 
 
-- _Shifting property by frequency_. $\mathcal{L} \{ e^{at}f(t) \}(s) = F(s-a)$, $\mathcal{L}^{-1} \{ F(s-a) \}(t) = e^{at}f(t)$
+$$ \mathcal{L}\{ af(t)+bg(t) \}(s) = aF(s)+bG(s) $$
 
-- _Shifting property by time_. $\mathcal{L} \{ f(t)H(t-a) \}(s) = e^{-as}\mathcal{L}\{ f(t+a) \}(s)$, $\mathcal{L}^{-1} \{ e^{-as}F(s) \}(t) = f(t-a)H(t-a)$, where $H(t-a)$ is the Heaviside step function. $H(t-a)$ is equal to 0 when $t<a$ and 1 when $t>a$.
+- _Shifting property by frequency_. 
 
--
+$$ \begin{align*}\mathcal{L} \{ e^{at}f(t) \}(s) &= F(s-a) \\ \mathcal{L}^{-1} \{ F(s-a) \}(t) &= e^{at}f(t) \end{align*} $$
+
+- _Shifting property by time_. 
+
+$$ \begin{align*} \mathcal{L} \{ f(t)H(t-a) \}(s) &= e^{-as}\mathcal{L}\{ f(t+a) \}(s) \\ \mathcal{L}^{-1} \{ e^{-as}F(s) \}(t) &= f(t-a)H(t-a) \end{align*} $$
+
+where $H(t-a)$ is the Heaviside step function. $H(t-a)$ is equal to 0 when $t<a$ and 1 when $t>a$.
+
+- _Time scaling_.
+
+$$ \mathcal{L}\{ f(at)\}(s) = \frac{1}{a}F(\frac{s}{a}) $$
+
+hjh
