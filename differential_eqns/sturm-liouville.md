@@ -28,6 +28,23 @@ The following theorems (stated without proof) hold for the regular Sturm-Liouvil
 - All the eigenvalues $\lambda$ are real.
 
 - There exists an infinite number of eigenvalues that are ordered by magnitude:
+
 $$ \lambda_{1} < \lambda_{2} < \dots < \lambda_{n} < \lambda_{n+1} < \dots $$
 
 - For each eigenvalue there is a corresponding eigenfunction $\phi_{n}$ that is unique to within a multiplicative factor and that has $n-1$ zeros on the interval $a<x<b$.
+
+- The eigenfunctions form a complete set, that is, any piecewise smooth function $f(x)$ can be represented by a generalized Fourier series of $\phi_{n}$:
+
+$$ f(x) \approx \sum_{n=1}^{\infty} a_{n}\phi_{n}(x) \,, $$
+
+which converges to $\[f(x^{+} + f(x^{-})\]/2$.
+
+- The eigenfunctions are orthogonal to each other relative to the weight function $w(x)$:
+
+$$ \int_{a}^{b} \phi_{n}(x)\phi_{m}(x)w(x)dx = 0 \quad \text{if } n \neq m $$
+
+- Any eigenvalue can be related to its eigenfunction by the **Rayleigh quotient**:
+
+$$ \lambda = \frac{-p\phi\frac{d\phi}{dx}|_{a}^{b} + \int_{a}^{b} \left[ p \left( \frac{d\phi}{dx} \right)^{2} - q\phi^{2}\right]dx}{\int_{a}^{b}\phi^{2}w(x)dx} \,, $$
+
+where the boundary conditions can be used to simplify this expression.
