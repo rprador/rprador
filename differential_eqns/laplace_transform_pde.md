@@ -59,3 +59,37 @@ $$ \mathcal{L}\{ \frac{d^{2}}{dt^{2}}f(t) \}(s) = s^{2}F(s)-sf(t=0)-\frac{df}{dt
 
 $$ \mathcal{L}\{ \frac{d^{(n)}}{dt^{(n)}}f(t) \}(s) = s^{n}F(s) - \sum_{i=1}^{n-1}s^{n-i}f(t=0^{+})  $$
 
+## Use in ODEs
+
+To see how Laplace transforms are used, consider the following ODE for the function $y=y(t)$:
+
+$$ y'' - 2y' + y = 2te^{t} \,, $$
+
+subject to the boundary conditions $y(0)=y'(0)=0$. Taking the Laplace transform of both sides, we get
+
+$$ \mathcal{L}\{ y'' \} - 2\mathcal{L}\{ y' \} + \mathcal{L}\{ y \} = 2 \mathcal{L}\{ te^{t} \} \,. $
+
+Denoting the image function as $Y=Y(s)$, and using the following transforms:
+
+$$ \begin{align*} \mathcal{L}\{ y'' \} &= s^{2}Y(s)-sy(0) - y'(0) \\ \mathcal{L}\{ y' \} &= sY(s) - y(0) \\ \mathcal{L}\{ te^{-at} \} &= \frac{1}{(s+a)^{2}} \end{align*} \,, $$
+
+we get
+
+$$ s^{2}Y - sy(0) - y'(0) -2(sY - y(0)) + Y = \frac{2}{(s-1)^{2}} \,. $$
+
+Note how important it is to have the boundary conditions! Without them, we cannot move further in the problem. Using $y(0)=y'(0)=0$, the above equation reduces to
+
+$$ s^{2}Y - 2sY + Y = \frac{2}{(s-1)^{2}} \,. $$
+
+Solving for the image function $Y(s)$, 
+
+$$ Y(s) = \frac{2}{(s-1)^{4}} $$
+
+Finally, we take the inverse Laplace transform to convert back to $y(t)$. Using the inverse Laplace transform
+
+$$ \mathcal{L}^{-1} \{ \frac{1}{(s+a)^{n}} = \frac{t^{n-1}e^{-at}}{(n-1)!}, \quad (n=1,2,3,\dots) \,, $$
+
+the solution to the ODE is
+
+$$ \begin{align*} y(t) &= \mathcal{L}^{-1} \{ Y(s) \} \\ &= \mathcal{L}^{-1} \{ \frac{2}{(s-1)^{4}} \} \\ &= \frac{t^{3}e^{t}}{3} \end{align*}$$
+
