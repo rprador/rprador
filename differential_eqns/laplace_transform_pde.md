@@ -29,6 +29,10 @@ Although we can perform the integration, a Laplace transform table is much more 
 
 $$ \mathcal{L}\{ af(t)+bg(t) \}(s) = aF(s)+bG(s) $$
 
+Note: it is implied here that the multiplicative constants $a$ and $b$ can be taken outside the operator,
+
+$$ \mathcal{L}\{ af(t) \} = a \mathcal{L}\{ f(t) \} = aF(s) $$
+
 - _Shifting property by frequency_. 
 
 $$ \begin{align*}\mathcal{L} \{ e^{at}f(t) \}(s) &= F(s-a) \\ \mathcal{L}^{-1} \{ F(s-a) \}(t) &= e^{at}f(t) \end{align*} $$
