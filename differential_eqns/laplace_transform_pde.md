@@ -87,7 +87,7 @@ $$ Y(s) = \frac{2}{(s-1)^{4}} $$
 
 Finally, we take the inverse Laplace transform to convert back to $y(t)$. Using the inverse Laplace transform
 
-$$ \mathcal{L}^{-1} \{ \frac{1}{(s+a)^{n}} = \frac{t^{n-1}e^{-at}}{(n-1)!}, \quad (n=1,2,3,\dots) \,, $$
+$$ \mathcal{L}^{-1} \left{ \frac{1}{(s+a)^{n}} \right} = \frac{t^{n-1}e^{-at}}{(n-1)!}, \quad (n=1,2,3,\dots) \,, $$
 
 the solution to the ODE is
 
