@@ -37,7 +37,9 @@ $$ \lambda_{1} < \lambda_{2} < \dots < \lambda_{n} < \lambda_{n+1} < \dots $$
 
 $$ f(x) \approx \sum_{n=1}^{\infty} a_{n}\phi_{n}(x) \,, $$
 
-which converges to $\[f(x^{+} + f(x^{-})\]/2$.
+which converges to $\[f(x^{+} + f(x^{-})\]/2$. The coefficients $a_{n}$ are found through application of orthogonality of the eigenfunctions:
+
+$$ a_{m} = \frac{\int_{a}^{b}f(x)\phi_{m}(x)w(x)dx}{\int_{a}^{b}\phi_{m}^{2}(x)w(x)dx} $$
 
 - The eigenfunctions are orthogonal to each other relative to the weight function $w(x)$:
 
