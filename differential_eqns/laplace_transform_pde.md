@@ -67,7 +67,7 @@ $$ y'' - 2y' + y = 2te^{t} \,, $$
 
 subject to the boundary conditions $y(0)=y'(0)=0$. Taking the Laplace transform of both sides, we get
 
-$$ \mathcal{L}\{ y'' \} - 2\mathcal{L}\{ y' \} + \mathcal{L}\{ y \} = 2 \mathcal{L}\{ te^{t} \} \,. $
+$$ \mathcal{L}\{ y'' \} - 2\mathcal{L}\{ y' \} + \mathcal{L}\{ y \} = 2 \mathcal{L}\{ te^{t} \} \,. $$
 
 Denoting the image function as $Y=Y(s)$, and using the following transforms:
 
