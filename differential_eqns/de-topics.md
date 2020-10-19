@@ -11,3 +11,5 @@ This page and its subpages cover some topics within differenential equations, bo
 ## Partial Differential Equation
 
 [Sturm-Liouville Equations](https://rprador.github.io/rprador/differential_eqns//sturm-liouville)
+
+[Laplace Transform](https://rprador.github.io/rprador/differential_eqns/laplace_transform_pde.md)
