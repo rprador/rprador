@@ -21,4 +21,13 @@ with the following boundary conditions over the interval $a<x<b$:
 
 $$ \begin{align}  \alpha_1 y(a) + \alpha_2 y'(a) &= 0 \\ \beta_1 y(b) + \beta_2 y'(b) &= 0 \end{align} $$
 
-where $\alpha\_1, \alpha\_2, \beta\_1, \beta\_2$ are constants. In some texts, the coefficient $w(x)$ is called the ***weight function*** and is notated sometimes as $r(x)$.
+where $\alpha\_1, \alpha\_2, \beta\_1, \beta\_2$ are constants. In some texts, the coefficient $w(x)$ is called the ***weight function*** and is notated sometimes as $r(x)$. If the coefficients of (1)-(3) are real and continuous everywhere (including at the end points), and $p>0$ and $w>0$, then we call this a **regular** Sturm-Liouville eigenvalue problem.
+
+The following theorems (stated without proof) hold for the regular Sturm-Liouville eigenvalue problem.
+
+- All the eigenvalues $\lambda$ are real.
+
+- There exists an infinite number of eigenvalues that are ordered by magnitude:
+$$ \lambda_{1} < \lambda_{2} < \dots < \lambda_{n} < \lambda_{n+1} < \dots $$
+
+- For each eigenvalue there is a corresponding eigenfunction $\phi_{n}$ that is unique to within a multiplicative factor and that has $n-1$ zeros on the interval $a<x<b$.
