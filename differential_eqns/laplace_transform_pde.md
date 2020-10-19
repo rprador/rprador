@@ -43,4 +43,11 @@ where $H(t-a)$ is the Heaviside step function. $H(t-a)$ is equal to 0 when $t<a$
 
 $$ \mathcal{L}\{ f(at)\}(s) = \frac{1}{a}F(\frac{s}{a}) $$
 
-hjh
+- _First derivatives_.
+
+$$ \mathcal{L}\{ \frac{d}{dt}f(t) \}(s) = sF(s) - f(t=0^{+}) $$
+
+- _General derivative_.
+
+$$ \mathcal{L}\{ \frac{d^{(n)}}{dt^{(n)}}f(t) \}(s) = s^{n}F(s) - \sum_{i=1}^{n-1}s^{n-i}f(t=0^{+})  $$
+
