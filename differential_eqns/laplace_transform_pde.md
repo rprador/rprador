@@ -113,7 +113,7 @@ $$ \mathcal{L}^{-1} \{ F(s)G(s) \}(t) = g * f = \int_{0}^{t} g(\bar{t})f(t-\bar{
 
 where $g\*f$ is called the **convolution** of $g(t)=\mathcal{L}^{-1} \{ G(s) \} $ and $f(t)=\mathcal{L}^{-1} \{ F(s) \}$. Equivalently, the Laplace transform is given by
 
-$$ \mathcal{L} \{ \int_{0}^{t} g(\bar{t})f(t-\bar{t})d\bar{t}\}(t) = F(s)G(s)  \,. $$
+$$ \mathcal{L} \left\{ \int_{0}^{t} g(\bar{t})f(t-\bar{t})d\bar{t\right\}\}(t) = F(s)G(s)  \,. $$
 
 It should be noted that the order of the convolution does not matter: $g\*f = f\*g$.
 
