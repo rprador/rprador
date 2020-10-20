@@ -84,9 +84,16 @@ The method of undetermined coefficients relies on noting that the inhomogeneous 
 
 $$ y'' + p(x) y' + q(x)y = g(x) \,, $$
 
-the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing possibilities for $y$ given $g(x)$.
+the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing possibilities for $y$ given $g(x)$, where $P\_n = a\_n x^{n} + a\_{n-1}x^{n-1} + \dots + a\_{0}$ is an $n$-th degree polynomial and $p\_n = A\_n x^{n} + A\_{n-1}x^{n-1} + \dots + A\_{0}$ is also a polynomial. 
 
-$$ \begin{tabular}{c c} g_{i}(x) & y_{i}(x) \\ 1 & 1 \end{tabular} $$
+| $g\_i(x)$ | $y\_i(x)$ |
+| --------- | --------- |
+| $P\_n$ | $x^{s}p\_n$ |
+| $P\_n e^{\alpha t}$ | $x^{s}p\_n e^{\alpha t}$ |
+| $P\_n e^{\alpha t}\sin(\beta t)$ | $x^{s}p\_n e^{\alpha t} \cos(\beta t)$ |
+| $P\_n e^{\alpha t}\cos(\beta t)$ | $x^{s}p\_n e^{\alpha t} \sin(\beta t)$ |
+
+Note: $s=0,1,2$ is the smallest nonnegative integer that will ensure that no term in $y\_i$ is a solution to the corresponding homogenous equation. 
 
 ### Particular Solution by the Method of Variation of Parameters
 
