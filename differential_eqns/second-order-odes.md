@@ -32,7 +32,7 @@ The end result:
 
 $$ \begin{equation} 0=ar^2 br + c \end{equation} \,, $$
 
-is known as the **characteristic equation**. Solving this quadratic equation will give the values for $r_1$ and $r_2$. Based on these roots, different methods exists to obtain
+is known as the **characteristic equation**. Solving this quadratic equation will give the values for $r_1$ and $r_2$. Based on these roots, different methods exists to obtain the general solution.
 
 ### Complex roots for $r_1, r_2$
 
