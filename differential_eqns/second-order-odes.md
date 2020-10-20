@@ -88,10 +88,14 @@ the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing p
 
 | $g\_i(x)$ | $y\_i(x)$ |
 | --------- | --------- |
+| $ae^{\alpha x}$ | $Ae^{\alpha x}$ |
+| $a\cos(\beta x)$ | $A\cos(\beta x) + B\sin(\beta x)$|
+| $a\sin(\beta x)$ | $A\cos(\beta x) + B\sin(\beta x)$|
+| $a\cos(\beta x) + b\cos(\beta x)$ | $A\cos(\beta x) + B\sin(\beta x)$| 
 | $P\_n$ | $x^{s}p\_n$ |
 | $P\_n e^{\alpha t}$ | $x^{s}p\_n e^{\alpha t}$ |
-| $P\_n e^{\alpha t}\sin(\beta t)$ | $x^{s}p\_n e^{\alpha t} \cos(\beta t)$ |
-| $P\_n e^{\alpha t}\cos(\beta t)$ | $x^{s}p\_n e^{\alpha t} \sin(\beta t)$ |
+| $P\_n e^{\alpha t}\sin(\beta t)$ | $x^{s} (p\_n e^{\alpha t} \cos(\beta t) + p\_m e^{\alpha t} \sin(\beta t))$ |
+| $P\_n e^{\alpha t}\cos(\beta t)$ | $x^{s} (p\_n e^{\alpha t} \cos(\beta t) + p\_m e^{\alpha t} \sin(\beta t))$ |
 
 Note: $s=0,1,2$ is the smallest nonnegative integer that will ensure that no term in $y\_i$ is a solution to the corresponding homogenous equation. 
 
