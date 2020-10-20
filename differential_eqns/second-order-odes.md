@@ -82,7 +82,7 @@ the general solution is found by following three steps:
 
 The method of undetermined coefficients relies on noting that the inhomogeneous part of an ODE has an intuitive solution. In essence, it is an "educated guessing" method that uses commonly-seen solutions. For the ODE
 
-$$ y'' + p(x) y' + q(x)y = g(x) \,, $$
+$$ y'' + p(x) y' + q(x)y = g(x) = g_{1}(x) + g_{2}(x) + \dots \,, $$
 
 the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing possibilities for $y$ given $g(x)$, where $P\_n = a\_n x^{n} + a\_{n-1}x^{n-1} + \dots + a\_{0}$ is an $n$-th degree polynomial and $p\_n = A\_n x^{n} + A\_{n-1}x^{n-1} + \dots + A\_{0}$ is also a polynomial. 
 
