@@ -101,7 +101,7 @@ $$ \frac{q(s)}{p(s)} = \frac{c_1}{s-s_1} + \frac{c_2}{s-s_2} + \dots + \frac{c_n
 
 where $c\_i$ are coefficients to be determined and the roots of $p(s)$ are called **simple poles** of $q/p$. Normally, as would have been taught in a calculus course or before, the way to get the coefficients is to multiply both sides of the expression above by the $(s-s\_i)$, and choose a value for $s\_i$ such that all the other terms except for one go to zero. Afterwards, a comparison of coefficients or algebra is done. However, a much quicker way is to use a limit instead:
 
-$$ c_i = \lim_{s\rightarrows_i} \frac{(s-s_i)q(s)}{p(s)} \,. $$
+$$ c_i = \lim_{s\rightarrow s_i} \frac{(s-s_i)q(s)}{p(s)} \,. $$
 
 By taking this limit, all terms except for $c\_i$ will vanish and the result of the limit will determine the coefficient. To get all of the coefficients, we simply apply this limit for all of the simple poles of $q/p$.
 
@@ -109,6 +109,6 @@ By taking this limit, all terms except for $c\_i$ will vanish and the result of 
 
 The convolution theorem is used to obtain the inverse Laplace transform of a product of functions. Stated:
 
-$$ \mathcal{L}^{-1} \{ F(s)G(s) \}(t) = g * f = \int_{0}^{t} g(\overbar{t})f(t-\overbar{t})d\overbar{t} \,, $$
+$$ \mathcal{L}^{-1} \{ F(s)G(s) \}(t) = g * f = \int_{0}^{t} g(\bar{t})f(t-\bar{t})d\bar{t} \,, $$
 
 where $g\*f$ is called the **convolution** of $g(t)=\mathcal{L}^{-1} \{ G(s) \} $ and $f(t)=\mathcal{L}^{-1} \{ F(s) \}$.
