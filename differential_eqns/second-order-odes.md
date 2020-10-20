@@ -86,10 +86,7 @@ $$ y'' + p(x) y' + q(x)y = g(x) \,, $$
 
 the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing possibilities for $y$ given $g(x)$.
 
-$$ \begin{tabular}{c c} 
-g_{i}(x) & y_{i}(x) \\
-1 & 1
-\end{tabular} $$
+$$ \begin{tabular}{c c} g_{i}(x) & y_{i}(x) \\ 1 & 1 \end{tabular} $$
 
 ### Particular Solution by the Method of Variation of Parameters
 
