@@ -78,9 +78,18 @@ the general solution is found by following three steps:
 2. Determine the **particular** solution $y_p$ to the inhomogenous ODE using any method (see below).
 3. Take their sum: $$ y = C_1 y_h (x) + C_2 y_p (x)$$. This is the general solution.
 
-### Particular Solution by the Method of Undermined Coefficients
+### Particular Solution by the Method of Undetermined Coefficients
 
-add soon.
+The method of undetermined coefficients relies on noting that the inhomogeneous part of an ODE has an intuitive solution. In essence, it is an "educated guessing" method that uses commonly-seen solutions. For the ODE
+
+$$ y'' + p(x) y' + q(x)y = g(x) \,, $$
+
+the solution $y(x)$ can be speculated through $g(x)$. Below is a table showing possibilities for $y$ given $g(x)$.
+
+$$ \begin{tabular}{c c} 
+g_{i}(x) & y_{i}(x) \\
+1 & 1
+\end{tabular} $$
 
 ### Particular Solution by the Method of Variation of Parameters
 
