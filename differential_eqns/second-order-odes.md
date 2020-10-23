@@ -30,7 +30,7 @@ $$  \begin{align*} 0 &= ar^{2}e^{rt} + bre^{rt} + ce^{rt} \\
 
 The end result:
 
-$$ \begin{equation} 0=ar^2 br + c \end{equation} \,, $$
+$$ \begin{equation} 0=ar^2 + br + c \end{equation} \,, $$
 
 is known as the **characteristic equation**. Solving this quadratic equation will give the values for $r_1$ and $r_2$. Based on these roots, different methods exists to obtain the general solution.
 
@@ -54,7 +54,7 @@ $$ \begin{equation}  y = C_1e^{r_1 x} + C_2 xe^{r_1 x} \end{equation} $$
 
 For the second-order ODE
 
-$$ y'' + p(x)y' + q(x) = 0 \,, $$
+$$ y'' + p(x)y' + q(x)y = 0 \,, $$
 
 suppose we already have a solution, $y_1 (x)$. We can fashion a second solution of the form
 
