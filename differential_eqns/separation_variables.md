@@ -11,6 +11,10 @@ Separation of variables is one of the most useful methods to try at first when s
 
 $$ u(x,t) = X(x)T(t) ,. $$
 
-For the linear PDes solved with this method, we can employ two addition theorems:
+For the linear PDes solved with this method, we can employ two addition theorems.
 
-$$ \begin{theorem} Given a linear, homogenous PDE, if $u_j$ (where $j=1,\dots, n$) are solutions to the same linear PDE. \end{theorem} $$
+**Theorem 1**. Given a linear, homogenous PDE, if $u_j$ (where $j=1,\dots, n$) are solutions to the same linear PDE, then another solution is given by any linear combination of these individual solutions:
+
+$$ u = \sum_{j=1}^{n} c_{j}u_{j} \,, $$
+
+where $c_j$ are constant coefficients. The solution $u$ also satisfies the (linear+homogenous) boundary conditions and initial conditions that $u_j$ do.
