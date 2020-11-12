@@ -88,3 +88,5 @@ with boundary conditions $V(0,t)=0 \rightarrow X(0)=0$ and $V(L,t)=0 \rightarrow
 $$ T' + k\lambda^2 T = 0 \,, $$
 
 with initial condition left arbitrary (original gives no new information).
+
+We can now solve these two ODEs. For $X$ we have  
