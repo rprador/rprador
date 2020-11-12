@@ -10,6 +10,8 @@ This page and its subpages cover some topics within differenential equations, bo
 
 ## Partial Differential Equation
 
-[Sturm-Liouville Equations](https://rprador.github.io/rprador/differential_eqns//sturm-liouville)
+[Separation of Variables](https://rprador.github.io/rprador/differential_eqns/separation_variables)
+
+[Sturm-Liouville Equations](https://rprador.github.io/rprador/differential_eqns/sturm-liouville)
 
 [Laplace Transform](https://rprador.github.io/rprador/differential_eqns/laplace_transform_pde)
