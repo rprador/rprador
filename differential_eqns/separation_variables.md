@@ -53,7 +53,7 @@ $$ \frac{\partial V}{\partial t} = k\left( \frac{\partial^2 V}{\partial x^2} + \
 
 The steady state problem is thus given by
 
-$$ \begin{align*} 0 &= k\frac{d^2 \psi}{d x^2} \\ \psi(0)&=U_0 \\ \psi(L)&=U_L \end{align*} \,. $$
+$$ \begin{align*} 0 &= k\frac{d^2 \psi}{d x^2} \\ \psi(0)&=U_0 \\ \psi(L)&=U_L \end{align*} $$
 
 The general solution is 
 
@@ -62,3 +62,29 @@ $$ \psi(x) = Ax + B \,, $$
 which, after applying the boundary conditions, becomes
 
 $$ \psi(x) = U_0 + \frac{U_L - U_0}{L}x $$
+
+Going back to the original PDE, we know from the steady state problem that $\psi(x)$ vanishes at its second derivative. Hence,
+
+$$ \frac{\partial V}{\partial t} = k \frac{\partial^2 V}{\partial x^2} $$
+
+The transient boundary conditions come from the original ones and using the split solution, but now in terms of $V$: $V(x,t) = U(x,t) - \psi(x)$. Hence,
+
+$$ \begin{align*} V(0,t) &= U(0,t) - \psi(0) = U_0 - U_0 = 0 \\ V(L,t) &= U(L,t) - \psi(L) = U_L - U_L = 0 \end{align*} $$
+
+So we have $V(0,t)=0$ and $V(L,t)=0$ as our boundary conditions for the transient solution. The initial condition is derived similarly,
+
+$$ V(x,0) = U(x,0) - \psi(x) = f(x) - U_0 - \frac{U_L - U_0}{L} \,. $$
+
+What remains now is to simplify the transient problem using separation of variables: $V(x,t) = X(x)T(t)$. Applying this to the transient PDE,
+
+$$ XT' = kTX'' \longrightarrow \frac{X''}{X} = \frac{T'}{kT} = \alpha $$
+
+In this case, a physically acceptable problem comes from having $\alpha$ be negative. Hence, $\alpha = -\lambda^2$, leading to
+
+$$ X'' + \lambda^2 X = 0 \,, $$
+
+with boundary conditions $V(0,t)=0 \rightarrow X(0)=0$ and $V(L,t)=0 \rightarrow X(L)=0$, and
+
+$$ T' + k\lambda^2 T = 0 \,, $$
+
+with initial condition left arbitrary (original gives no new information).
