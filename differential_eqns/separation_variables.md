@@ -43,3 +43,22 @@ The above theorem states that a solution can be found from a linear combination 
 
 $$ \begin{align*} \frac{\partial U}{\partial t} &= k \frac{\partial^2 U}{\partial x^2}, \quad 0<x<L,\quad t>0 \\ U(0, t) &= U_0, \quad t>0 \\ U(L, t)&=U_L, \quad t>0 \\ U(x,0) &= f(x),\quad 0<x<L   \end{align*} $$
 
+The boundary conditions are nonhomogenous, so we can try to split up the problem into a homogenous and nonhomogenous parts:
+
+$$ U(x,t) = V(x,t) + \psi(x) \,, $$
+
+where $V(x,t)$ is the transient solution that depends on time and $\psi(x)$ is the steady state solution that depends only on $x$. Substituting this split solution into the PDE,
+
+$$ \frac{\partial V}{\partial t} = k\left( \frac{\partial^2 V}{\partial x^2} + \frac{d^2 \psi}{d x^2} \right) $$
+
+The steady state problem is thus given by
+
+$$ \begin{align*} 0 &= k\frac{d^2 \psi}{d x^2} \\ \psi(0)&=U_0 \\ \psi(L)&=U_L \end{align*} \,. $$
+
+The general solution is 
+
+$$ \psi(x) = Ax + B \,, $$
+
+which, after applying the boundary conditions, becomes
+
+$$ \psi(x) = U_0 + \frac{U_L - U_0}{L}x $$
