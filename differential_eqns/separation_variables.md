@@ -33,4 +33,11 @@ $$ \frac{X''}{X} = \frac{T'}{cT} = \alpha \,, $$
 
 which leads to two separate ODEs that can be solved
 
-$ X'' - \alpha X = 0 $ and $T' - \alpha cT = 0$.
+$$ X'' - \alpha X = 0  \quad \text{and} \quad T' - \alpha cT = 0  \,. $$
+
+The solution will depend on whether $\alpha$ is positive, negative, or zero, as well as on the boundary and initial conditions. When a physical argument cannot be made to determine $\alpha$, the safest bet is to go through all three cases and see which on satisfies the conditions.
+
+## Nonhomogenous Problems
+
+The above theorem states that a solution can be found from a linear combination of individual solutions for linear, homogenous conditions. However, what do we do if the problem is inherently nonhomogenous?
+
