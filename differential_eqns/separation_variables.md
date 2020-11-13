@@ -101,3 +101,12 @@ Thus,
 
 $$ X(x) = A \sin\left(\frac{n\pi}{L}x\right) $$
 
+For $T$, we have a 1st-order linear ODE that happens to be a separable equation. Thus, the general solution is (keeping mind our result for $\lambda$) 
+
+$$ T(t) = Ce^{-n^2 \pi^2 kt/L^2} \,. $$
+
+The complete transient solution is therefore
+
+$$ V(x,t) = be^{-n^2 \pi^2 kt/L^2}\sin\left(\frac{n\pi}{L}x $$
+
+where we combined the constants $b=BC$.
