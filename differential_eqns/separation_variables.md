@@ -115,8 +115,18 @@ $$ V_{n}(x,t) = be^{-n^2 \pi^2 kt/L^2}\sin\left(\frac{n\pi}{L}x $$
 
 where we combined the constants $b=BC$. Invoking theorem 1 gives the complete transient solution
 
-$$ V(x,t) = \sum_{n=1}^{\infty} be^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right)  $$
+$$ V(x,t) = \sum_{n=1}^{\infty} b_n e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right)  $$
 
 Note that the superposition is done so that the initial condition can be satisfied. Using the initial condition,
 
 $$ V(x,0) = f(x) - U_0 - \frac{U_L - U_0}{L} = \sum_{n=1}^{\infty} b \sin\left(\frac{n\pi}{L}x\right) $$
+
+Here, we recognized this as a Fourier sine series. Thus, we are able to get the coefficients as
+
+$$ b_n = \frac{2}{L} \int_{0}^{L}\left( f(x) - U_0 - \frac{U_L - U_0}{L} \right) \sin\left(\frac{n\pi}{L}x\right) dx $$
+
+The solution to the heat conduction problem is, finally,
+
+$$ U(x,t) = \sum_{n=1}^{\infty} b_n e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right) + U_0 + \frac{U_L - U_0}{L}x $$
+
+where we combine the steady state and transient solutions together.
