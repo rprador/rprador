@@ -89,4 +89,15 @@ $$ T' + k\lambda^2 T = 0 \,, $$
 
 with initial condition left arbitrary (original gives no new information).
 
-We can now solve these two ODEs. For $X$ we have  
+We can now solve these two ODEs. For $X$ we have a linear 2nd-order ODE. The characteristic equation yields a complex solution ($r = 0 \pm i\lambda$), so the general solution is given by
+
+$$ X(x) = A\sin(\lambda x) + B\cos(\lambda x) \,. $$
+
+Using the boundary conditions lead to
+
+$$ \begin{align*} X(0) &= 0 \longrightarrow B=0 \\ X(L) &= 0 \longrightarrow \lambda = \frac{n\pi}{L} (n=1,2,\dots)  \end{align*} $$
+
+Thus,
+
+$$ X(x) = A \sin\left(\frac{n\pi}{L}x\right) $$
+
