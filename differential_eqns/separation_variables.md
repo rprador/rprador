@@ -17,7 +17,7 @@ For the linear PDes solved with this method, we can employ a useful theorem.
 
 $$ u = \sum_{j=1}^{n} c_{j}u_{j} \,, $$
 
-where $c_j$ are constant coefficients. The solution $u$ also satisfies the (linear+homogenous) boundary conditions and initial conditions that $u_j$ do.
+where $c_j$ are constant coefficients. The solution $u$ also satisfies the (linear+homogenous) boundary conditions and initial conditions that $u_j$ do. Known as the superposition principle.
 
 Suppose we are given a simple yet common PDE to solve
 
@@ -39,9 +39,13 @@ The solution will depend on whether $\alpha$ is positive, negative, or zero, as 
 
 ## Nonhomogenous Problems
 
-The above theorem states that a solution can be found from a linear combination of individual solutions for linear, homogenous conditions. However, what do we do if the problem is inherently nonhomogenous? In similar thought to separation of variables, we can split the problem into separate parts. Suppose we are dealing with a heat conduction problem through a rod
+The above theorem states that a solution can be found from a linear combination of individual solutions for linear, homogenous conditions. However, what do we do if the problem is inherently nonhomogenous? 
 
-$$ \begin{align*} \frac{\partial U}{\partial t} &= k \frac{\partial^2 U}{\partial x^2}, \quad 0<x<L,\quad t>0 \\ U(0, t) &= U_0, \quad t>0 \\ U(L, t)&=U_L, \quad t>0 \\ U(x,0) &= f(x),\quad 0<x<L   \end{align*} $$
+### Method of Splitting
+
+In similar thought to separation of variables, we can split the problem into separate parts. Suppose we are dealing with a heat conduction problem through a rod
+
+$$ \begin{align*} \frac{\partial U}{\partial t} &= k \frac{\partial^2 U}{\partial x^2}, \quad 0<x<L,\quad t>0 \\ U(0, t) &= U_0, \quad t>0 \\ U(L, t)&=U_L, \quad t>0 \\ U(x,0) &= f(x),\quad 0<x<L  \end{align*} $$
 
 The boundary conditions are nonhomogenous, so we can try to split up the problem into a homogenous and nonhomogenous parts:
 
@@ -105,8 +109,14 @@ For $T$, we have a 1st-order linear ODE that happens to be a separable equation.
 
 $$ T(t) = Ce^{-n^2 \pi^2 kt/L^2} \,. $$
 
-The complete transient solution is therefore
+The transient solution(s) is therefore
 
-$$ V(x,t) = be^{-n^2 \pi^2 kt/L^2}\sin\left(\frac{n\pi}{L}x $$
+$$ V_{n}(x,t) = be^{-n^2 \pi^2 kt/L^2}\sin\left(\frac{n\pi}{L}x $$
 
-where we combined the constants $b=BC$.
+where we combined the constants $b=BC$. Invoking theorem 1 gives the complete transient solution
+
+$$ V(x,t) = \sum_{n=1}^{\infty} be^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right)  $$
+
+Note that the superposition is done so that the initial condition can be satisfied. Using the initial condition,
+
+$$ V(x,0) = f(x) - U_0 - \frac{U_L - U_0}{L} = \sum_{n=1}^{\infty} b \sin\left(\frac{n\pi}{L}x\right) $$
