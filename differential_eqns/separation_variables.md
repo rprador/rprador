@@ -181,3 +181,6 @@ Using the superposition principle to satisfy the initial condition, we have
 
 $$ y(x,t) = \sum_{n=1}^{\infty} y_n(x,t) = \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) $$
 
+We now swap to a time-dependent coefficient to achieve the eigenfunction expansion:
+
+$$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrightarrow \sum_{n=1}^{\infty}d_n\sin(\frac{n\pi}{L}x)$$
