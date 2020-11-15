@@ -183,4 +183,8 @@ $$ y(x,t) = \sum_{n=1}^{\infty} y_n(x,t) = \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi
 
 We now swap to a time-dependent coefficient to achieve the eigenfunction expansion:
 
-$$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrightarrow \sum_{n=1}^{\infty}d_n\sin(\frac{n\pi}{L}x)$$
+$$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrightarrow \sum_{n=1}^{\infty}d_n(t) \sin(\frac{n\pi}{L}x)$$
+
+To see if this eigenfunction expansion works, substitute back into the PDE:
+
+$$ \sum_{n=1}^{\infty} d''_n(t) \sin(\frac{n\pi}{L}x) = c^2 \sum_{n=1}^{\infty}-\frac{n^2 \pi^2}{L^2}d_n(t) \sin(\frac{n\pi}{L}x) + \frac{e^{-t}}{\rho} $$
