@@ -143,7 +143,7 @@ $$ \sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n(t) X_n(x) $$
 
 where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions. This expression for the solution will be called the **eigenfunction expansion**.
 
-3) Substitue the eigenfunction expansion into the original PDE. 
+3) Substitute the eigenfunction expansion into the original PDE. 
 
 4) Obtain and solve the resulting ODEs for $d_n(t)$.
 
@@ -151,13 +151,13 @@ where $T(t)$ is the time-dependent solution from separation of variables and $d_
 
 To understand this process, let's look to an example. Consider the one-dimensional vibration problem of a taut string with a forcing function $F(x,t)=e^{-t}$:
 
-$$ \begin{align*} \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\partial x^2} + \frac{e^{-t}}{\rho}, \quad 0<x<L, \quad t>0 \\ y(0, t) &= 0, \quad t>0 \\ y(L,t) &= 0, \quad t>0 \\ y(x,0) &= f(x), \quad 0<x<L \\ \frac{\partial y}{\partial t} &= 0, \quad 0<x<L \end{align*} $$
+$$ \begin{align*} \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\partial x^2} + \frac{e^{-t}}{\rho}, \quad 0<x<L, \quad t>0 \\ y(0, t) &= 0, \quad t>0 \\ y(L,t) &= 0, \quad t>0 \\ y(x,0) &= f(x), \quad 0<x<L \\ \left.\frac{\partial y}{\partial t}\right|_{t=0} &= 0, \quad 0<x<L \end{align*} $$
 
 The homogenous PDE is given by
 
 $$ \frac{\partial^2 y}{\partial t^2} = c^2 \frac{\partial^2 y}{\partial x^2} \,. $$
 
-Using separation of variables, we are lead to the following ODEs:
+Using separation of variables, we are led to the following ODEs:
 
 $$ \begin{align*}  X'' + \lambda^2 X &= 0 \\ X(0) &= 0 \\ X(L) &= 0 \end{align*} $$
 
@@ -217,4 +217,4 @@ with the coefficient given by the initial condition $y(x,0)=f(x)$ as:
 
 $$ b_n = \frac{2}{L}\int_{0}^{L}f(x)\sin(\frac{n\pi}{L}x) - \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \,. $$
 
-
+This result is ugly but the method itself is simple.
