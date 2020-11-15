@@ -175,4 +175,9 @@ $$ \begin{align*} X(0)=0 &\rightarrow B=0 \\ X(L) = 0 &\rightarrow \lambda = \fr
 
 Hence, the individual solutions are given by
 
-$$ y_n(x,t) = X_n(x)T(t) = A\sin(\lambda x)D\cos(c\lambda_n t) = C\cos(\frac{cn\pi}{L}t)\sin(\frac{n\pi}{L}x) $$
+$$ y_n(x,t) = X_n(x)T(t) = C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \,. $$
+
+Using the superposition principle to satisfy the initial condition, we have
+
+$$ y(x,t) = \sum_{n=1}^{\infty} y_n(x,t) = \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) $$
+
