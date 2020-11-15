@@ -131,7 +131,7 @@ $$ U(x,t) = \sum_{n=1}^{\infty} b_n e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{
 
 where we combine the steady state and transient solutions together.
 
-### Method of Eigenvalue Expansion for Time-dependent Inhomogeneities
+### Variation of Constants for Time-dependent Inhomogeneities
 
 This method works similar to variation of parameters for ODEs. Here is a quick summary of how this method is performed:
 
@@ -187,4 +187,12 @@ $$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrighta
 
 To see if this eigenfunction expansion works, substitute back into the PDE:
 
-$$ \sum_{n=1}^{\infty} d''_n(t) \sin(\frac{n\pi}{L}x) = c^2 \sum_{n=1}^{\infty}-\frac{n^2 \pi^2}{L^2}d_n(t) \sin(\frac{n\pi}{L}x) + \frac{e^{-t}}{\rho} $$
+$$ \sum_{n=1}^{\infty} d''_n(t) \sin(\frac{n\pi}{L}x) = -c^2 \sum_{n=1}^{\infty}\frac{n^2 \pi^2}{L^2}d_n(t) \sin(\frac{n\pi}{L}x) + \frac{e^{-t}}{\rho} $$
+
+One additional modification is now made. We expand $e^{-t}/\rho$ as a Fourier sine series
+
+$$ \frac{e^{-t}}{\rho} = \sum_{n=1}^{\infty} F_n \sin(\frac{n\pi}{L}x), \quad F_n(t) = \frac{2}{L}\int_{0}^{L}\frac{e^{-t}}{\rho}\sin(\frac{n\pi}{L}x)=\frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} $$
+
+Substituting this into the expanded PDE and reducing yields
+
+$$ \sum_{n=1}^{\infty} \left[ d''_n(t) + \frac{n^2 \pi^2 c^2}{L^2}d_n(t) - \frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} \right] \sin(\frac{n\pi}{L}x) = 0 $$
