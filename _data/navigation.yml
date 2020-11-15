@@ -1,5 +1,9 @@
 # Site navigation links
 - title: Home
   url: /
-- title: Go back...
-  url: /../
+- title: Classical Mechanics
+  url: https://rprador.github.io/rprador/mechanics/mechanics-topics
+- title: Fluid Mechanics
+  url: https://rprador.github.io/rprador/fluid-mech/fm-topics
+- title: Differential Equations
+  url: https://rprador.github.io/rprador/differential_eqns/de-topics
