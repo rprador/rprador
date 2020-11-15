@@ -139,7 +139,7 @@ This method works similar to variation of parameters for ODEs. Here is a quick s
 
 2) Convert the homogenous solution to one that varies on a time-depedent coefficient:
 
-$$ \sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n X_n(x) $$
+$$ \sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n(t) X_n(x) $$
 
 where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions. This expression for the solution will be called the **eigenfunction expansion**.
 
@@ -149,6 +149,18 @@ where $T(t)$ is the time-dependent solution from separation of variables and $d_
 
 5) Use the initial conditions on the PDE to find any integration constants from the previous step.
 
-To understand this process, let's look to an example.
+To understand this process, let's look to an example. Consider the one-dimensional vibration problem of a taut string with a forcing function $F(x,t)=e^{-t}$:
 
+$$ \begin{align*} \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\partial x^2} + \frac{e^{-t}}{\rho}, \quad 0<x<L, \quad t>0 \\ y(0, t) &= 0, \quad t>0 \\ y(L,t) &= 0, \quad t>0 \\ y(x,0) &= f(x), \quad 0<x<L \\ \frac{\partial y}{\partial t} &= 0, \quad 0<x<L \end{align*} $$
 
+The homogenous PDE is given by
+
+$$ \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\partial x^2} \,. $$
+
+Using separation of variables, we are lead to the following ODEs:
+
+$$ \begin{align*}  X'' + \lambda^2 X &= 0 \\ X(0) &= 0 \\ X(L) &= 0 \end{align*} $$
+
+where $\alpha = -\lambda^2$ are the eigenvalues chosen to obtain oscillatory solutions; and,
+
+$$ T'' + \lambda^2 c^2 T = 0  $$
