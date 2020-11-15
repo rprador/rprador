@@ -171,7 +171,7 @@ $$ \begin{align*} X(x) &= A\sin(\lambda x) + B\cos(\lambda x) \\ T(t) &= C\sin(c
 
 Applying the boundary conditions,
 
-$$ \begin{align*} X(0)=0 &\rightarrow B=0 \end{align*} \\ X(L) = 0 &\rightarrow \lambda = \frac{n\pi}{L} \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} = 0 &\rightarrow C=0 \end{align*} $$
+$$ \begin{align*} X(0)=0 &\rightarrow B=0 \\ X(L) = 0 &\rightarrow \lambda = \frac{n\pi}{L} \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} = 0 &\rightarrow C=0 \end{align*} $$
 
 Hence, the individual solutions are given by
 
