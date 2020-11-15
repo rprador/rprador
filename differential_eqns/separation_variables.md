@@ -41,7 +41,7 @@ The solution will depend on whether $\alpha$ is positive, negative, or zero, as 
 
 The above theorem states that a solution can be found from a linear combination of individual solutions for linear, homogenous conditions. However, what do we do if the problem is inherently nonhomogenous? 
 
-### Method of Splitting
+### Method of Splitting for time-independent inhomogenieties
 
 In similar thought to separation of variables, we can split the problem into separate parts. Suppose we are dealing with a heat conduction problem through a rod
 
