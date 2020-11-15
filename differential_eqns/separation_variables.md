@@ -155,7 +155,7 @@ $$ \begin{align*} \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\
 
 The homogenous PDE is given by
 
-$$ \frac{\partial^2 y}{\partial t^2} &= c^2 \frac{\partial^2 y}{\partial x^2} \,. $$
+$$ \frac{\partial^2 y}{\partial t^2} = c^2 \frac{\partial^2 y}{\partial x^2} \,. $$
 
 Using separation of variables, we are lead to the following ODEs:
 
