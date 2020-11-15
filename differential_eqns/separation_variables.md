@@ -111,7 +111,7 @@ $$ T(t) = Ce^{-n^2 \pi^2 kt/L^2} \,. $$
 
 The transient solution(s) is therefore
 
-$$ V_{n}(x,t) = be^{-n^2 \pi^2 kt/L^2}\sin\left(\frac{n\pi}{L}x $$
+$$ V_{n} (x,t) = b e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right) $$
 
 where we combined the constants $b=BC$. Invoking theorem 1 gives the complete transient solution
 
