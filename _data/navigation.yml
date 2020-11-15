@@ -2,4 +2,4 @@
 - title: Home
   url: /
 - title: Go back...
-  url: HREF="javascript:javascript:history.go(-1)"
+  url: ../
