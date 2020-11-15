@@ -211,7 +211,7 @@ $$ a_n = \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \,. $$
 
 Finally, the solution looks like
 
-$$ y(x,t) = \sum_{n=1}^{\infty} \left[ b_n \cos(\frac{n\pi c}{L}t) + \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \left( n\pice^{-t} + L\sin(\frac{n\pi c}{L}t) \right) sin(\frac{n\pi}{L}x) \right]  \,, $$
+$$ y(x,t) = \sum_{n=1}^{\infty} \left[ b_n \cos(\frac{n\pi c}{L}t) + \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \left( n\pi ce^{-t} + L\sin(\frac{n\pi c}{L}t) \right) sin(\frac{n\pi}{L}x) \right]  \,, $$
 
 with the coefficient given by the initial condition $y(x,0)=f(x)$ as:
 
