@@ -163,8 +163,12 @@ $$ \begin{align*}  X'' + \lambda^2 X &= 0 \\ X(0) &= 0 \\ X(L) &= 0 \end{align*}
 
 where $\alpha = -\lambda^2$ are the eigenvalues chosen to obtain oscillatory solutions; and,
 
-$$ T'' + \lambda^2 c^2 T = 0  $$
+$$ \begin{align*} T'' + \lambda^2 c^2 T &= 0  \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} \end{align*}$$
 
 The general solutions to both ODEs are
 
 $$ \begin{align*} X(x) &= A\sin(\lambda x) + B\cos(\lambda x) \\ T(t) &= C\sin(c\lambda t) + D\cos(c\lambda t)  \end{align*} $$
+
+Applying the boundary conditions,
+
+$$ \begin{align*} X(0)=0 &\rightarrow B=0 \end{align*} \\ X(L) = 0 &\rightarrow \lambda = \frac{n\pi}{L} \\ \frac{\partial T}{ \partial t}  $$
