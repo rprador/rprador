@@ -41,7 +41,7 @@ The solution will depend on whether $\alpha$ is positive, negative, or zero, as 
 
 The above theorem states that a solution can be found from a linear combination of individual solutions for linear, homogenous conditions. However, what do we do if the problem is inherently nonhomogenous? 
 
-### Method of Splitting for time-independent inhomogenieties
+### Method of Splitting for Time-independent Inhomogenieties
 
 In similar thought to separation of variables, we can split the problem into separate parts. Suppose we are dealing with a heat conduction problem through a rod
 
@@ -130,3 +130,19 @@ The solution to the heat conduction problem is, finally,
 $$ U(x,t) = \sum_{n=1}^{\infty} b_n e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{L}x\right) + U_0 + \frac{U_L - U_0}{L}x $$
 
 where we combine the steady state and transient solutions together.
+
+## Method of Eigenvalue Expansion for Time-dependent Inhomogeneities
+
+This method works similar to variation of parameters for ODEs. Here is a quick summary of how this method is performed:
+
+1) Solve the PDE as if it were homogenous, with homogenous boundary conditions and initial conditions. Let $X_n(x)$ be the eigenfunction determined from this step.
+
+2) Convert the homogenous solution to one that varies on a time-depedent coefficient:
+
+$$ sum_n C_n X_n(x) T(t) \ringrightarrow \sum_n d_n X_n(x) $$
+
+where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions.
+
+3) a
+
+
