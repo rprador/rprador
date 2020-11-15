@@ -131,7 +131,7 @@ $$ U(x,t) = \sum_{n=1}^{\infty} b_n e^{-n^2 \pi^2 kt/L^2} \sin\left(\frac{n\pi}{
 
 where we combine the steady state and transient solutions together.
 
-## Method of Eigenvalue Expansion for Time-dependent Inhomogeneities
+### Method of Eigenvalue Expansion for Time-dependent Inhomogeneities
 
 This method works similar to variation of parameters for ODEs. Here is a quick summary of how this method is performed:
 
@@ -141,8 +141,14 @@ This method works similar to variation of parameters for ODEs. Here is a quick s
 
 $$ \sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n X_n(x) $$
 
-where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions.
+where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions. This expression for the solution will be called the **eigenfunction expansion**.
 
-3) a
+3) Substitue the eigenfunction expansion into the original PDE. 
+
+4) Obtain and solve the resulting ODEs for $d_n(t)$.
+
+5) Use the initial conditions on the PDE to find any integration constants from the previous step.
+
+To understand this process, let's look to an example.
 
 
