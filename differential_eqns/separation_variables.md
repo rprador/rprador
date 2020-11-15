@@ -163,7 +163,7 @@ $$ \begin{align*}  X'' + \lambda^2 X &= 0 \\ X(0) &= 0 \\ X(L) &= 0 \end{align*}
 
 where $\alpha = -\lambda^2$ are the eigenvalues chosen to obtain oscillatory solutions; and,
 
-$$ \begin{align*} T'' + \lambda^2 c^2 T &= 0  \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} \end{align*}$$
+$$ \begin{align*} T'' + \lambda^2 c^2 T &= 0  \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} = 0 \end{align*}$$
 
 The general solutions to both ODEs are
 
@@ -171,4 +171,8 @@ $$ \begin{align*} X(x) &= A\sin(\lambda x) + B\cos(\lambda x) \\ T(t) &= C\sin(c
 
 Applying the boundary conditions,
 
-$$ \begin{align*} X(0)=0 &\rightarrow B=0 \end{align*} \\ X(L) = 0 &\rightarrow \lambda = \frac{n\pi}{L} \\ \frac{\partial T}{ \partial t}  $$
+$$ \begin{align*} X(0)=0 &\rightarrow B=0 \end{align*} \\ X(L) = 0 &\rightarrow \lambda = \frac{n\pi}{L} \\ \left.\frac{\partial T}{\partial t}\right|_{t=0} = 0 &\rightarrow C=0 \end{align*} $$
+
+Hence, the individual solutions are given by
+
+$$ y_n(x,t) = X_n(x)T(t) = A\sin(\lambda x)D\cos(c\lambda_n t) = C\cos(\frac{cn\pi}{L}t)\sin(\frac{n\pi}{L}x) $$
