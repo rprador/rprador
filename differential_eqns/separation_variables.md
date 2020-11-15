@@ -179,20 +179,42 @@ $$ y_n(x,t) = X_n(x)T(t) = C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \,. $$
 
 Using the superposition principle to satisfy the initial condition, we have
 
-$$ y(x,t) = \sum_{n=1}^{\infty} y_n(x,t) = \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) $$
+$$ y(x,t) = \sum_{n=1}^{\infty} y_n(x,t) = \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \,. $$
 
 We now swap to a time-dependent coefficient to achieve the eigenfunction expansion:
 
-$$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrightarrow \sum_{n=1}^{\infty}d_n(t) \sin(\frac{n\pi}{L}x)$$
+$$ \sum_{n=1}^{\infty}C_n\sin(\frac{n\pi}{L}x)\cos(\frac{cn\pi}{L}t) \longrightarrow \sum_{n=1}^{\infty}d_n(t) \sin(\frac{n\pi}{L}x) \,. $$
 
 To see if this eigenfunction expansion works, substitute back into the PDE:
 
-$$ \sum_{n=1}^{\infty} d''_n(t) \sin(\frac{n\pi}{L}x) = -c^2 \sum_{n=1}^{\infty}\frac{n^2 \pi^2}{L^2}d_n(t) \sin(\frac{n\pi}{L}x) + \frac{e^{-t}}{\rho} $$
+$$ \sum_{n=1}^{\infty} d''_n(t) \sin(\frac{n\pi}{L}x) = -c^2 \sum_{n=1}^{\infty}\frac{n^2 \pi^2}{L^2}d_n(t) \sin(\frac{n\pi}{L}x) + \frac{e^{-t}}{\rho} \,. $$
 
 One additional modification is now made. We expand $e^{-t}/\rho$ as a Fourier sine series
 
-$$ \frac{e^{-t}}{\rho} = \sum_{n=1}^{\infty} F_n \sin(\frac{n\pi}{L}x), \quad F_n(t) = \frac{2}{L}\int_{0}^{L}\frac{e^{-t}}{\rho}\sin(\frac{n\pi}{L}x)=\frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} $$
+$$ \frac{e^{-t}}{\rho} = \sum_{n=1}^{\infty} F_n \sin(\frac{n\pi}{L}x), \quad F_n(t) = \frac{2}{L}\int_{0}^{L}\frac{e^{-t}}{\rho}\sin(\frac{n\pi}{L}x)=\frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} \,. $$
 
 Substituting this into the expanded PDE and reducing yields
 
-$$ \sum_{n=1}^{\infty} \left[ d''_n(t) + \frac{n^2 \pi^2 c^2}{L^2}d_n(t) - \frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} \right] \sin(\frac{n\pi}{L}x) = 0 $$
+$$ \sum_{n=1}^{\infty} \left[ d''_n(t) + \frac{n^2 \pi^2 c^2}{L^2}d_n(t) - \frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} \right] \sin(\frac{n\pi}{L}x) = 0 \,. $$
+
+It follows that the coefficients must vanish as
+
+$$d''_n(t) + \frac{n^2 \pi^2 c^2}{L^2}d_n(t) - \frac{2e^{-t}(1+(-1)^{n+1})}{n\pi\rho} = 0 \,. $$
+
+This is a second-order nonhomogenous linear ODE for $d_n(t)$. The general solution is by variation of parameters:
+
+$$ d_n(t) = b_n \cos(\frac{n\pi c}{L}t) + a_n \sin(\frac{n\pi c}{L}t) + \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)}e^{-t} \,. $$
+
+The initial condition $d'\_n(0)=0$ gives
+
+$$ a_n = \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \,. $$
+
+Finally, the solution looks like
+
+$$ y(x,t) = \sum_{n=1}^{\infty} \left[ b_n \cos(\frac{n\pi c}{L}t) + \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \left( n\pice^{-t} + L\sin(\frac{n\pi c}{L}t) \right) sin(\frac{n\pi}{L}x) \right]  \,, $$
+
+with the coefficient given by the initial condition $y(x,0)=f(x)$ as:
+
+$$ b_n = \frac{2}{L}\int_{0}^{L}f(x)\sin(\frac{n\pi}{L}x) - \frac{2L^2 (1+(-1)^{n+1})}{n\pi\rho (L^2 + n^2 \pi^2 c^2)} \,. $$
+
+
