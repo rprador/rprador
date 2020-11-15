@@ -139,7 +139,7 @@ This method works similar to variation of parameters for ODEs. Here is a quick s
 
 2) Convert the homogenous solution to one that varies on a time-depedent coefficient:
 
-$$ sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n X_n(x) $$
+$$ \sum_n C_n X_n(x) T(t) \longrightarrow \sum_n d_n X_n(x) $$
 
 where $T(t)$ is the time-dependent solution from separation of variables and $d_n(t)$ are the now time-dependent coefficients of the eigenfunctions.
 
