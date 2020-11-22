@@ -70,13 +70,13 @@ Thus, we get the homogenous solution: $y_h = C_1 y_1 (x) + C_2 y_2 (x)$.
 
 For an inhomogenous second-order linear ODES of the form:
 
-$$ y'' + p(x)y' + q(x) = g(x) \,, $$
+$$ y'' + p(x)y' + q(x)y = g(x) \,, $$
 
 the general solution is found by following three steps:
 
 1. Find the **homogenous** (or **complementary**) solution $y_h$ to $$ y'' + p(x)y' + q(x) = 0$$.
 2. Determine the **particular** solution $y_p$ to the inhomogenous ODE using any method (see below).
-3. Take their sum: $$ y = C_1 y_h (x) + C_2 y_p (x)$$. This is the general solution.
+3. Take their sum: $y = C_1 y_h (x) + C_2 y_p (x)$. This is the general solution.
 
 ### Particular Solution by the Method of Undetermined Coefficients
 
