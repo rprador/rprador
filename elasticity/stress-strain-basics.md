@@ -50,3 +50,9 @@ For a thin plate loaded by forces applied at the boundary so that the force comp
 ### Plane Strain
 
 This simplification can be made for bodies that have very large dimensions in one (or more) directions. If a body is very long, say, in the $z$-direction, then loads applied perpendicular to the $z$-axis do not vary the elemental lengths within the body. In other words, the state of the strains on the cross section in the perpendicular directions ($xy$ in this example) are constant and the only nonzero strains, i.e. strains in $z$ ($\epsilon_{z}$, $\gamma_{xz}$, $\gamma_{yz}$) are all zero.
+
+## Cauchy Stress Tensor
+
+It is convenient to think of the state of stresses on a body to be fully defined by the nine components of the **Cauchy stress tensor**:
+
+$$ \mathbf{\sigma} \equiv \begin{pmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13} \\ \sigma_{21} & \sigma_{22} & \sigma_{23} \\ \sigma_{31} & \sigma_{32} & \sigma_{33} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{x} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_{y} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_{z} \end{pmatrix} $$
