@@ -9,6 +9,8 @@ title: Basics of Stress and Strain
 
 Short reference page dedicated to definitions and notation (I frequently forget them).
 
+## Definitions
+
 For a given force $F$ acting over a cross-sectional area $A$ of a prismatic bar, the average **stress** is defined as the ratio
 
 $$ \begin{equation} \mathbf{\sigma} = \lim_{\delta A\rightarrow 0} \frac{\delta F}{\delta A} \approx \frac{\mathbf{F}}{A} \end{equation} $$
@@ -38,3 +40,13 @@ where $\nu$ is called **Poisson's ratio**. This can be considered Hooke's law in
 $$ \epsilon_{ij} = \frac{1}{E} \left[\sigma_{ij}(1+\nu) - \nu \delta-{ij}\sum_{k}\sigma_{kk}\right] $$
 
 where $\delta_{ij}$ is the Kronecker delta.
+
+## Special Cases for Simplification
+
+### Plane Stress
+
+For a thin plate loaded by forces applied at the boundary so that the force components are all in-plane to the face of the plate, the out-of-plane stress components can be taken to be zero on both the face of the plate and within the body of the plate. In other words, loads applied parallel to the $xy$-plane create nonzero stresses only in the $xy$-plane. Therefore, $\sigma_z$, $\tau_{zz}$, and $\tau_{yz}$ are zero. 
+
+### Plane Strain
+
+This simplification can be made for bodies that have very large dimensions in one (or more) directions. If a body is very long, say, in the $z$-direction, then loads applied perpendicular to the $z$-axis do not vary the elemental lengths within the body. In other words, the state of the strains on the cross section in the perpendicular directions ($xy$ in this example) are constant and the only nonzero strains, i.e. strains in $z$ ($\epsilon_{z}$, $\gamma_{xz}$, $\gamma_{yz}$) are all zero.
