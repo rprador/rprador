@@ -63,7 +63,7 @@ The tensor and its components are in units of stress (N/m$^2$). The directions o
 
 Accompanying the stress tensor is the **traction vector** $T$, which can be thought of as just the sum of the stresses on a cross section. Alternatively, the traction vector is a particular row of the stress tensor:
 
-$$ \mathbf{T} = \mathbf{\sigma} \cdot \mathbf{n} = \begin{pmatrix} T_{x} \\ T_{y} \\ T_{z} \end{pmatrix} $$
+$$ \mathbf{T} = \boldsymbol{\sigma} \cdot \mathbf{n} = \begin{pmatrix} T_{x} \\ T_{y} \\ T_{z} \end{pmatrix} $$
 
 $$ T_{i} = \sum_{i}\sigma_{ij}n_{j} $$
 
