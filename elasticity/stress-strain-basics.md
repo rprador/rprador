@@ -23,7 +23,7 @@ Suppose a given body is deformed by a small amount, with displacement coordinate
 
 $$ \epsilon_{x} = \frac{\partial u}{\partial x} \quad \epsilon_{y} = \frac{\partial v}{\partial y} \quad \epsilon_{x} = \frac{\partial u}{\partial x} \quad \text{(Elongations)}$$
 
-$$ \gamma_{xy} = \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}, \quad \gamma_{xz} = \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x}, \quad \gamma_{yz} = \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} \quad \text{Shearing Strains}$$
+$$ \gamma_{xy} = \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}, \quad \gamma_{xz} = \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x}, \quad \gamma_{yz} = \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} \quad \text{(Shearing Strains)}$$
 
 The stresses and strains are related through the empirically established Hooke's law:
 
@@ -31,6 +31,10 @@ $$ \begin{equation} \sigma = E\epsilon \end{equation} $$
 
 where $E$ is the modulus of elasticty or *Young's modulus*. Materials that obey Hooke's law are known as *linearly elastic* materials. The strains are also related to the stresses more generally by the **method of superposition**, which states that for a uniformly applied set of stresses on the body
 
-$$ \begin{align} \epsilon_{x} &= \frac{1}{E} [\sigma_{x} - \nu( \sigma_{y} + \sigma_{x})] \\ \epsilon_{y} &= \frac{1}{E} [\sigma_{y} - \nu( \sigma_{x} + \sigma_{z})] \\ \epsilon_{z} &= \frac{1}{E} [\sigma_{z} - \nu( \sigma_{x} + \sigma_{xy})] \end{align} $$
+$$ \begin{align} \epsilon_{x} &= \frac{1}{E} [\sigma_{x} - \nu( \sigma_{y} + \sigma_{x})] \\ \epsilon_{y} &= \frac{1}{E} [\sigma_{y} - \nu( \sigma_{x} + \sigma_{z})] \\ \epsilon_{z} &= \frac{1}{E} [\sigma_{z} - \nu( \sigma_{x} + \sigma_{y})] \end{align} $$
 
-where $\nu$ is called **Poisson's ratio**.
+where $\nu$ is called **Poisson's ratio**. This can be considered Hooke's law in three dimensions. A compact way to write this is 
+
+$$ \epsilon_{ij} = \frac{1}{E} \left[\sigma_{ij}(1+\nu) - \nu \delta-{ij}\sum_{k}\sigma_{kk}\right] $$
+
+where $\delta_{ij}$ is the Kronecker delta.
