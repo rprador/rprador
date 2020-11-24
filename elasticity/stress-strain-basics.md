@@ -59,9 +59,9 @@ $$ \mathbf{\sigma} \equiv \begin{pmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13
 
 The tensor and its components are in units of stress (N/m$^2$). The directions of the component $\sigma_{ij}$ is defined as $i$ being the direction perpendicular to the plane that the stress is acting in and $j$ is the specific directional component within the plane. For example, $\sigma_{xy}$ is the stress component in the $y$ direction created by the plane perpedicular to the $x$ axis.
 
-Accompanying the stress tensor is the **traction vector** $T$, which can be thought of as just the sum of the stress in one direction. Alternatively, the traction vector is a particular row of the stress tensor:
+Accompanying the stress tensor is the **traction vector** $T$, which can be thought of as just the sum of the stresses in one direction. Alternatively, the traction vector is a particular row of the stress tensor:
 
-$$ \mathbf{T} = \mathbf{\sigma} \cdot \mathbf{n} $$
+$$ \mathbf{T} = \mathbf{\sigma} \cdot \mathbf{n} = \begin{pmatrix} T_{x} \\ T_{y} \\ T_{z} \end{pmatrix} $$
 
 $$ T_{i} = \sum_{i}\sigma_{ij}n_{j} $$
 
