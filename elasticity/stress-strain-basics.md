@@ -21,7 +21,7 @@ $$ \tau_{xy} = \tau{yx}, \quad  \tau_{zx}=\tau_{xz}, \quad \tau_{zy}=\tau_{yz} \
 
 Suppose a given body is deformed by a small amount, with displacement coordinates $(u, v, w)$ along the $x, y, z$ axes. This deformation causes changes in the length of the body and displaces it at an angle different from the initial set up. The ratio of the displacement to the axes coordinates are called the **unit elongation** along the axes and the change in the angle is called the **shearing strain**. The following notation is frequently used:
 
-$$ \epsilon_{x} = \frac{\partial u}{\partial x} \quad \epsilon_{y} = \frac{\partial v}{\partial y} \quad \epsilon_{x} = \frac{\partial u}{\partial x} $$
+$$ \epsilon_{x} = \frac{\partial u}{\partial x} \quad \epsilon_{y} = \frac{\partial v}{\partial y} \quad \epsilon_{x} = \frac{\partial u}{\partial x} \quad \text{(Elongations)}$$
 
 $$ \gamma_{xy} = \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}, \quad \gamma_{xz} = \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x}, \quad \gamma_{yz} = \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} \quad \text{Shearing Strains}$$
 
@@ -29,4 +29,8 @@ The stresses and strains are related through the empirically established Hooke's
 
 $$ \begin{equation} \sigma = E\epsilon \end{equation} $$
 
-where $E$ is the modulus of elasticty or *Young's modulus*. 
+where $E$ is the modulus of elasticty or *Young's modulus*. Materials that obey Hooke's law are known as *linearly elastic* materials. The strains are also related to the stresses more generally by the **method of superposition**, which states that for a uniformly applied set of stresses on the body
+
+$$ \begin{align} \epsilon_{x} &= \frac{1}{E} [\sigma_{x} - \nu( \sigma_{y} + \sigma_{x})] \\ \epsilon_{y} &= \frac{1}{E} [\sigma_{y} - \nu( \sigma_{x} + \sigma_{z})] \\ \epsilon_{z} &= \frac{1}{E} [\sigma_{z} - \nu( \sigma_{x} + \sigma_{xy})] \end{align} $$
+
+where $\nu$ is called **Poisson's ratio**.
