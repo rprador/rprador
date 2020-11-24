@@ -13,7 +13,7 @@ Short reference page dedicated to definitions and notation (I frequently forget 
 
 For a given force $F$ acting over a cross-sectional area $A$ of a prismatic bar, the average **stress** is defined as the ratio
 
-$$ \begin{equation} \mathbf{\sigma} = \lim_{\delta A\rightarrow 0} \frac{\delta F}{\delta A} \approx \frac{\mathbf{F}}{A} \end{equation} $$
+$$ \begin{equation} \boldsymbol{\sigma} = \lim_{\delta A\rightarrow 0} \frac{\delta F}{\delta A} \approx \frac{\mathbf{F}}{A} \end{equation} $$
 
 Since the stress depends on an applied force to the body, it is a vector quantity. The stress components that are perpendicular to the area $A$ are called **normal stresses** and the stress components acting in the plane of $A$ are called **shearing stresses**. The following notation is frequently used:
 
@@ -55,9 +55,9 @@ This simplification can be made for bodies that have very large dimensions in on
 
 It is convenient to think of the state of stresses on a body to be fully defined by the nine components of the **Cauchy stress tensor**:
 
-$$ \mathbf{\sigma} \equiv \begin{pmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13} \\ \sigma_{21} & \sigma_{22} & \sigma_{23} \\ \sigma_{31} & \sigma_{32} & \sigma_{33} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{x} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_{y} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_{z} \end{pmatrix} $$
+$$ \boldsymbol{\sigma} \equiv \begin{pmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13} \\ \sigma_{21} & \sigma_{22} & \sigma_{23} \\ \sigma_{31} & \sigma_{32} & \sigma_{33} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{x} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_{y} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_{z} \end{pmatrix} $$
 
-$$ \mathbf{\sigma} = \sum_{i=1}^{3}\sum_{j=1}^{3} \sigma_{ij} \hat{e}_{i}\hat{e}_{j} = \sigma_{11}\hat{e}_{1}\hat{e}_{1} + \sigma_{12}\hat{e}_{1}\hat{e}_{2} + \sigma_{13}\hat{e}_{1}\hat{e}_{3} + \dots $$
+$$ \boldsymbol{\sigma} = \sum_{i=1}^{3}\sum_{j=1}^{3} \sigma_{ij} \hat{e}_{i}\hat{e}_{j} = \sigma_{11}\hat{e}_{1}\hat{e}_{1} + \sigma_{12}\hat{e}_{1}\hat{e}_{2} + \sigma_{13}\hat{e}_{1}\hat{e}_{3} + \dots $$
 
 The tensor and its components are in units of stress (N/m$^2$). The directions of the component $\sigma_{ij}$ is defined as $i$ being the direction perpendicular to the plane that the stress is acting in and $j$ is the specific directional component within the plane. For example, $\sigma_{xy}$ is the stress component in the $y$ direction created by the plane perpedicular to the $x$ axis.
 
