@@ -56,3 +56,5 @@ This simplification can be made for bodies that have very large dimensions in on
 It is convenient to think of the state of stresses on a body to be fully defined by the nine components of the **Cauchy stress tensor**:
 
 $$ \mathbf{\sigma} \equiv \begin{pmatrix} \sigma_{11} & \sigma_{12} & \sigma_{13} \\ \sigma_{21} & \sigma_{22} & \sigma_{23} \\ \sigma_{31} & \sigma_{32} & \sigma_{33} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \equiv \begin{pmatrix} \sigma_{x} & \tau_{xy} & \tau_{xz} \\ \tau_{yx} & \sigma_{y} & \tau_{yz} \\ \tau_{zx} & \tau_{zy} & \sigma_{z} \end{pmatrix} $$
+
+The tensor and its components are in units of stress (N/m$^2$). The directions of the component $\sigma_{ij}$ is defined as $i$ being the direction perpendicular to the plane that the stress is acting in and $j$ is the specific directional component within the plane. For example, $\sigma_{xy}$ is the stress component in the $y$ direction created by the plane perpedicular to the $x$ axis.
