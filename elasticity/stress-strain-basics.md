@@ -15,5 +15,5 @@ $$ \begin{equation} \mathbf{\sigma} = \lim_{\delta A\rightarrow 0} \frac{\delta 
 
 Since the stress depends on an applied force to the body, it is a vector quantity. The stress components that are perpendicular to the area $A$ are called **normal stresses** and the stress components acting in the plane of $A$ are called **shearing stresses**. The following notation is frequently used:
 
-$$ \begin{align*}  \sigma_{x} \quad & \sigma_y \quad & \sigma_z \quad & \text{(Normal Stresses)} \\ \tau_{xy}=\tau{yx} \quad & \tau_{zx}=\tau{xz} \quad & \tau_{zy}=\tau{yz} \quad & \text{(Shear Stresses)} \end{align*} $$
+$$ \begin{align*}  \sigma_{x} &, \quad \sigma_y &, \quad \sigma_z \quad & \text{(Normal Stresses)} \\ \tau_{xy}=\tau{yx} &, \quad \tau_{zx}=\tau{xz} &, \quad \tau_{zy}=\tau{yz} &, \quad & \text{(Shear Stresses)} \end{align*} $$
 
