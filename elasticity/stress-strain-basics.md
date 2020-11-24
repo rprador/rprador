@@ -19,5 +19,5 @@ $$ \begin{align*}  \sigma_{x} &, \sigma_y &, \sigma_z & \text{(Normal Stresses)}
 
 Suppose a given body is deformed by a small amount, with displacement coordinates $(u, v, w)$ along the $x, y, z$ axes. This deformation causes changes in the length of the body and displaces it at an angle different from the initial set up. The ratio of the displacement to the axes coordinates are called the **unit elongation** along the axes and the change in the angle is called the **shearing strain**. The following notation is frequently used:
 
-$$ \begin{align*} \epsilon_{x} &= \frac{\partial u}{\partial x} \quad \epsilon_{y} &= \frac{\partial v}{\partial y} \quad \epsilon_{x} &= \frac{\partial u}{\partial x} \end{align} $$
+$$ \begin{align*} \epsilon_{x} &= \frac{\partial u}{\partial x} \quad \epsilon_{y} &= \frac{\partial v}{\partial y} \quad \epsilon_{x} &= \frac{\partial u}{\partial x} \\ \gamma_{xy} &= \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}, \quad \gamma_{xz} &= \frac{\partial u}{\partial z} + \frac{\partial w}{\partial x}, \quad \gamma_{yz} &= \frac{\partial v}{\partial z} + \frac{\partial w}{\partial y} \end{align} $$
 
