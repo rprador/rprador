@@ -63,6 +63,22 @@ Accompanying the stress tensor is the **traction vector** $T$, which can be thou
 
 $$ \mathbf{T} = \mathbf{\sigma} \cdot \mathbf{n} $$
 
-$$ T_{i} = \simga_{ij}n_{j} $$
+$$ T_{i} = \sum_{i}\sigma_{ij}n_{j} $$
+
+$$ T_{x} = \sigma_{xx}\hat{n}_{x} + \sigma_{xy}\hat{n}_{y} + \sigma_{xz}\hat{n}_{z} $$ 
+
+$$ T_{y} = \sigma_{yx}\hat{n}_{x} + \sigma_{yy}\hat{n}_{y} + \sigma_{yz}\hat{n}_{z} $$ 
+
+$$ T_{z} = \sigma_{zx}\hat{n}_{x} + \sigma_{zy}\hat{n}_{y} + \sigma_{zz}\hat{n}_{z} $$ 
 
 where $\mathbf{\sigma}$ is the stress tensor and $\mathbf{n}$ is a unit vector that can be either $\hat{n}\_{x}$, $\hat{n}\_{y}$, or $\hat{n}\_{z}$.
+
+Physically, the traction vector is similar to a stress but it measures the (internal) force vector acting on a cross section divided by that cross section's area.
+
+Individual stress components can be extracted from the stress tensor and traction vectors as follows:
+
+$$ \hat{n}_{y} \cdot T_{y} = \hat{n}_{y} (\sigma_{yx}\hat{n}_{x} + \sigma_{yy}\hat{n}_{y} + \sigma_{yz}\hat{n}_{z}) = \sigma_{yy} $$
+
+or
+
+$$ \hat{n}_{y} \cdot \mathbf{\sigma} \cdot \hat{n}_{y} = \hat{n}_{y} \cdot \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \cdot \hat{n}_{y} = \sigma_{yy} $$
