@@ -59,7 +59,7 @@ $$ p_\theta = \frac{\partial L}{\partial \dot{\theta}} = mr^{2}\dot{\theta} = l 
 
 or
 
-$$ \begin{equation} \boxed{mr^{2}\dot{\theta} = l} \end{equation} $$
+$$ \begin{equation} mr^{2}\dot{\theta} = l \end{equation} $$
 
 where $l$ is the constant magnitude of the angular momentum. This gives us the first equation of motion in $\theta$.
 
