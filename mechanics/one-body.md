@@ -85,19 +85,23 @@ $$ m\ddot{r} \dot{r} = -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r}
 
 The left-hand side can be rewritten as 
 
-$$ m\ddot{r} \dot{r} = \frac{d}{dr}\left( \frac{1}{2}m\dot{r}^2 \right) \,, $$
+$$ m\ddot{r} \dot{r} = \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 \right) \,, $$
 
 while the right-hand side can also be rewritten by reversing the chain rule
 
-$$ -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} = \frac{dg}{dr} \frac{dr}{dt} \leftrightarrow \frac{dg}{dt}, \quad g=V + \frac{l^2}{2mr^2} \,, $$
+$$ \frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} = \frac{dg}{dr} \frac{dr}{dt} \leftrightarrow \frac{dg}{dt}, \quad g=V + \frac{l^2}{2mr^2} \,, $$
 
 or,
 
-$$ -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} = \frac{d}{dt}\left( V + \frac{l^2}{2mr^2} \right) $$
+$$ \frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} = \frac{d}{dt}\left( V + \frac{l^2}{2mr^2} \right) $$
 
 Hence, we have
 
-$$ \frac{d}{dr}\left( \frac{1}{2}m\dot{r}^2 \right) = \frac{d}{dt}\left( V + \frac{l^2}{2mr^2} \right) $$
+$$ \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 \right) = -\frac{d}{dt}\left( V + \frac{l^2}{2mr^2} \right) \,, $$
+
+which, after rearranging, becomes
+
+$$ \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 + V + \frac{l^2}{2mr^2} \right)  $$
 
 
 ### Solving for $r, \theta, t$
