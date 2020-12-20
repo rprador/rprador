@@ -71,6 +71,30 @@ Substituting $\dot{\theta}=\frac{l}{mr^{2}}$ from the first equation of motion i
 
 $$ \begin{equation} m\ddot{r} - \frac{l^{2}}{mr^{3}} = -\frac{\partial V}{\partial r} \end{equation} $$
 
+   Another equation can be found if we apply conservation of energy to the problem. Denoting the constant energy of the system as $E$, we have
+
+$$ \begin{equation} E = \frac{1}{2}m(\dot{r}^2 + r^2 \dot{\theta}^2) + V(r) \end{equation} $$
+
+This can also be derived directly from the other two equations of motion. Starting from the second equation of motion, rewritten as
+
+$$ m\ddot{r} = -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \,. $$
+
+If both sides are multiplied by $\dot{r}$, we have
+
+$$ m\ddot{r} \dot{r} = -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} \,. $$
+
+The left-hand side can be rewritten as 
+
+$$ m\ddot{r} \dot{r} = \frac{d}{dr}\left( \frac{1}{2}m\dot{r}^2 \right) \,, $$
+
+while the right-hand side can also be rewritten by reversing the chain rule
+
+$$ -\frac{d}{dr}\left( V + \frac{l^2}{2mr^2} \right) \dot{r} = \frac{dg}{dr} \frac{dr}{dt}, \quad g=V + \frac{l^2}{2mr^2} \,. $$
+
+Hence, we have
+
+$$ \frac{d}{dr}\left( \frac{1}{2}m\dot{r}^2 \right) = \frac{dg}{dr} \frac{dr}{dt} $$
+
 
 ### Solving for $r, \theta, t$
 
