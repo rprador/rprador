@@ -101,8 +101,11 @@ $$ \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 \right) = -\frac{d}{dt}\left( V + \f
 
 which, after rearranging, becomes
 
-$$ \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 + V + \frac{l^2}{2mr^2} \right)  $$
+$$ \frac{d}{dt}\left( \frac{1}{2}m\dot{r}^2 + V + \frac{l^2}{2mr^2} \right) = 0 \,. $$
 
+which leads to the conservation of energy
+
+$$ \frac{1}{2}m\dot{r}^2 + V + \frac{l^2}{2mr^2} = \text{const.} = E $$
 
 ### Solving for $r, \theta, t$
 
