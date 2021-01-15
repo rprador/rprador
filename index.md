@@ -14,7 +14,7 @@ This Github Pages is a dedicated location for storing personal notes that I have
 
 ## Materials
 
-[Materials Science Basics](https://rprador.github.io/rprador/materials/materials-topics)
+[Materials Science](https://rprador.github.io/rprador/materials/materials-topics)
 
 ## Mathematics
 
