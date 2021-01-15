@@ -17,4 +17,6 @@ $$ E_{\text{ionic}} =  E_A + E_R = -\frac{1}{4\pi\varepsilon_0} \frac{Z_1 Z_2 e^
 
 where $\varepsilon_0$ is the permittivity of vacuum, $Z$ is the absolute valence of the ions (the amount of charge), $e$ is the electron charge, and $B$ and $n$ are experimental constants.
 
-*Covalent Bonding* - Bonding between atoms with differences in electronegativity (measures the tendency of an atom to attract a shared pair of electrons), i.e. through sharing of electrons. 
+*Covalent Bonding* - Bonding between atoms with differences in electronegativity (measures the tendency of an atom to attract a shared pair of electrons), i.e. through sharing of electrons. Several materials experience hybridization of orbitals in covalent bonding - that is, orbitals are mixed such that they overlap during bonding. Covalent bonds are directional, unlike ionic bonds.
+
+*Metallic bonding* - Bonding of metals and alloys in which free electrons within the material create ion cores from the remaining nonvalence electrons. These ion cores, which are net positive, attract other ion cores in the material but are electronically shielded from each other somewhat by the free eelctrons. The free electrons, in addition to shielding the ion cores, also hold the cores themselves together.
