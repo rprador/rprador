@@ -12,6 +12,10 @@ This Github Pages is a dedicated location for storing personal notes that I have
 
 [Elasticity](https://rprador.github.io/rprador/elasticity/el-topics)
 
+## Materials
+
+[Materials Science Basics](https://rprador.github.io/rprador/materials/materials-topics)
+
 ## Mathematics
 
 [Differential Equations](https://rprador.github.io/rprador/differential_eqns/de-topics)
