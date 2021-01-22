@@ -41,6 +41,14 @@ $$ \epsilon_{ij} = \frac{1}{E} \left[\sigma_{ij}(1+\nu) - \nu \delta-{ij}\sum_{k
 
 where $\delta_{ij}$ is the Kronecker delta.
 
+Shearing strain and shearing stress can be related to each other using $E$ and $\nu$ as
+
+$$ \gamma = \frac{2(1+\nu)\tau}{E} $$ \,.
+
+Frequently, rearrangement of this relation is denoted through another constant $G$, known as the *modulus of elasticity in shear* or *modulus or rigidity* or *shear modulus*,
+
+$$ G = \frac{\tau}{\gamma} = \frac{E}{2(1+\nu)}$$ \,.
+
 ## Special Cases for Simplification
 
 ### Plane Stress
