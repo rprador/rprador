@@ -49,6 +49,10 @@ Frequently, rearrangement of this relation is denoted through another constant $
 
 $$ G = \frac{\tau}{\gamma} = \frac{E}{2(1+\nu)}$$
 
+Suppose we have a body in tension from an axial force, creating strains both in the axial and lateral (perpendicular to axial direction) directions. The ratio between both strains is called *Poisson's ratio*,
+
+$$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{ax}}} $$
+
 ## Special Cases for Simplification
 
 ### Plane Stress
