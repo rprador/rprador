@@ -53,6 +53,7 @@ Suppose we have a body in tension from an axial force, creating strains both in 
 
 $$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{ax}}} $$
 
+This is useful for calculating the lateral strain using $\varepsilon_{\text{lat}} = \nu \varepsilon_{\text{ax}}$.
 ## Special Cases for Simplification
 
 ### Plane Stress
