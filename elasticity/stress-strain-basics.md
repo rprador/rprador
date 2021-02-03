@@ -29,7 +29,7 @@ $$ \gamma_{xy} = \frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}, 
 
 The stresses and strains are related through the empirically established Hooke's law:
 
-$$ \begin{equation} \sigma = E\epsilon \end{equation} $$
+$$ \begin{equation} \sigma = E\epsilon \end{equation} \quad \text{(Hooke's Law)} $$
 
 where $E$ is the modulus of elasticty or *Young's modulus*. Materials that obey Hooke's law are known as *linearly elastic* materials. The strains are also related to the stresses more generally by the *method of superposition*, which states that for a uniformly applied set of stresses on the body
 
@@ -47,11 +47,11 @@ $$ \gamma = \frac{2(1+\nu)\tau}{E} $$
 
 Frequently, rearrangement of this relation is denoted through another constant $G$, known as the *modulus of elasticity in shear* or *modulus or rigidity* or *shear modulus*,
 
-$$ G = \frac{\tau}{\gamma} = \frac{E}{2(1+\nu)}$$
+$$ G = \frac{\tau}{\gamma} = \frac{E}{2(1+\nu)} \quad \text{(Shear Modulus)} $$
 
 Suppose we have a body in tension from an axial force, creating strains both in the axial and lateral (perpendicular to axial direction) directions. The ratio between both strains is called *Poisson's ratio*,
 
-$$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{ax}}} $$
+$$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{ax}}} \quad \text{(Poisson's Ratio)} $$
 
 This is useful for calculating the lateral strain using $\varepsilon_{\text{lat}} = \nu \varepsilon_{\text{ax}}$.
 ## Special Cases for Simplification
