@@ -57,7 +57,7 @@ This is useful for calculating the lateral strain using $\varepsilon_{\text{lat}
 
 Similar to the unit elongation concept (strains) is unit *volume change*, or the *dilatation*
 
-$$ e = \frac{\Delta V}{V_{\text{initial}}} = \varepsilon (1-2\nu)\frac{\sigma}{E}(1-2\nu) \quad \text(Dilatation)$$
+$$ e = \frac{\Delta V}{V_{\text{initial}}} = \varepsilon (1-2\nu) = \frac{\sigma}{E}(1-2\nu) \quad \text(Dilatation) $$
 
 ## Special Cases for Simplification
 
