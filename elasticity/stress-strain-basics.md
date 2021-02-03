@@ -55,7 +55,7 @@ $$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon
 
 This is useful for calculating the lateral strain using $\varepsilon_{\text{lat}} = \nu \varepsilon_{\text{ax}}$.
 
-Similar to the unit elongation concept (strains) is unit *volume change*, or the *dilatation*
+Similar to the unit elongation concept (strains) is unit *volume change*, or the *dilatation*, 
 
 $$ e = \frac{\Delta V}{V_{\text{initial}}} = \varepsilon (1-2\nu) = \frac{\sigma}{E}(1-2\nu) \quad \text(Dilatation) $$
 
