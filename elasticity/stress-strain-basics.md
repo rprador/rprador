@@ -54,6 +54,11 @@ Suppose we have a body in tension from an axial force, creating strains both in 
 $$ \nu = -\frac{\text{lateral strain}}{\text{axial strain}} = -\frac{\varepsilon_{\text{lat}}}{\varepsilon_{\text{ax}}} \quad \text{(Poisson's Ratio)} $$
 
 This is useful for calculating the lateral strain using $\varepsilon_{\text{lat}} = \nu \varepsilon_{\text{ax}}$.
+
+Similar to the unit elongation concept (strains) is unit *volume change*, or the *dilatation*
+
+$$ e = \frac{\Delta V}{V_{\text{initial}}} = \varepsilon (1-2\nu)\frac{\sigma}{E}(1-2\nu) \quad \text(Dilatatiun)$$
+
 ## Special Cases for Simplification
 
 ### Plane Stress
