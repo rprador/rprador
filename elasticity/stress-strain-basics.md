@@ -110,3 +110,15 @@ $$ \hat{n}_{y} \cdot \mathbf{\sigma} \cdot \hat{n}_{y} = \hat{n}_{y} \cdot \begi
 For reference, a *structure* is any object that supports or transmits loads. The *strength* of a structure is its ability to resist loads. The strength that a structure needs during common application is called the *required strength* while the largest strength a structure can have is called *actual strength*. Going by these, one type of safety measure is the *safety factor*
 
 $$ n = \frac{\text{Actual Strength}}{\text{Required Strength}} $$ 
+
+Usual safe range used is from 1 to 10, but this can vary. Of course, the higher the safety factory, the better.
+
+Yield strength (i.e. the amount of force required to cause yielding, that is, elongation of a material at constant tension) can also be used as a safety measure through the quantity *allowable stress*
+
+$$ \text{Allowable Stress} = \frac{\text{Yield Strength}}{Safety Factor} $$
+
+which can be broken down into its normal and shear components
+
+$$ \sigma_{\text{allow}} = \frac{\sigma_y}{n_1}, \quad \tau_{\text{allow}} = \frac{\tau_y}{n_2} $$
+
+where $n_1, n_2$ are safety factors.
