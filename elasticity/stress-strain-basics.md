@@ -105,4 +105,8 @@ or
 
 $$ \hat{n}_{y} \cdot \mathbf{\sigma} \cdot \hat{n}_{y} = \hat{n}_{y} \cdot \begin{pmatrix} \sigma_{xx} & \sigma_{xy} & \sigma_{xz} \\ \sigma_{yx} & \sigma_{yy} & \sigma_{yz} \\ \sigma_{zx} & \sigma_{zy} & \sigma_{zz} \end{pmatrix} \cdot \hat{n}_{y} = \sigma_{yy} $$
 
+## Common Metrics for Safety
 
+For reference, a *structure* is any object that supports or transmits loads. The *strength* of a structure is its ability to resist loads. The strength that a structure needs during common application is called the *required strength* while the largest strength a structure can have is called *actual strength*. Going by these, one type of safety measure is the *safety factor*
+
+$$ n = \frac{\text{Actual Strength}}{\text{Required Strength}} $$ 
