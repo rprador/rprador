@@ -121,4 +121,4 @@ which can be broken down into its normal and shear components
 
 $$ \sigma_{\text{allow}} = \frac{\sigma_y}{n_1}, \quad \tau_{\text{allow}} = \frac{\tau_y}{n_2} $$
 
-where $n_1, n_2$ are safety factors.
+where $n_1, n_2$ are safety factors. The allowable stress is useful as the dependence on the yield strength provides a way to know if the material is being kept within the linearly elastic limit (note: yield stress is roughly the upper limit of the linear elastic range).
